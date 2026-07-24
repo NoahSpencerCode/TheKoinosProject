@@ -1248,6 +1248,15 @@ window.KOINOS_DATA = {
         "minors"
       ],
       "secular_example": "Nēpios is built from 'not' plus 'speech' — a child too young to talk properly. Legal papyri use it for minors who cannot yet act for themselves; the sentence's whole point is the gap between the educated and people with no words at all."
+    },
+    "unassuming": {
+      "greek": "ταπεινός (tapeinos)",
+      "variants": [
+        "low",
+        "unassuming",
+        "of no status"
+      ],
+      "secular_example": "Tapeinos is concretely 'low' — geographers use it for low-lying land and a river running low — and socially it meant low-status, servile, a nobody. Greek writers used it as an insult; a teacher praising his own heart as tapeinos would have sounded startling, almost backwards, to a first-century ear."
     }
   },
   "manuscripts": [
