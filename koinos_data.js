@@ -272,15 +272,6 @@ window.KOINOS_DATA = {
       ],
       "secular_example": "In everyday Greek a dikaios man is one neighbors trust — he pays his debts, keeps contracts, and deals straight."
     },
-    "right": {
-      "greek": "δικαιοσύνη (dikaiosynē)",
-      "variants": [
-        "what is right",
-        "fairness",
-        "justice"
-      ],
-      "secular_example": "Plato's Republic is one long argument about dikaiosynē — whether doing right actually benefits the person who practices it."
-    },
     "splendor": {
       "greek": "δόξα (doxa)",
       "variants": [
@@ -1086,6 +1077,24 @@ window.KOINOS_DATA = {
         "skin condition"
       ],
       "secular_example": "Greek medical writers use lepra for scaly skin conditions generally — a broader term than the modern disease called leprosy — and it made a person ritually untouchable."
+    },
+    "right time": {
+      "greek": "καιρός (kairos)",
+      "variants": [
+        "the due moment",
+        "the appointed season",
+        "the ripe time"
+      ],
+      "secular_example": "Greek splits time in two: chronos is duration on the clock, kairos the right moment — the harvest's season, the instant to strike in battle. Fruit picked pro kairou, 'before the kairos,' is picked unripe."
+    },
+    "what is right": {
+      "greek": "δικαιοσύνη (dikaiosynē)",
+      "variants": [
+        "what is right",
+        "fairness",
+        "justice"
+      ],
+      "secular_example": "Plato's Republic is one long argument about dikaiosynē — whether doing right actually benefits the person who practices it."
     }
   },
   "manuscripts": [
