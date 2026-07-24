@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>The Koinos Project</title>
 <meta name="description" content="An ordinary English rendering of the Greek New Testament — read the Greek and the new English side by side.">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0e0d0c">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf9f7">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Koinos">
 <style>
   /* ---------- Design tokens ---------- */
   :root {
@@ -44,7 +50,8 @@
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
-  html { height: 100%; }
+  html { height: 100%; -webkit-text-size-adjust: 100%; }
+  button, .row { touch-action: manipulation; }
   body {
     font-family: var(--serif);
     background: var(--bg);
@@ -246,9 +253,17 @@
     font-family: var(--sans);
   }
   .sheet.on { transform: translate(-50%, 0); }
+  .sheet::before {
+    content: "";
+    position: absolute; top: 7px; left: 50%;
+    transform: translateX(-50%);
+    width: 36px; height: 4px;
+    border-radius: 999px;
+    background: var(--hairline);
+  }
   .sheet-head {
     display: flex; align-items: center; gap: 12px;
-    padding: 14px 18px 12px;
+    padding: 18px 18px 12px;
     border-bottom: 1px solid var(--hairline);
     flex: none;
   }
@@ -300,10 +315,24 @@
   .idx-ms .r-title { font-size: 16px; font-weight: 600; }
   .idx-ms .r-sub { margin-top: 3px; }
 
-  @media (max-width: 480px) {
-    h1.title { font-size: 28px; }
-    .english-block { font-size: 18px; }
-    .pager .label { min-width: 84px; }
+  /* ---------- Mobile (primary experience) ---------- */
+  @media (max-width: 600px) {
+    main { padding: 28px 18px calc(112px + env(safe-area-inset-bottom, 0px)); }
+    h1.title { font-size: 27px; }
+    .subtitle { font-size: 15.5px; margin-bottom: 26px; }
+    .prose p { font-size: 16.5px; }
+    .english-block { font-size: 17.5px; }
+    .greek-block { font-size: 15px; padding-left: 14px; margin-bottom: 24px; }
+    .bar { padding: 8px 10px calc(8px + env(safe-area-inset-bottom, 0px)); }
+    .bar-btn { width: 44px; height: 44px; }
+    .chev { width: 44px; height: 44px; }
+    .pager .label { min-width: 86px; font-size: 12.5px; }
+    .sheet { max-height: 84vh; border-left: none; border-right: none; }
+    #popover.as-card {
+      left: 10px; right: 10px; width: auto;
+      top: auto; bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+      transform-origin: bottom center;
+    }
   }
 </style>
 </head>
@@ -737,16 +766,28 @@
     /* ----- popover ----- */
     var pop = document.getElementById("popover");
     var popShownAt = 0;
-    function showPopover(el, key) {
-      popShownAt = performance.now();
+    var mobileMq = window.matchMedia("(max-width: 600px)");
+    function fillPopover(key) {
       var e = D.lexicon[key];
-      if (!e) return;
+      if (!e) return false;
       pop.innerHTML =
         '<div class="pop-label">Greek</div><div class="pop-greek">' + esc(e.greek) + "</div>" +
         '<div class="pop-label">Ordinary range</div><div class="pop-variants">' + esc(e.variants.join(" · ")) + "</div>" +
         '<div class="pop-example">' + esc(e.secular_example) + "</div>";
-      var r = el.getBoundingClientRect();
+      return true;
+    }
+    function showPopover(el, key) {
+      if (!fillPopover(key)) return;
+      popShownAt = performance.now();
       pop.classList.add("on");
+      if (mobileMq.matches) {
+        pop.classList.add("as-card");
+        pop.style.left = "";
+        pop.style.top = "";
+        return;
+      }
+      pop.classList.remove("as-card");
+      var r = el.getBoundingClientRect();
       var pw = pop.offsetWidth, ph = pop.offsetHeight;
       var x = Math.min(Math.max(12, r.left + r.width / 2 - pw / 2), window.innerWidth - pw - 12);
       var below = r.bottom + 10;
@@ -880,17 +921,18 @@
       var wordRow = ev.target.closest("[data-word]");
       if (wordRow) {
         close();
-        var key = wordRow.dataset.word;
-        // show as centered popover
-        var e = D.lexicon[key];
-        pop.innerHTML =
-          '<div class="pop-label">Greek</div><div class="pop-greek">' + esc(e.greek) + "</div>" +
-          '<div class="pop-label">Ordinary range</div><div class="pop-variants">' + esc(e.variants.join(" · ")) + "</div>" +
-          '<div class="pop-example">' + esc(e.secular_example) + "</div>";
+        if (!fillPopover(wordRow.dataset.word)) return;
         popShownAt = performance.now();
         pop.classList.add("on");
-        pop.style.left = Math.max(12, (window.innerWidth - pop.offsetWidth) / 2) + "px";
-        pop.style.top = "120px";
+        if (mobileMq.matches) {
+          pop.classList.add("as-card");
+          pop.style.left = "";
+          pop.style.top = "";
+        } else {
+          pop.classList.remove("as-card");
+          pop.style.left = Math.max(12, (window.innerWidth - pop.offsetWidth) / 2) + "px";
+          pop.style.top = "120px";
+        }
         return;
       }
       var pageRow = ev.target.closest("[data-goq]");
@@ -910,6 +952,21 @@
       var hidden = document.body.classList.toggle("hide-greek");
       greekBtn.setAttribute("aria-pressed", String(!hidden));
     });
+    /* swipe page turns (ignored while a sheet is open) */
+    var tX = 0, tY = 0, tT = 0;
+    document.addEventListener("touchstart", function (ev) {
+      if (openSheet || ev.touches.length > 1) { tT = 0; return; }
+      tX = ev.touches[0].clientX; tY = ev.touches[0].clientY; tT = Date.now();
+    }, { passive: true });
+    document.addEventListener("touchend", function (ev) {
+      if (!tT || openSheet) return;
+      var dx = ev.changedTouches[0].clientX - tX;
+      var dy = ev.changedTouches[0].clientY - tY;
+      var dt = Date.now() - tT;
+      tT = 0;
+      if (dt < 600 && Math.abs(dx) > 64 && Math.abs(dy) < 60) go(dx < 0 ? cur + 1 : cur - 1);
+    }, { passive: true });
+
     document.addEventListener("keydown", function (ev) {
       if (ev.key === "Escape") { close(); hidePopover(); return; }
       if (ev.target.tagName === "INPUT") return;

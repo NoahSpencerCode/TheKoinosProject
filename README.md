@@ -13,6 +13,25 @@ An ordinary English rendering of the Greek New Testament.
 
 Installment 1: the opening of Matthew (family record through the first tour of Galilee), 6 pages, 32 lexicon entries. Translation continues; a reader webpage that loads `koinos_data.json` is the next build step.
 
+## Read it
+
+- `index.html` — the reader. Open it directly (double-click) or serve the folder; it loads `koinos_data.js` / `koinos_data.json`.
+- `koinos_reader.html` — fully self-contained single file (data inlined), handy for sharing.
+
+The reader is mobile-first: swipe to turn pages, tap any underlined word for its Greek and ordinary meaning, and use the bottom bar — search on the left, index on the right.
+
+## Publish with GitHub Pages
+
+1. Create a new GitHub repository (e.g. `TheKoinosProject`) and push this folder:
+   ```
+   git remote add origin https://github.com/YOURNAME/TheKoinosProject.git
+   git push -u origin main
+   ```
+2. On GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch**, then pick **main** and **/ (root)** and save.
+3. After a minute the book is live at `https://YOURNAME.github.io/TheKoinosProject/`.
+
+Everything uses relative paths and the `.nojekyll` file is included, so no build step or configuration is needed.
+
 ## Greek source
 
 SBL Greek New Testament (Greek text only; no English translation consulted), critical sigla removed, formatted as continuous prose to reflect the earliest manuscripts, which carry no chapter or verse numbers.
