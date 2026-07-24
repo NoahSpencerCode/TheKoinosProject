@@ -39,6 +39,8 @@ A fresh English rendering of the Greek New Testament in ordinary modern English,
 | μάγοι | astrologers |
 | ἔρημος | the open country |
 | πονηρός | never "evil" — by context: bad, harmful, nasty, corrupt, flawed (root: ponos, hardship) |
+| παρθένος | young woman (never "virgin" — doctrinally loaded; Hebrew behind Isaiah quote is ʿalmāh, young woman) |
+| Capitalization | Master/God capitalized only by the ordinary title-as-name rule (like "the Captain"); manuscripts are all-uncial and make no distinction. Noah confirmed keeping capitals. |
 | μακάριος | happy, fortunate (upcoming, Matt 5) |
 | ἀμὴν λέγω ὑμῖν | "I tell you truly" (upcoming) |
 | μαθητής | student (upcoming) |
