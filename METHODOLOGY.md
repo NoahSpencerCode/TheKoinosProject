@@ -38,6 +38,7 @@ A fresh English rendering of the Greek New Testament in ordinary modern English,
 | δαιμονιζόμενοι / δαιμόνιον | plagued by spirits / spirit |
 | μάγοι | astrologers |
 | ἔρημος | the open country |
+| πονηρός | never "evil" — by context: bad, harmful, nasty, corrupt, flawed (root: ponos, hardship) |
 | μακάριος | happy, fortunate (upcoming, Matt 5) |
 | ἀμὴν λέγω ὑμῖν | "I tell you truly" (upcoming) |
 | μαθητής | student (upcoming) |
