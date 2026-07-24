@@ -128,15 +128,6 @@
       ],
       "secular_example": "Aristotle says the tragic hero falls not through wickedness but through some great error — hamartia — of judgment."
     },
-    "change your thinking": {
-      "greek": "μετανοέω / μετάνοια (metanoeō / metanoia)",
-      "variants": [
-        "change your thinking",
-        "change of mind",
-        "rethink and regret"
-      ],
-      "secular_example": "Thucydides reports that the day after condemning Mytilene the Athenians felt a change of mind — metanoia — and reversed the decree."
-    },
     "kingdom": {
       "greek": "βασιλεία (basileia)",
       "variants": [
@@ -604,6 +595,497 @@
         "maiden"
       ],
       "secular_example": "In the historians a parthenos is an unmarried daughter of marriageable age, as when a treaty promises a king's daughter, still a parthenos, in marriage. The Hebrew behind the quoted line (almah) simply means a young woman."
+    },
+    "change the way you think": {
+      "greek": "μετανοεῖτε (metanoeite)",
+      "variants": [
+        "change the way you think",
+        "turn your thinking around",
+        "rethink your life"
+      ],
+      "secular_example": "Thucydides reports that the day after condemning Mytilene the Athenians felt a change of mind — metanoia — and reversed the decree."
+    },
+    "change of mind": {
+      "greek": "μετάνοια (metanoia)",
+      "variants": [
+        "change of mind",
+        "rethinking",
+        "turnaround in thinking"
+      ],
+      "secular_example": "In the historians metanoia is the moment a person or an assembly reverses course after seeing more clearly — regret that changes behavior."
+    },
+    "rama": {
+      "greek": "Ῥαμά (Rama)",
+      "variants": [
+        "a town just north of Jerusalem",
+        "staging point of the Babylon deportation"
+      ],
+      "secular_example": "When Babylon emptied Jerusalem, captives were assembled at Rama before the march east — which is why, in the quoted poem, weeping for lost children is heard there."
+    },
+    "herod": {
+      "greek": "Ἡρῴδης (Herod the Great)",
+      "variants": [
+        "Rome-appointed king of Judea, 37–4 BCE",
+        "the builder-king"
+      ],
+      "secular_example": "Rome installed Herod as client king of Judea; he rebuilt the Jerusalem temple on a colossal scale and grew infamous for executing anyone he suspected of rivalry — including his own sons."
+    },
+    "archelaus": {
+      "greek": "Ἀρχέλαος (Archelaus)",
+      "variants": [
+        "Herod's son",
+        "ruler of Judea 4 BCE–6 CE"
+      ],
+      "secular_example": "Archelaus inherited Judea at his father's death and ruled so brutally that Rome deposed and exiled him within ten years — reason enough for a returning family to steer north to Galilee instead."
+    },
+    "galilee": {
+      "greek": "Γαλιλαία (Galilaia)",
+      "variants": [
+        "the northern region",
+        "farm and fishing country around the lake"
+      ],
+      "secular_example": "Galilee was the fertile north — small villages, terraced hills, and a lake full of fish — ruled after Herod by his son Antipas, and looked down on by southern sophisticates."
+    },
+    "nazareth": {
+      "greek": "Ναζαρέτ (Nazaret)",
+      "variants": [
+        "a small hill village in Galilee",
+        "population of a few hundred"
+      ],
+      "secular_example": "Nazareth was so minor it appears in no surviving text, list, or inscription before this book — a farming hamlet in the Galilean hills."
+    },
+    "threshing floor": {
+      "greek": "ἅλων (halōn)",
+      "variants": [
+        "threshing floor",
+        "packed harvest floor"
+      ],
+      "secular_example": "Farm leases in the papyri name the village halōn — the packed-earth floor where the crop is beaten out and winnowed before the landlord takes his share."
+    },
+    "delight": {
+      "greek": "εὐδοκέω (eudokeō)",
+      "variants": [
+        "be delighted with",
+        "approve",
+        "take pleasure in"
+      ],
+      "secular_example": "Egyptian contract papyri close with the formula 'I approve' — eudokō — the signer's declaration that the terms please him."
+    },
+    "doing badly": {
+      "greek": "κακῶς ἔχω (kakōs echō)",
+      "variants": [
+        "doing badly",
+        "in a bad way",
+        "sick"
+      ],
+      "secular_example": "Greek says you 'have it badly' when you are ill: private letters ask anxiously after a friend 'having it badly' and hope he will soon 'have it well.'"
+    },
+    "david": {
+      "greek": "Δαυίδ (David)",
+      "variants": [
+        "Israel's most famous king, c. 1000 BCE",
+        "founder of the royal line"
+      ],
+      "secular_example": "David was the king every later hope of restored kingship pointed back to; 'son of David' works in this book like a royal claim."
+    },
+    "solomon": {
+      "greek": "Σολομών (Solomōn)",
+      "variants": [
+        "David's son",
+        "king remembered for wealth and building"
+      ],
+      "secular_example": "Solomon's court, buildings, and imported luxuries made his name a byword for splendor centuries after his death."
+    },
+    "abraham": {
+      "greek": "Ἀβραάμ (Abraam)",
+      "variants": [
+        "ancestral father of the nation",
+        "head of the family record"
+      ],
+      "secular_example": "Abraham stands at the head of the family line; to 'have Abraham as father' was to claim membership in the nation by descent."
+    },
+    "moses": {
+      "greek": "Μωϋσῆς (Mōusēs)",
+      "variants": [
+        "the law-giver",
+        "leader of the exodus"
+      ],
+      "secular_example": "Moses was credited with the nation's law; 'the gift Moses ordered' is the standard offering that law required after a skin disease healed."
+    },
+    "isaiah": {
+      "greek": "Ἠσαΐας (Ēsaias)",
+      "variants": [
+        "spokesman in Jerusalem, 8th century BCE",
+        "author of the most-quoted scroll"
+      ],
+      "secular_example": "Isaiah spoke in Jerusalem around 700 BCE; this book reaches for his scroll more than any other."
+    },
+    "jeremiah": {
+      "greek": "Ἰερεμίας (Ieremias)",
+      "variants": [
+        "spokesman at Jerusalem's fall",
+        "witness of the deportation"
+      ],
+      "secular_example": "Jeremiah lived through Babylon's destruction of Jerusalem around 586 BCE; the weeping he describes belongs to that catastrophe."
+    },
+    "rachel": {
+      "greek": "Ῥαχήλ (Rachēl)",
+      "variants": [
+        "Jacob's wife",
+        "ancestral mother"
+      ],
+      "secular_example": "Rachel, mother of tribes, was remembered as buried near the road by Bethlehem and Rama — so in poetry she stands for every mother of the land weeping for lost children."
+    },
+    "peter": {
+      "greek": "Πέτρος (Petros)",
+      "variants": [
+        "Rock",
+        "nickname of Simon"
+      ],
+      "secular_example": "Petros is simply the Greek word for a stone or rock, used as a nickname — like calling a man Rocky."
+    },
+    "matthew": {
+      "greek": "Μαθθαῖος (Maththaios)",
+      "variants": [
+        "toll collector at Capernaum",
+        "the name this book carries"
+      ],
+      "secular_example": "A toll-booth worker on the trade road at Capernaum; tradition attached his name to this whole account."
+    },
+    "pharisees": {
+      "greek": "Φαρισαῖοι (Pharisaioi)",
+      "variants": [
+        "lay movement of strict law-keeping",
+        "the separated ones"
+      ],
+      "secular_example": "The Pharisees were a popular movement devoted to careful keeping of the law in daily life — widely respected, politically active, rivals of the temple aristocracy."
+    },
+    "sadducees": {
+      "greek": "Σαδδουκαῖοι (Saddoukaioi)",
+      "variants": [
+        "the temple aristocracy",
+        "priestly establishment party"
+      ],
+      "secular_example": "The Sadducees were the wealthy priestly establishment around the Jerusalem temple; they worked with Rome and rejected newer ideas the Pharisees accepted."
+    },
+    "gadarenes": {
+      "greek": "Γαδαρηνοί (Gadarēnoi)",
+      "variants": [
+        "people of Gadara",
+        "a Greek city southeast of the lake"
+      ],
+      "secular_example": "Gadara was one of the Greek-style cities of the Ten Towns; the pig herds mark the district as non-Judean country."
+    },
+    "bethlehem": {
+      "greek": "Βηθλέεμ (Bēthleem)",
+      "variants": [
+        "village south of Jerusalem",
+        "David's hometown"
+      ],
+      "secular_example": "Bethlehem, a farming village an afternoon's walk from Jerusalem, mattered for one reason: King David had come from it."
+    },
+    "judea": {
+      "greek": "Ἰουδαία (Ioudaia)",
+      "variants": [
+        "the southern region around Jerusalem",
+        "heartland of the Judeans"
+      ],
+      "secular_example": "Judea was the hill country around Jerusalem — the old royal south, ruled after Herod by his son and then directly by Roman governors."
+    },
+    "jerusalem": {
+      "greek": "Ἱεροσόλυμα (Hierosolyma)",
+      "variants": [
+        "the capital",
+        "site of the temple"
+      ],
+      "secular_example": "Jerusalem held the temple and the high priesthood; festivals poured pilgrims into it, and every power that ruled the region had to hold it."
+    },
+    "jordan": {
+      "greek": "Ἰορδάνης (Iordanēs)",
+      "variants": [
+        "the land's river",
+        "runs from the lake to the Dead Sea"
+      ],
+      "secular_example": "The Jordan runs down a deep rift valley from the lake of Galilee to the Dead Sea; crossing it marked entering or leaving the land."
+    },
+    "egypt": {
+      "greek": "Αἴγυπτος (Aigyptos)",
+      "variants": [
+        "Rome's grain province to the southwest",
+        "home of large Judean communities"
+      ],
+      "secular_example": "Egypt under Rome was rich, stable, and close — with big Judean communities in Alexandria, it was the natural refuge from a king in Judea."
+    },
+    "capernaum": {
+      "greek": "Καφαρναούμ (Kapharnaoum)",
+      "variants": [
+        "fishing town on the lake's north shore",
+        "toll stop on the trade road"
+      ],
+      "secular_example": "Capernaum sat where the trade road met the lake — fishing boats, a toll booth, a small garrison; a working town, not a famous one."
+    },
+    "syria": {
+      "greek": "Συρία (Syria)",
+      "variants": [
+        "the Roman province to the north",
+        "capital at Antioch"
+      ],
+      "secular_example": "Syria was the great Roman province north of the land; its governor commanded the legions nearest Judea."
+    },
+    "ten towns": {
+      "greek": "Δεκάπολις (Dekapolis)",
+      "variants": [
+        "league of ten Greek-style cities",
+        "east of the Jordan"
+      ],
+      "secular_example": "The Ten Towns were Greek-speaking cities with theaters, temples, and pig markets — a strip of Mediterranean city culture on the land's eastern edge."
+    },
+    "zebulun": {
+      "greek": "Ζαβουλών (Zaboulōn)",
+      "variants": [
+        "old northern tribal territory"
+      ],
+      "secular_example": "Zebulun was one of the old tribal allotments of the north, long absorbed into Galilee by this period."
+    },
+    "naphtali": {
+      "greek": "Νεφθαλίμ (Nephthalim)",
+      "variants": [
+        "old tribal territory by the lake"
+      ],
+      "secular_example": "Naphtali's old territory ran along the lake's western shore — the district where Capernaum stood."
+    },
+    "israel": {
+      "greek": "Ἰσραήλ (Israēl)",
+      "variants": [
+        "the nation's own name for itself",
+        "the twelve-tribe people"
+      ],
+      "secular_example": "Israel is the people's internal name — the whole twelve-tribe family — where 'Judeans' is what outsiders called the southerners."
+    },
+    "winnowing shovel": {
+      "greek": "πτύον (ptyon)",
+      "variants": [
+        "winnowing shovel",
+        "grain fork"
+      ],
+      "secular_example": "After threshing, the farmer tosses grain into the breeze with a ptyon: kernels fall straight down, husks blow aside."
+    },
+    "handed over": {
+      "greek": "παραδίδωμι (paradidōmi)",
+      "variants": [
+        "hand over",
+        "deliver up",
+        "transfer"
+      ],
+      "secular_example": "The everyday delivery word — papyri use it for handing goods to a carrier and prisoners to the guards."
+    },
+    "casting net": {
+      "greek": "ἀμφίβληστρον (amphiblēstron)",
+      "variants": [
+        "casting net",
+        "throw-net"
+      ],
+      "secular_example": "A circular weighted net thrown from the shallows so it bells open and sinks over the fish."
+    },
+    "frankincense": {
+      "greek": "λίβανος (libanos)",
+      "variants": [
+        "frankincense",
+        "incense resin"
+      ],
+      "secular_example": "A resin tapped from trees in southern Arabia and shipped north at great cost — burned for its fragrant smoke in homes, courts, and temples."
+    },
+    "myrrh": {
+      "greek": "σμύρνα (smyrna)",
+      "variants": [
+        "myrrh",
+        "aromatic resin"
+      ],
+      "secular_example": "A bitter, fragrant resin used in perfume, medicine, and preparing the dead for burial — a luxury import worth its weight in silver."
+    },
+    "grain-basket": {
+      "greek": "μόδιος (modios)",
+      "variants": [
+        "grain measure",
+        "bushel basket"
+      ],
+      "secular_example": "The modios was the standard Roman grain measure, about a bucketful — every market stall had one to hand."
+    },
+    "storeroom": {
+      "greek": "ταμεῖον (tameion)",
+      "variants": [
+        "storeroom",
+        "inner room",
+        "pantry"
+      ],
+      "secular_example": "The tameion was the lockable inner room of an ordinary house — food, tools, and savings lived there, and it was the one private place."
+    },
+    "speck": {
+      "greek": "κάρφος (karphos)",
+      "variants": [
+        "speck",
+        "chip of dry wood",
+        "splinter"
+      ],
+      "secular_example": "A karphos is the dry chip or straw-flake that gets in your eye on a windy day at the threshing floor."
+    },
+    "beam": {
+      "greek": "δοκός (dokos)",
+      "variants": [
+        "beam",
+        "roof timber",
+        "joist"
+      ],
+      "secular_example": "A dokos is a roof beam — building accounts price them by length; the joke is its absurd scale next to a speck."
+    },
+    "authority": {
+      "greek": "ἐξουσία (exousia)",
+      "variants": [
+        "authority",
+        "right of disposal",
+        "power to act"
+      ],
+      "secular_example": "In legal papyri exousia is the owner's right of disposal — he 'has authority' to sell, lease, or give what is his."
+    },
+    "sensible": {
+      "greek": "φρόνιμος (phronimos)",
+      "variants": [
+        "sensible",
+        "practically wise",
+        "forward-planning"
+      ],
+      "secular_example": "Xenophon calls a household manager phronimos when he plans ahead — the practical sense that stocks the barn before winter."
+    },
+    "salt": {
+      "greek": "ἅλας (halas)",
+      "variants": [
+        "salt",
+        "preservative",
+        "seasoning"
+      ],
+      "secular_example": "Salt preserved fish and meat in a world without cold storage — Roman soldiers' pay was once reckoned in it, which is where 'salary' comes from."
+    },
+    "tax collectors": {
+      "greek": "τελῶναι (telōnai)",
+      "variants": [
+        "toll collectors",
+        "tax farmers",
+        "revenue contractors"
+      ],
+      "secular_example": "Telōnai bid for the contract to collect tolls, then squeezed out their profit — comedy and papyri alike treat them as bywords for extortion."
+    },
+    "foreigners": {
+      "greek": "ἐθνικοί (ethnikoi)",
+      "variants": [
+        "foreigners",
+        "people of the nations",
+        "non-Judeans"
+      ],
+      "secular_example": "Ethnikoi is 'the nations' people' — everyone outside the Judean nation; an outsider label rather than an insult."
+    },
+    "lake": {
+      "greek": "θάλασσα (thalassa)",
+      "variants": [
+        "sea",
+        "lake",
+        "big water"
+      ],
+      "secular_example": "Greek thalassa covers any big water; the 'sea' of Galilee is a freshwater lake about thirteen miles long, and this translation calls it what it is."
+    },
+    "failures": {
+      "greek": "ἁμαρτωλοί (hamartōloi)",
+      "variants": [
+        "failures",
+        "people who miss the mark",
+        "disreputable people"
+      ],
+      "secular_example": "The people-word built on hamartia: those socially counted as getting life wrong — the crowd polite company avoided at dinner."
+    },
+    "son of humanity": {
+      "greek": "ὁ υἱὸς τοῦ ἀνθρώπου (ho huios tou anthrōpou)",
+      "variants": [
+        "the son of humanity",
+        "the human one",
+        "this human being"
+      ],
+      "secular_example": "A Semitic idiom: 'son of man' simply meant a human being — and in Aramaic speech could point modestly at the speaker himself."
+    },
+    "wineskins": {
+      "greek": "ἀσκοί (askoi)",
+      "variants": [
+        "wineskins",
+        "hide bottles"
+      ],
+      "secular_example": "Wine traveled in whole goat hides; a fresh skin stretches as new wine keeps working, while an old brittle one splits."
+    },
+    "toll booth": {
+      "greek": "τελώνιον (telōnion)",
+      "variants": [
+        "toll booth",
+        "customs post"
+      ],
+      "secular_example": "A roadside customs table where goods moving on the trade road were assessed — Capernaum's sat near the lakeshore."
+    },
+    "groom": {
+      "greek": "νυμφίος (nymphios)",
+      "variants": [
+        "groom",
+        "bridegroom"
+      ],
+      "secular_example": "Village weddings ran for days around the groom; his friends' one job was to celebrate while he was with them."
+    },
+    "take pity": {
+      "greek": "ἐλεέω (eleeō)",
+      "variants": [
+        "take pity",
+        "show mercy",
+        "help out of compassion"
+      ],
+      "secular_example": "The beggar's cry in Greek streets was eleēson — 'take pity' — the ordinary appeal to anyone who might help."
+    },
+    "mercy": {
+      "greek": "ἔλεος (eleos)",
+      "variants": [
+        "mercy",
+        "pity",
+        "practical compassion"
+      ],
+      "secular_example": "Greek ethics discussed eleos as the feeling that moves a judge or victor to go easy — compassion with consequences."
+    },
+    "insulting": {
+      "greek": "βλασφημέω (blasphēmeō)",
+      "variants": [
+        "insult",
+        "speak abusively",
+        "damage a reputation"
+      ],
+      "secular_example": "In ordinary Greek blasphēmeō just means to bad-mouth — orators accuse rivals of blasphēmia against the city and its leaders."
+    },
+    "gut": {
+      "greek": "σπλαγχνίζομαι (splanchnizomai)",
+      "variants": [
+        "feel it in the gut",
+        "be moved to the depths",
+        "ache with compassion"
+      ],
+      "secular_example": "Built on splanchna, the innards — Greek located strong feeling in the guts, the way English calls a sight gut-wrenching."
+    },
+    "army captain": {
+      "greek": "ἑκατόνταρχος (hekatontarchos)",
+      "variants": [
+        "army captain",
+        "centurion",
+        "commander of a hundred"
+      ],
+      "secular_example": "A hekatontarchos commanded about a hundred soldiers — the working backbone of the Roman army, promoted from the ranks."
+    },
+    "skin disease": {
+      "greek": "λέπρα (lepra)",
+      "variants": [
+        "scaly skin disease",
+        "skin condition"
+      ],
+      "secular_example": "Greek medical writers use lepra for scaly skin conditions generally — a broader term than the modern disease called leprosy — and it made a person ritually untouchable."
     }
   },
   "manuscripts": [
@@ -629,7 +1111,7 @@
         {
           "page": 4,
           "greek": "Ἐν δὲ ταῖς ἡμέραις ἐκείναις παραγίνεται Ἰωάννης ὁ βαπτιστὴς κηρύσσων ἐν τῇ ἐρήμῳ τῆς Ἰουδαίας καὶ λέγων· Μετανοεῖτε, ἤγγικεν γὰρ ἡ βασιλεία τῶν οὐρανῶν. οὗτος γάρ ἐστιν ὁ ῥηθεὶς διὰ Ἠσαΐου τοῦ προφήτου λέγοντος· Φωνὴ βοῶντος ἐν τῇ ἐρήμῳ· Ἑτοιμάσατε τὴν ὁδὸν κυρίου, εὐθείας ποιεῖτε τὰς τρίβους αὐτοῦ. αὐτὸς δὲ ὁ Ἰωάννης εἶχεν τὸ ἔνδυμα αὐτοῦ ἀπὸ τριχῶν καμήλου καὶ ζώνην δερματίνην περὶ τὴν ὀσφὺν αὐτοῦ, ἡ δὲ τροφὴ ἦν αὐτοῦ ἀκρίδες καὶ μέλι ἄγριον. τότε ἐξεπορεύετο πρὸς αὐτὸν Ἱεροσόλυμα καὶ πᾶσα ἡ Ἰουδαία καὶ πᾶσα ἡ περίχωρος τοῦ Ἰορδάνου, καὶ ἐβαπτίζοντο ἐν τῷ Ἰορδάνῃ ποταμῷ ὑπʼ αὐτοῦ ἐξομολογούμενοι τὰς ἁμαρτίας αὐτῶν. Ἰδὼν δὲ πολλοὺς τῶν Φαρισαίων καὶ Σαδδουκαίων ἐρχομένους ἐπὶ τὸ βάπτισμα αὐτοῦ εἶπεν αὐτοῖς· Γεννήματα ἐχιδνῶν, τίς ὑπέδειξεν ὑμῖν φυγεῖν ἀπὸ τῆς μελλούσης ὀργῆς; ποιήσατε οὖν καρπὸν ἄξιον τῆς μετανοίας καὶ μὴ δόξητε λέγειν ἐν ἑαυτοῖς· Πατέρα ἔχομεν τὸν Ἀβραάμ, λέγω γὰρ ὑμῖν ὅτι δύναται ὁ θεὸς ἐκ τῶν λίθων τούτων ἐγεῖραι τέκνα τῷ Ἀβραάμ. ἤδη δὲ ἡ ἀξίνη πρὸς τὴν ῥίζαν τῶν δένδρων κεῖται· πᾶν οὖν δένδρον μὴ ποιοῦν καρπὸν καλὸν ἐκκόπτεται καὶ εἰς πῦρ βάλλεται. Ἐγὼ μὲν ὑμᾶς βαπτίζω ἐν ὕδατι εἰς μετάνοιαν· ὁ δὲ ὀπίσω μου ἐρχόμενος ἰσχυρότερός μού ἐστιν, οὗ οὐκ εἰμὶ ἱκανὸς τὰ ὑποδήματα βαστάσαι· αὐτὸς ὑμᾶς βαπτίσει ἐν πνεύματι ἁγίῳ καὶ πυρί· οὗ τὸ πτύον ἐν τῇ χειρὶ αὐτοῦ, καὶ διακαθαριεῖ τὴν ἅλωνα αὐτοῦ καὶ συνάξει τὸν σῖτον αὐτοῦ εἰς τὴν ἀποθήκην, τὸ δὲ ἄχυρον κατακαύσει πυρὶ ἀσβέστῳ.",
-          "english": "In those days John the Immerser appeared, announcing in the open country of Judea: 'Change your thinking, because the kingdom of the skies has come close.' This is the man spoken of through Isaiah the spokesman: 'A voice of someone shouting in the open country: Get the Master's road ready; make his paths straight.' John himself wore clothing of camel hair with a leather belt around his waist, and his food was locusts and wild honey.\n\nThen Jerusalem, all Judea, and the whole Jordan region kept going out to him, and they were immersed by him in the Jordan river while openly admitting their errors.\n\nBut when he saw many of the Pharisees and Sadducees coming to his immersion, he said to them: 'You children of poisonous snakes — who tipped you off to run from the anger that is coming? Then produce fruit that matches a changed way of thinking, and do not imagine you can tell yourselves, We have Abraham for a father. I tell you, God can raise up children for Abraham out of these stones. The axe is already lying at the root of the trees: every tree that fails to produce good fruit is being cut down and thrown into the fire. I immerse you in water for a change of thinking, but the one coming after me is stronger than I am — I am not fit to carry his sandals. He will immerse you in sacred breath and fire. His winnowing shovel is in his hand, and he will clean out his threshing floor and gather his grain into the storehouse, but the husks he will burn up with a fire that cannot be put out.'"
+          "english": "In those days John the Immerser appeared, announcing in the open country of Judea: 'Change the way you think, because the kingdom of the skies has come close.' This is the man spoken of through Isaiah the spokesman: 'A voice of someone shouting in the open country: Get the Master's road ready; make his paths straight.' John himself wore clothing of camel hair with a leather belt around his waist, and his food was locusts and wild honey.\n\nThen Jerusalem, all Judea, and the whole Jordan region kept going out to him, and they were immersed by him in the Jordan river while openly admitting their errors.\n\nBut when he saw many of the Pharisees and Sadducees coming to his immersion, he said to them: 'You children of poisonous snakes — who tipped you off to run from the anger that is coming? Then produce fruit that lives up to a real change of mind, and do not imagine you can tell yourselves, We have Abraham for a father. I tell you, God can raise up children for Abraham out of these stones. The axe is already lying at the root of the trees: every tree that fails to produce good fruit is being cut down and thrown into the fire. I immerse you in water for a change of mind, but the one coming after me is stronger than I am — I am not fit to carry his sandals. He will immerse you in sacred breath and fire. His winnowing shovel is in his hand, and he will clean out his threshing floor and gather his grain into the storehouse, but the husks he will burn up with a fire that cannot be put out.'"
         },
         {
           "page": 5,
@@ -639,7 +1121,7 @@
         {
           "page": 6,
           "greek": "Ἀκούσας δὲ ὅτι Ἰωάννης παρεδόθη ἀνεχώρησεν εἰς τὴν Γαλιλαίαν. καὶ καταλιπὼν τὴν Ναζαρὰ ἐλθὼν κατῴκησεν εἰς Καφαρναοὺμ τὴν παραθαλασσίαν ἐν ὁρίοις Ζαβουλὼν καὶ Νεφθαλίμ· ἵνα πληρωθῇ τὸ ῥηθὲν διὰ Ἠσαΐου τοῦ προφήτου λέγοντος· Γῆ Ζαβουλὼν καὶ γῆ Νεφθαλίμ, ὁδὸν θαλάσσης, πέραν τοῦ Ἰορδάνου, Γαλιλαία τῶν ἐθνῶν, ὁ λαὸς ὁ καθήμενος ἐν σκοτίᾳ φῶς εἶδεν μέγα, καὶ τοῖς καθημένοις ἐν χώρᾳ καὶ σκιᾷ θανάτου φῶς ἀνέτειλεν αὐτοῖς. Ἀπὸ τότε ἤρξατο ὁ Ἰησοῦς κηρύσσειν καὶ λέγειν· Μετανοεῖτε, ἤγγικεν γὰρ ἡ βασιλεία τῶν οὐρανῶν. Περιπατῶν δὲ παρὰ τὴν θάλασσαν τῆς Γαλιλαίας εἶδεν δύο ἀδελφούς, Σίμωνα τὸν λεγόμενον Πέτρον καὶ Ἀνδρέαν τὸν ἀδελφὸν αὐτοῦ, βάλλοντας ἀμφίβληστρον εἰς τὴν θάλασσαν, ἦσαν γὰρ ἁλιεῖς· καὶ λέγει αὐτοῖς· Δεῦτε ὀπίσω μου, καὶ ποιήσω ὑμᾶς ἁλιεῖς ἀνθρώπων. οἱ δὲ εὐθέως ἀφέντες τὰ δίκτυα ἠκολούθησαν αὐτῷ. Καὶ προβὰς ἐκεῖθεν εἶδεν ἄλλους δύο ἀδελφούς, Ἰάκωβον τὸν τοῦ Ζεβεδαίου καὶ Ἰωάννην τὸν ἀδελφὸν αὐτοῦ, ἐν τῷ πλοίῳ μετὰ Ζεβεδαίου τοῦ πατρὸς αὐτῶν καταρτίζοντας τὰ δίκτυα αὐτῶν, καὶ ἐκάλεσεν αὐτούς. οἱ δὲ εὐθέως ἀφέντες τὸ πλοῖον καὶ τὸν πατέρα αὐτῶν ἠκολούθησαν αὐτῷ. Καὶ περιῆγεν ἐν ὅλῃ τῇ Γαλιλαίᾳ, διδάσκων ἐν ταῖς συναγωγαῖς αὐτῶν καὶ κηρύσσων τὸ εὐαγγέλιον τῆς βασιλείας καὶ θεραπεύων πᾶσαν νόσον καὶ πᾶσαν μαλακίαν ἐν τῷ λαῷ. καὶ ἀπῆλθεν ἡ ἀκοὴ αὐτοῦ εἰς ὅλην τὴν Συρίαν· καὶ προσήνεγκαν αὐτῷ πάντας τοὺς κακῶς ἔχοντας ποικίλαις νόσοις καὶ βασάνοις συνεχομένους, δαιμονιζομένους καὶ σεληνιαζομένους καὶ παραλυτικούς, καὶ ἐθεράπευσεν αὐτούς. καὶ ἠκολούθησαν αὐτῷ ὄχλοι πολλοὶ ἀπὸ τῆς Γαλιλαίας καὶ Δεκαπόλεως καὶ Ἱεροσολύμων καὶ Ἰουδαίας καὶ πέραν τοῦ Ἰορδάνου.",
-          "english": "When Jesus heard that John had been handed over, he withdrew to Galilee. Leaving Nazareth, he went and settled in Capernaum, on the shore of the lake in the territory of Zebulun and Naphtali, so that what was said through Isaiah the spokesman would come true: 'Land of Zebulun and land of Naphtali, the road by the sea, across the Jordan, Galilee of the nations: the people sitting in darkness saw a great light, and for those sitting in the land and shadow of death, a light rose.'\n\nFrom then on Jesus began to announce: 'Change your thinking, because the kingdom of the skies has come close.'\n\nWalking along the lake of Galilee, he saw two brothers — Simon, the one called Peter, and his brother Andrew — throwing a casting net into the water, since they were fishermen. He said to them, 'Come with me, and I will have you fishing for people.' They dropped their nets at once and went with him. Going on from there he saw two other brothers, James the son of Zebedee and his brother John, in the boat with their father Zebedee, mending their nets. He called them, and at once they left the boat and their father and went with him.\n\nHe traveled through the whole of Galilee, teaching in their meeting halls, announcing the good news of the kingdom, and healing every disease and every ailment among the people. Word about him went out through the whole of Syria, and people brought him everyone who was doing badly — those gripped by all kinds of diseases and pains, those plagued by spirits, the moonstruck, and the paralyzed — and he healed them. And large crowds followed him, from Galilee, the Ten Towns, Jerusalem, Judea, and across the Jordan."
+          "english": "When Jesus heard that John had been handed over, he withdrew to Galilee. Leaving Nazareth, he went and settled in Capernaum, on the shore of the lake in the territory of Zebulun and Naphtali, so that what was said through Isaiah the spokesman would come true: 'Land of Zebulun and land of Naphtali, the road by the sea, across the Jordan, Galilee of the nations: the people sitting in darkness saw a great light, and for those sitting in the land and shadow of death, a light rose.'\n\nFrom then on Jesus began to announce: 'Change the way you think, because the kingdom of the skies has come close.'\n\nWalking along the lake of Galilee, he saw two brothers — Simon, the one called Peter, and his brother Andrew — throwing a casting net into the water, since they were fishermen. He said to them, 'Come with me, and I will have you fishing for people.' They dropped their nets at once and went with him. Going on from there he saw two other brothers, James the son of Zebedee and his brother John, in the boat with their father Zebedee, mending their nets. He called them, and at once they left the boat and their father and went with him.\n\nHe traveled through the whole of Galilee, teaching in their meeting halls, announcing the good news of the kingdom, and healing every disease and every ailment among the people. Word about him went out through the whole of Syria, and people brought him everyone who was doing badly — those gripped by all kinds of diseases and pains, those plagued by spirits, the moonstruck, and the paralyzed — and he healed them. And large crowds followed him, from Galilee, the Ten Towns, Jerusalem, Judea, and across the Jordan."
         },
         {
           "page": 7,
@@ -685,6 +1167,31 @@
           "page": 15,
           "greek": "Προσέχετε ἀπὸ τῶν ψευδοπροφητῶν, οἵτινες ἔρχονται πρὸς ὑμᾶς ἐν ἐνδύμασι προβάτων ἔσωθεν δέ εἰσιν λύκοι ἅρπαγες. ἀπὸ τῶν καρπῶν αὐτῶν ἐπιγνώσεσθε αὐτούς. μήτι συλλέγουσιν ἀπὸ ἀκανθῶν σταφυλὰς ἢ ἀπὸ τριβόλων σῦκα; οὕτως πᾶν δένδρον ἀγαθὸν καρποὺς καλοὺς ποιεῖ, τὸ δὲ σαπρὸν δένδρον καρποὺς πονηροὺς ποιεῖ· οὐ δύναται δένδρον ἀγαθὸν καρποὺς πονηροὺς ποιεῖν, οὐδὲ δένδρον σαπρὸν καρποὺς καλοὺς ποιεῖν. πᾶν δένδρον μὴ ποιοῦν καρπὸν καλὸν ἐκκόπτεται καὶ εἰς πῦρ βάλλεται. ἄρα γε ἀπὸ τῶν καρπῶν αὐτῶν ἐπιγνώσεσθε αὐτούς. Οὐ πᾶς ὁ λέγων μοι· Κύριε κύριε εἰσελεύσεται εἰς τὴν βασιλείαν τῶν οὐρανῶν, ἀλλʼ ὁ ποιῶν τὸ θέλημα τοῦ πατρός μου τοῦ ἐν τοῖς οὐρανοῖς. πολλοὶ ἐροῦσίν μοι ἐν ἐκείνῃ τῇ ἡμέρᾳ· Κύριε κύριε, οὐ τῷ σῷ ὀνόματι ἐπροφητεύσαμεν, καὶ τῷ σῷ ὀνόματι δαιμόνια ἐξεβάλομεν, καὶ τῷ σῷ ὀνόματι δυνάμεις πολλὰς ἐποιήσαμεν; καὶ τότε ὁμολογήσω αὐτοῖς ὅτι Οὐδέποτε ἔγνων ὑμᾶς· ἀποχωρεῖτε ἀπʼ ἐμοῦ οἱ ἐργαζόμενοι τὴν ἀνομίαν. Πᾶς οὖν ὅστις ἀκούει μου τοὺς λόγους τούτους καὶ ποιεῖ αὐτούς, ὁμοιωθήσεται ἀνδρὶ φρονίμῳ, ὅστις ᾠκοδόμησεν αὐτοῦ τὴν οἰκίαν ἐπὶ τὴν πέτραν. καὶ κατέβη ἡ βροχὴ καὶ ἦλθον οἱ ποταμοὶ καὶ ἔπνευσαν οἱ ἄνεμοι καὶ προσέπεσαν τῇ οἰκίᾳ ἐκείνῃ, καὶ οὐκ ἔπεσεν, τεθεμελίωτο γὰρ ἐπὶ τὴν πέτραν. καὶ πᾶς ὁ ἀκούων μου τοὺς λόγους τούτους καὶ μὴ ποιῶν αὐτοὺς ὁμοιωθήσεται ἀνδρὶ μωρῷ, ὅστις ᾠκοδόμησεν αὐτοῦ τὴν οἰκίαν ἐπὶ τὴν ἄμμον. καὶ κατέβη ἡ βροχὴ καὶ ἦλθον οἱ ποταμοὶ καὶ ἔπνευσαν οἱ ἄνεμοι καὶ προσέκοψαν τῇ οἰκίᾳ ἐκείνῃ, καὶ ἔπεσεν, καὶ ἦν ἡ πτῶσις αὐτῆς μεγάλη. Καὶ ἐγένετο ὅτε ἐτέλεσεν ὁ Ἰησοῦς τοὺς λόγους τούτους, ἐξεπλήσσοντο οἱ ὄχλοι ἐπὶ τῇ διδαχῇ αὐτοῦ· ἦν γὰρ διδάσκων αὐτοὺς ὡς ἐξουσίαν ἔχων καὶ οὐχ ὡς οἱ γραμματεῖς αὐτῶν.",
           "english": "'Watch out for the fake spokesmen. They come to you in sheep's clothing, but inside they are plundering wolves. You will recognize them by their fruit. People do not gather grapes from thorn bushes or figs from thistles, do they? In the same way, every healthy tree produces good fruit, and a rotten tree produces bad fruit. A healthy tree cannot produce bad fruit, and a rotten tree cannot produce good fruit. Every tree that fails to produce good fruit is cut down and thrown into the fire. So then — by their fruit you will recognize them.\n\n'Not everyone who says to me, Master, master, will enter the kingdom of the skies — only the one who does what my father in the skies wants. On that day many will say to me: Master, master, didn't we speak in your name as spokesmen? Didn't we throw out spirits in your name? Didn't we do many powerful things in your name? And then I will say to them openly: I never knew you. Get away from me, you workers of lawlessness.\n\n'So everyone who hears these words of mine and does them will be like a sensible man who built his house on the rock. The rain came down, the rivers rose, the winds blew and threw themselves against that house — and it did not fall, because its foundation was set on the rock. And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand. The rain came down, the rivers rose, the winds blew and battered that house — and it fell. And its fall was enormous.'\n\nAnd when Jesus finished these words, the crowds were amazed at his teaching, because he was teaching them like a man who held authority — not like their scholars."
+        },
+        {
+          "page": 16,
+          "greek": "Καταβάντος δὲ αὐτοῦ ἀπὸ τοῦ ὄρους ἠκολούθησαν αὐτῷ ὄχλοι πολλοί. καὶ ἰδοὺ λεπρὸς προσελθὼν προσεκύνει αὐτῷ λέγων· Κύριε, ἐὰν θέλῃς δύνασαί με καθαρίσαι. καὶ ἐκτείνας τὴν χεῖρα ἥψατο αὐτοῦ λέγων· Θέλω, καθαρίσθητι· καὶ εὐθέως ἐκαθαρίσθη αὐτοῦ ἡ λέπρα. καὶ λέγει αὐτῷ ὁ Ἰησοῦς· Ὅρα μηδενὶ εἴπῃς, ἀλλὰ ὕπαγε σεαυτὸν δεῖξον τῷ ἱερεῖ, καὶ προσένεγκον τὸ δῶρον ὃ προσέταξεν Μωϋσῆς εἰς μαρτύριον αὐτοῖς. Εἰσελθόντος δὲ αὐτοῦ εἰς Καφαρναοὺμ προσῆλθεν αὐτῷ ἑκατόνταρχος παρακαλῶν αὐτὸν καὶ λέγων· Κύριε, ὁ παῖς μου βέβληται ἐν τῇ οἰκίᾳ παραλυτικός, δεινῶς βασανιζόμενος. καὶ λέγει αὐτῷ· Ἐγὼ ἐλθὼν θεραπεύσω αὐτόν. καὶ ἀποκριθεὶς ὁ ἑκατόνταρχος ἔφη· Κύριε, οὐκ εἰμὶ ἱκανὸς ἵνα μου ὑπὸ τὴν στέγην εἰσέλθῃς· ἀλλὰ μόνον εἰπὲ λόγῳ, καὶ ἰαθήσεται ὁ παῖς μου· καὶ γὰρ ἐγὼ ἄνθρωπός εἰμι ὑπὸ ἐξουσίαν, ἔχων ὑπʼ ἐμαυτὸν στρατιώτας, καὶ λέγω τούτῳ· Πορεύθητι, καὶ πορεύεται, καὶ ἄλλῳ· Ἔρχου, καὶ ἔρχεται, καὶ τῷ δούλῳ μου· Ποίησον τοῦτο, καὶ ποιεῖ. ἀκούσας δὲ ὁ Ἰησοῦς ἐθαύμασεν καὶ εἶπεν τοῖς ἀκολουθοῦσιν· Ἀμὴν λέγω ὑμῖν, παρʼ οὐδενὶ τοσαύτην πίστιν ἐν τῷ Ἰσραὴλ εὗρον. λέγω δὲ ὑμῖν ὅτι πολλοὶ ἀπὸ ἀνατολῶν καὶ δυσμῶν ἥξουσιν καὶ ἀνακλιθήσονται μετὰ Ἀβραὰμ καὶ Ἰσαὰκ καὶ Ἰακὼβ ἐν τῇ βασιλείᾳ τῶν οὐρανῶν· οἱ δὲ υἱοὶ τῆς βασιλείας ἐκβληθήσονται εἰς τὸ σκότος τὸ ἐξώτερον· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων. καὶ εἶπεν ὁ Ἰησοῦς τῷ ἑκατοντάρχῃ· Ὕπαγε, ὡς ἐπίστευσας γενηθήτω σοι· καὶ ἰάθη ὁ παῖς ἐν τῇ ὥρᾳ ἐκείνῃ. Καὶ ἐλθὼν ὁ Ἰησοῦς εἰς τὴν οἰκίαν Πέτρου εἶδεν τὴν πενθερὰν αὐτοῦ βεβλημένην καὶ πυρέσσουσαν· καὶ ἥψατο τῆς χειρὸς αὐτῆς, καὶ ἀφῆκεν αὐτὴν ὁ πυρετός, καὶ ἠγέρθη καὶ διηκόνει αὐτῷ. Ὀψίας δὲ γενομένης προσήνεγκαν αὐτῷ δαιμονιζομένους πολλούς· καὶ ἐξέβαλεν τὰ πνεύματα λόγῳ, καὶ πάντας τοὺς κακῶς ἔχοντας ἐθεράπευσεν· ὅπως πληρωθῇ τὸ ῥηθὲν διὰ Ἠσαΐου τοῦ προφήτου λέγοντος· Αὐτὸς τὰς ἀσθενείας ἡμῶν ἔλαβεν καὶ τὰς νόσους ἐβάστασεν.",
+          "english": "When he came down from the mountain, large crowds followed him. And look — a man with a serious skin disease came up, bowed down before him, and said, 'Master, if you want to, you can make me clean.' Jesus stretched out his hand, touched him, and said, 'I want to. Be clean.' And immediately his skin disease was cleaned away. Then Jesus told him, 'See that you tell no one — but go show yourself to the priest, and offer the gift Moses ordered, as evidence for them.'\n\nAs he entered Capernaum, an army captain came up and appealed to him: 'Master, my serving boy is lying at home paralyzed, in terrible pain.' He said to him, 'I will come and heal him.' The captain answered, 'Master, I am not important enough for you to come under my roof. Just say the word, and my boy will be healed. I am a man under authority myself, with soldiers under me: I tell one, Go, and he goes; another, Come, and he comes; and my slave, Do this, and he does it.' Hearing this, Jesus was amazed and said to the people following him, 'I tell you truly: I have not found this much trust in anyone in Israel. And I tell you, many will come from the east and the west and take their places at the table with Abraham and Isaac and Jacob in the kingdom of the skies, while the sons of the kingdom are thrown out into the outer darkness — out there, there will be crying and grinding of teeth.' Then Jesus said to the captain, 'Go. Let it happen for you just as you trusted it would.' And the boy was healed in that hour.\n\nWhen Jesus came into Peter's house, he saw Peter's mother-in-law lying down with a fever. He touched her hand and the fever let go of her, and she got up and waited on him. When evening came, people brought him many who were plagued by spirits, and he threw the spirits out with a word and healed everyone who was doing badly. This was so that what was said through Isaiah the spokesman would come true: He himself took our weaknesses and carried our diseases."
+        },
+        {
+          "page": 17,
+          "greek": "Ἰδὼν δὲ ὁ Ἰησοῦς πολλοὺς ὄχλους περὶ αὐτὸν ἐκέλευσεν ἀπελθεῖν εἰς τὸ πέραν. καὶ προσελθὼν εἷς γραμματεὺς εἶπεν αὐτῷ· Διδάσκαλε, ἀκολουθήσω σοι ὅπου ἐὰν ἀπέρχῃ. καὶ λέγει αὐτῷ ὁ Ἰησοῦς· Αἱ ἀλώπεκες φωλεοὺς ἔχουσιν καὶ τὰ πετεινὰ τοῦ οὐρανοῦ κατασκηνώσεις, ὁ δὲ υἱὸς τοῦ ἀνθρώπου οὐκ ἔχει ποῦ τὴν κεφαλὴν κλίνῃ. ἕτερος δὲ τῶν μαθητῶν εἶπεν αὐτῷ· Κύριε, ἐπίτρεψόν μοι πρῶτον ἀπελθεῖν καὶ θάψαι τὸν πατέρα μου. ὁ δὲ Ἰησοῦς λέγει αὐτῷ· Ἀκολούθει μοι, καὶ ἄφες τοὺς νεκροὺς θάψαι τοὺς ἑαυτῶν νεκρούς. Καὶ ἐμβάντι αὐτῷ εἰς πλοῖον ἠκολούθησαν αὐτῷ οἱ μαθηταὶ αὐτοῦ. καὶ ἰδοὺ σεισμὸς μέγας ἐγένετο ἐν τῇ θαλάσσῃ, ὥστε τὸ πλοῖον καλύπτεσθαι ὑπὸ τῶν κυμάτων, αὐτὸς δὲ ἐκάθευδεν. καὶ προσελθόντες ἤγειραν αὐτὸν λέγοντες· Κύριε, σῶσον, ἀπολλύμεθα. καὶ λέγει αὐτοῖς· Τί δειλοί ἐστε, ὀλιγόπιστοι; τότε ἐγερθεὶς ἐπετίμησεν τοῖς ἀνέμοις καὶ τῇ θαλάσσῃ, καὶ ἐγένετο γαλήνη μεγάλη. οἱ δὲ ἄνθρωποι ἐθαύμασαν λέγοντες· Ποταπός ἐστιν οὗτος ὅτι καὶ οἱ ἄνεμοι καὶ ἡ θάλασσα αὐτῷ ὑπακούουσιν; Καὶ ἐλθόντος αὐτοῦ εἰς τὸ πέραν εἰς τὴν χώραν τῶν Γαδαρηνῶν ὑπήντησαν αὐτῷ δύο δαιμονιζόμενοι ἐκ τῶν μνημείων ἐξερχόμενοι, χαλεποὶ λίαν ὥστε μὴ ἰσχύειν τινὰ παρελθεῖν διὰ τῆς ὁδοῦ ἐκείνης. καὶ ἰδοὺ ἔκραξαν λέγοντες· Τί ἡμῖν καὶ σοί, υἱὲ τοῦ θεοῦ; ἦλθες ὧδε πρὸ καιροῦ βασανίσαι ἡμᾶς; ἦν δὲ μακρὰν ἀπʼ αὐτῶν ἀγέλη χοίρων πολλῶν βοσκομένη. οἱ δὲ δαίμονες παρεκάλουν αὐτὸν λέγοντες· Εἰ ἐκβάλλεις ἡμᾶς, ἀπόστειλον ἡμᾶς εἰς τὴν ἀγέλην τῶν χοίρων. καὶ εἶπεν αὐτοῖς· Ὑπάγετε. οἱ δὲ ἐξελθόντες ἀπῆλθον εἰς τοὺς χοίρους· καὶ ἰδοὺ ὥρμησεν πᾶσα ἡ ἀγέλη κατὰ τοῦ κρημνοῦ εἰς τὴν θάλασσαν, καὶ ἀπέθανον ἐν τοῖς ὕδασιν. οἱ δὲ βόσκοντες ἔφυγον, καὶ ἀπελθόντες εἰς τὴν πόλιν ἀπήγγειλαν πάντα καὶ τὰ τῶν δαιμονιζομένων. καὶ ἰδοὺ πᾶσα ἡ πόλις ἐξῆλθεν εἰς ὑπάντησιν τῷ Ἰησοῦ, καὶ ἰδόντες αὐτὸν παρεκάλεσαν ὅπως μεταβῇ ἀπὸ τῶν ὁρίων αὐτῶν.",
+          "english": "Seeing large crowds around him, Jesus gave the order to cross to the other side of the lake. A scholar came up and said to him, 'Teacher, I will follow you wherever you go.' Jesus said to him, 'The foxes have dens and the birds of the sky have nests, but the son of humanity has nowhere to lay his head.' Another of his students said to him, 'Master, let me first go back and bury my father.' But Jesus told him, 'Follow me, and let the dead bury their own dead.'\n\nHe got into the boat, and his students followed him. And look — a great shaking arose on the lake, so that the boat was being buried under the waves. He himself was asleep. They came and woke him, saying, 'Master, rescue us — we are going under!' He said to them, 'Why are you so afraid, you people of little trust?' Then he got up and told off the winds and the water, and a great calm settled. The men were amazed and said, 'What kind of man is this, that even the winds and the water do what he says?'\n\nWhen he reached the other side, the country of the Gadarenes, two men plagued by spirits met him, coming out from among the tombs — so dangerous that no one could get past on that road. And look — they screamed, 'What do you want with us, son of God? Did you come here to torment us before the right time?' A long way off from them a large herd of pigs was feeding. The spirits kept begging him: 'If you throw us out, send us into the herd of pigs.' He said to them, 'Go.' They came out and went off into the pigs — and look, the whole herd charged down the cliff into the lake and died in the water. The herdsmen ran, went into the town, and reported everything, including what had happened to the men with the spirits. And look — the whole town came out to meet Jesus, and when they saw him they begged him to move on out of their territory."
+        },
+        {
+          "page": 18,
+          "greek": "Καὶ ἐμβὰς εἰς πλοῖον διεπέρασεν καὶ ἦλθεν εἰς τὴν ἰδίαν πόλιν. Καὶ ἰδοὺ προσέφερον αὐτῷ παραλυτικὸν ἐπὶ κλίνης βεβλημένον. καὶ ἰδὼν ὁ Ἰησοῦς τὴν πίστιν αὐτῶν εἶπεν τῷ παραλυτικῷ· Θάρσει, τέκνον· ἀφίενταί σου αἱ ἁμαρτίαι. καὶ ἰδού τινες τῶν γραμματέων εἶπαν ἐν ἑαυτοῖς· Οὗτος βλασφημεῖ. καὶ εἰδὼς ὁ Ἰησοῦς τὰς ἐνθυμήσεις αὐτῶν εἶπεν· Ἱνατί ἐνθυμεῖσθε πονηρὰ ἐν ταῖς καρδίαις ὑμῶν; τί γάρ ἐστιν εὐκοπώτερον, εἰπεῖν· Ἀφίενταί σου αἱ ἁμαρτίαι, ἢ εἰπεῖν· Ἔγειρε καὶ περιπάτει; ἵνα δὲ εἰδῆτε ὅτι ἐξουσίαν ἔχει ὁ υἱὸς τοῦ ἀνθρώπου ἐπὶ τῆς γῆς ἀφιέναι ἁμαρτίας— τότε λέγει τῷ παραλυτικῷ· Ἐγερθεὶς ἆρόν σου τὴν κλίνην καὶ ὕπαγε εἰς τὸν οἶκόν σου. καὶ ἐγερθεὶς ἀπῆλθεν εἰς τὸν οἶκον αὐτοῦ. ἰδόντες δὲ οἱ ὄχλοι ἐφοβήθησαν καὶ ἐδόξασαν τὸν θεὸν τὸν δόντα ἐξουσίαν τοιαύτην τοῖς ἀνθρώποις. Καὶ παράγων ὁ Ἰησοῦς ἐκεῖθεν εἶδεν ἄνθρωπον καθήμενον ἐπὶ τὸ τελώνιον, Μαθθαῖον λεγόμενον, καὶ λέγει αὐτῷ· Ἀκολούθει μοι· καὶ ἀναστὰς ἠκολούθησεν αὐτῷ. Καὶ ἐγένετο αὐτοῦ ἀνακειμένου ἐν τῇ οἰκίᾳ, καὶ ἰδοὺ πολλοὶ τελῶναι καὶ ἁμαρτωλοὶ ἐλθόντες συνανέκειντο τῷ Ἰησοῦ καὶ τοῖς μαθηταῖς αὐτοῦ. καὶ ἰδόντες οἱ Φαρισαῖοι ἔλεγον τοῖς μαθηταῖς αὐτοῦ· Διὰ τί μετὰ τῶν τελωνῶν καὶ ἁμαρτωλῶν ἐσθίει ὁ διδάσκαλος ὑμῶν; ὁ δὲ ἀκούσας εἶπεν· Οὐ χρείαν ἔχουσιν οἱ ἰσχύοντες ἰατροῦ ἀλλὰ οἱ κακῶς ἔχοντες. πορευθέντες δὲ μάθετε τί ἐστιν· Ἔλεος θέλω καὶ οὐ θυσίαν· οὐ γὰρ ἦλθον καλέσαι δικαίους ἀλλὰ ἁμαρτωλούς.",
+          "english": "He got into a boat, crossed back, and came to his own town. And look — people were carrying to him a paralyzed man lying on a mat. Seeing their trust, Jesus said to the paralyzed man, 'Take heart, child. Your errors are let go.' At that, some of the scholars said to themselves, 'This man is insulting God.' Jesus, knowing what they were thinking, said, 'Why do you think such corrupt things in your hearts? Which is easier — to say, Your errors are let go, or to say, Get up and walk? But so you will know that the son of humanity has the authority on earth to let errors go —' then he said to the paralyzed man, 'Get up, pick up your mat, and go home.' And he got up and went home. When the crowds saw it they were afraid, and they praised God for giving that kind of authority to human beings.\n\nAs Jesus moved on from there, he saw a man named Matthew sitting at the toll booth, and he said to him, 'Follow me.' And he stood up and followed him. While Jesus was at the table in the house, look — many tax collectors and people counted as failures came and took their places alongside Jesus and his students. Seeing it, the Pharisees said to his students, 'Why does your teacher eat with the tax collectors and the failures?' Jesus heard them and said, 'Healthy people do not need a doctor — people who are doing badly do. Go and learn what this means: I want mercy, not sacrifice. Because I did not come to invite the people who have it right; I came to invite the failures.'"
+        },
+        {
+          "page": 19,
+          "greek": "Τότε προσέρχονται αὐτῷ οἱ μαθηταὶ Ἰωάννου λέγοντες· Διὰ τί ἡμεῖς καὶ οἱ Φαρισαῖοι νηστεύομεν πολλά, οἱ δὲ μαθηταί σου οὐ νηστεύουσιν; καὶ εἶπεν αὐτοῖς ὁ Ἰησοῦς· Μὴ δύνανται οἱ υἱοὶ τοῦ νυμφῶνος πενθεῖν ἐφʼ ὅσον μετʼ αὐτῶν ἐστιν ὁ νυμφίος; ἐλεύσονται δὲ ἡμέραι ὅταν ἀπαρθῇ ἀπʼ αὐτῶν ὁ νυμφίος, καὶ τότε νηστεύσουσιν. οὐδεὶς δὲ ἐπιβάλλει ἐπίβλημα ῥάκους ἀγνάφου ἐπὶ ἱματίῳ παλαιῷ· αἴρει γὰρ τὸ πλήρωμα αὐτοῦ ἀπὸ τοῦ ἱματίου καὶ χεῖρον σχίσμα γίνεται. οὐδὲ βάλλουσιν οἶνον νέον εἰς ἀσκοὺς παλαιούς· εἰ δὲ μή γε, ῥήγνυνται οἱ ἀσκοὶ καὶ ὁ οἶνος ἐκχεῖται καὶ οἱ ἀσκοὶ ἀπόλλυνται· ἀλλὰ βάλλουσιν οἶνον νέον εἰς ἀσκοὺς καινούς, καὶ ἀμφότεροι συντηροῦνται. Ταῦτα αὐτοῦ λαλοῦντος αὐτοῖς, ἰδοὺ ἄρχων εἷς προσελθὼν προσεκύνει αὐτῷ λέγων ὅτι Ἡ θυγάτηρ μου ἄρτι ἐτελεύτησεν· ἀλλὰ ἐλθὼν ἐπίθες τὴν χεῖρά σου ἐπʼ αὐτήν, καὶ ζήσεται. Καὶ ἐγερθεὶς ὁ Ἰησοῦς ἠκολούθησεν αὐτῷ καὶ οἱ μαθηταὶ αὐτοῦ. Καὶ ἰδοὺ γυνὴ αἱμορροοῦσα δώδεκα ἔτη προσελθοῦσα ὄπισθεν ἥψατο τοῦ κρασπέδου τοῦ ἱματίου αὐτοῦ· ἔλεγεν γὰρ ἐν ἑαυτῇ· Ἐὰν μόνον ἅψωμαι τοῦ ἱματίου αὐτοῦ σωθήσομαι. ὁ δὲ Ἰησοῦς ἐπιστραφεὶς καὶ ἰδὼν αὐτὴν εἶπεν· Θάρσει, θύγατερ· ἡ πίστις σου σέσωκέν σε. καὶ ἐσώθη ἡ γυνὴ ἀπὸ τῆς ὥρας ἐκείνης. Καὶ ἐλθὼν ὁ Ἰησοῦς εἰς τὴν οἰκίαν τοῦ ἄρχοντος καὶ ἰδὼν τοὺς αὐλητὰς καὶ τὸν ὄχλον θορυβούμενον λέγει αὐτοῖς· Ἀναχωρεῖτε· οὐ γὰρ ἀπέθανεν τὸ κοράσιον ἀλλὰ καθεύδει. καὶ κατεγέλων αὐτοῦ. ὅτε δὲ ἐξεβλήθη ὁ ὄχλος, εἰσῆλθεν καὶ ἐκράτησεν τῆς χειρὸς αὐτῆς, καὶ ἠγέρθη τὸ κοράσιον. Καὶ ἐξῆλθεν ἡ φήμη αὕτη εἰς ὅλην τὴν γῆν ἐκείνην.",
+          "english": "Then John's students came up to him and asked, 'Why do we and the Pharisees go without food so often, while your students do not?' Jesus said to them, 'The groom's friends can't grieve while the groom is still with them, can they? But days are coming when the groom will be taken away from them — and then they will go without food. Nobody patches an old coat with a piece of unshrunk cloth: the patch pulls away from the coat and the tear gets worse. And people do not pour new wine into old wineskins — if they do, the skins burst, the wine spills out, and the skins are ruined. No: new wine goes into fresh skins, and both are kept safe.'\n\nWhile he was telling them this, look — an official came, bowed down before him, and said, 'My daughter has just died. But come put your hand on her, and she will live.' Jesus got up and went with him, and so did his students. And look — a woman who had been bleeding for twelve years came up behind him and touched the edge of his coat, because she kept telling herself, 'If I can just touch his coat, I will be kept safe.' Jesus turned, saw her, and said, 'Take heart, daughter. Your trust has kept you safe.' And the woman was well from that hour. When Jesus reached the official's house and saw the flute players and the crowd in an uproar, he said, 'Clear out — the girl did not die; she is sleeping.' And they laughed at him. When the crowd had been put outside, he went in and took her hand, and the girl got up. And the story of it went out through that whole region."
+        },
+        {
+          "page": 20,
+          "greek": "Καὶ παράγοντι ἐκεῖθεν τῷ Ἰησοῦ ἠκολούθησαν αὐτῷ δύο τυφλοὶ κράζοντες καὶ λέγοντες· Ἐλέησον ἡμᾶς, υἱὸς Δαυίδ. ἐλθόντι δὲ εἰς τὴν οἰκίαν προσῆλθον αὐτῷ οἱ τυφλοί, καὶ λέγει αὐτοῖς ὁ Ἰησοῦς· Πιστεύετε ὅτι δύναμαι τοῦτο ποιῆσαι; λέγουσιν αὐτῷ· Ναί, κύριε. τότε ἥψατο τῶν ὀφθαλμῶν αὐτῶν λέγων· Κατὰ τὴν πίστιν ὑμῶν γενηθήτω ὑμῖν. καὶ ἠνεῴχθησαν αὐτῶν οἱ ὀφθαλμοί. καὶ ἐνεβριμήσατο αὐτοῖς ὁ Ἰησοῦς λέγων· Ὁρᾶτε, μηδεὶς γινωσκέτω. οἱ δὲ ἐξελθόντες διεφήμισαν αὐτὸν ἐν ὅλῃ τῇ γῇ ἐκείνῃ. Αὐτῶν δὲ ἐξερχομένων ἰδοὺ προσήνεγκαν αὐτῷ ἄνθρωπον κωφὸν δαιμονιζόμενον. καὶ ἐκβληθέντος τοῦ δαιμονίου ἐλάλησεν ὁ κωφός. καὶ ἐθαύμασαν οἱ ὄχλοι λέγοντες· Οὐδέποτε ἐφάνη οὕτως ἐν τῷ Ἰσραήλ. οἱ δὲ Φαρισαῖοι ἔλεγον· Ἐν τῷ ἄρχοντι τῶν δαιμονίων ἐκβάλλει τὰ δαιμόνια. Καὶ περιῆγεν ὁ Ἰησοῦς τὰς πόλεις πάσας καὶ τὰς κώμας, διδάσκων ἐν ταῖς συναγωγαῖς αὐτῶν καὶ κηρύσσων τὸ εὐαγγέλιον τῆς βασιλείας καὶ θεραπεύων πᾶσαν νόσον καὶ πᾶσαν μαλακίαν. Ἰδὼν δὲ τοὺς ὄχλους ἐσπλαγχνίσθη περὶ αὐτῶν ὅτι ἦσαν ἐσκυλμένοι καὶ ἐρριμμένοι ὡσεὶ πρόβατα μὴ ἔχοντα ποιμένα. τότε λέγει τοῖς μαθηταῖς αὐτοῦ· Ὁ μὲν θερισμὸς πολύς, οἱ δὲ ἐργάται ὀλίγοι· δεήθητε οὖν τοῦ κυρίου τοῦ θερισμοῦ ὅπως ἐκβάλῃ ἐργάτας εἰς τὸν θερισμὸν αὐτοῦ.",
+          "english": "As Jesus moved on from there, two blind men followed him, shouting, 'Take pity on us, son of David!' When he went into the house, the blind men came up to him, and Jesus said to them, 'Do you trust that I can do this?' 'Yes, master,' they told him. Then he touched their eyes and said, 'Let it happen for you the way you trust it will.' And their eyes were opened. Jesus warned them sternly: 'See that nobody finds out.' But they went out and spread the story of him through that whole region.\n\nAs they were leaving, look — people brought him a man who could not speak, plagued by a spirit. When the spirit was thrown out, the mute man spoke, and the crowds were amazed: 'Nothing like this has ever been seen in Israel.' But the Pharisees said, 'He throws the spirits out by the ruler of the spirits.'\n\nJesus traveled through all the towns and the villages, teaching in their meeting halls, announcing the good news of the kingdom, and healing every disease and every ailment. And when he saw the crowds, he felt for them deep in his gut, because they were worn down and thrown aside, like sheep with no shepherd. Then he said to his students: 'The harvest is huge, and the workers are few. So beg the Master of the harvest to push workers out into his harvest.'"
         }
       ]
     }
