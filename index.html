@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>The Koinos Project</title>
+<meta name="description" content="An ordinary English rendering of the Greek New Testament — read the Greek and the new English side by side.">
+<style>
+  /* ---------- Design tokens ---------- */
+  :root {
+    --bg: #0e0d0c;
+    --surface: rgba(28, 27, 25, 0.72);
+    --surface-solid: #1c1b19;
+    --sheet: #171614;
+    --text: #e9e6e1;
+    --text-secondary: #a39d94;
+    --text-tertiary: #6e6960;
+    --accent: #c9a66b;
+    --accent-soft: rgba(201, 166, 107, 0.14);
+    --hairline: rgba(255, 255, 255, 0.09);
+    --shadow: 0 24px 70px rgba(0, 0, 0, 0.55), 0 2px 10px rgba(0, 0, 0, 0.3);
+    --radius: 14px;
+    --serif: "New York", "Iowan Old Style", Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Inter, Roboto, sans-serif;
+    --greek-color: #b3ada3;
+    --mark-bg: rgba(201, 166, 107, 0.32);
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #faf9f7;
+      --surface: rgba(255, 255, 255, 0.78);
+      --surface-solid: #ffffff;
+      --sheet: #ffffff;
+      --text: #201d19;
+      --text-secondary: #6f695f;
+      --text-tertiary: #a09a90;
+      --accent: #9a7434;
+      --accent-soft: rgba(154, 116, 52, 0.10);
+      --hairline: rgba(0, 0, 0, 0.10);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.08);
+      --greek-color: #7d766b;
+      --mark-bg: rgba(154, 116, 52, 0.25);
+    }
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  html { height: 100%; }
+  body {
+    font-family: var(--serif);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    position: sticky; top: 0; z-index: 30;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: calc(env(safe-area-inset-top, 0px) + 12px) 20px 12px;
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    -webkit-backdrop-filter: saturate(1.6) blur(18px);
+    backdrop-filter: saturate(1.6) blur(18px);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .wordmark {
+    font-family: var(--sans);
+    font-size: 12px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--accent);
+    cursor: pointer; user-select: none;
+    background: none; border: none;
+  }
+  .wordmark span { color: var(--text-secondary); font-weight: 400; }
+  .greek-toggle {
+    font-family: var(--serif);
+    font-size: 13px; line-height: 1;
+    padding: 7px 12px;
+    color: var(--text-secondary);
+    background: none;
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: color .18s ease, border-color .18s ease, background .18s ease;
+  }
+  .greek-toggle[aria-pressed="true"] { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+  .greek-toggle:hover { color: var(--text); }
+
+  /* ---------- Reading column ---------- */
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 24px calc(120px + env(safe-area-inset-bottom, 0px));
+    contain: layout style;
+  }
+  .spread { animation: pagein .22s ease both; }
+  @keyframes pagein { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  .kicker {
+    font-family: var(--sans);
+    font-size: 11px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--text-tertiary);
+    margin-bottom: 18px;
+  }
+  .kicker b { color: var(--accent); font-weight: 600; }
+
+  h1.title {
+    font-weight: 500; font-size: 34px; line-height: 1.2;
+    letter-spacing: -0.01em; margin-bottom: 6px;
+  }
+  .subtitle { color: var(--text-secondary); font-size: 17px; margin-bottom: 34px; }
+
+  .prose p { margin-bottom: 1.15em; font-size: 17.5px; }
+  .prose p:last-child { margin-bottom: 0; }
+
+  .greek-block {
+    font-size: 16.5px;
+    color: var(--greek-color);
+    border-left: 2px solid var(--hairline);
+    padding-left: 18px;
+    margin: 0 0 30px;
+    line-height: 1.8;
+  }
+  body.hide-greek .greek-block { display: none; }
+
+  .english-block { font-size: 19px; }
+  .english-block p { margin-bottom: 1.15em; }
+  .english-block p:last-child { margin-bottom: 0; }
+
+  .w {
+    cursor: pointer;
+    border-bottom: 1px dotted color-mix(in srgb, var(--accent) 55%, transparent);
+    transition: background .15s ease;
+    border-radius: 3px;
+  }
+  .w:hover { background: var(--accent-soft); }
+  mark { background: var(--mark-bg); color: inherit; border-radius: 3px; padding: 0 1px; }
+
+  .ms-summary {
+    font-family: var(--sans);
+    font-size: 14px; line-height: 1.6;
+    color: var(--text-secondary);
+    background: var(--accent-soft);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    margin-bottom: 34px;
+  }
+
+  /* ---------- Bottom bar ---------- */
+  .bar {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 10px;
+    padding: 10px 14px calc(10px + env(safe-area-inset-bottom, 0px));
+    background: color-mix(in srgb, var(--bg) 78%, transparent);
+    -webkit-backdrop-filter: saturate(1.6) blur(20px);
+    backdrop-filter: saturate(1.6) blur(20px);
+    border-top: 1px solid var(--hairline);
+  }
+  .bar-btn {
+    display: grid; place-items: center;
+    width: 40px; height: 40px;
+    border: none; border-radius: 12px;
+    background: none; color: var(--text-secondary);
+    cursor: pointer;
+    transition: background .16s ease, color .16s ease, transform .1s ease;
+  }
+  .bar-btn:hover { background: var(--accent-soft); color: var(--accent); }
+  .bar-btn:active { transform: scale(0.93); }
+  .bar-btn svg { width: 20px; height: 20px; }
+
+  .pager {
+    display: flex; align-items: center; gap: 4px;
+    font-family: var(--sans); font-size: 13px; font-weight: 500;
+    color: var(--text-secondary);
+    user-select: none;
+  }
+  .pager .label { min-width: 110px; text-align: center; font-variant-numeric: tabular-nums; }
+  .chev {
+    display: grid; place-items: center;
+    width: 36px; height: 36px;
+    border: none; border-radius: 10px;
+    background: none; color: var(--text);
+    cursor: pointer;
+    transition: background .16s ease, opacity .16s ease, transform .1s ease;
+  }
+  .chev:hover { background: var(--accent-soft); }
+  .chev:active { transform: scale(0.93); }
+  .chev[disabled] { opacity: 0.25; cursor: default; background: none; }
+  .chev svg { width: 18px; height: 18px; }
+
+  /* ---------- Popover (word lookup) ---------- */
+  #popover {
+    position: fixed; z-index: 60;
+    width: min(330px, calc(100vw - 24px));
+    background: var(--surface);
+    -webkit-backdrop-filter: saturate(1.6) blur(24px);
+    backdrop-filter: saturate(1.6) blur(24px);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 15px 17px;
+    font-family: var(--sans);
+    opacity: 0; transform: scale(0.96) translateY(4px);
+    transform-origin: top center;
+    pointer-events: none;
+    transition: opacity .16s ease, transform .16s ease;
+  }
+  #popover.on { opacity: 1; transform: none; pointer-events: auto; }
+  .pop-label {
+    font-size: 10px; font-weight: 600; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--text-tertiary);
+    margin-bottom: 3px;
+  }
+  .pop-greek { font-family: var(--serif); font-size: 20px; color: var(--accent); margin-bottom: 10px; }
+  .pop-variants { font-size: 14px; line-height: 1.5; margin-bottom: 10px; }
+  .pop-example {
+    font-size: 13px; line-height: 1.55; color: var(--text-secondary);
+    border-top: 1px solid var(--hairline);
+    padding-top: 9px; font-style: italic;
+  }
+
+  /* ---------- Sheets (search / index) ---------- */
+  .scrim {
+    position: fixed; inset: 0; z-index: 45;
+    background: rgba(0, 0, 0, 0.42);
+    opacity: 0; pointer-events: none;
+    transition: opacity .22s ease;
+  }
+  .scrim.on { opacity: 1; pointer-events: auto; }
+  .sheet {
+    position: fixed; left: 50%; bottom: 0; z-index: 50;
+    width: min(680px, 100vw);
+    max-height: 78vh;
+    transform: translate(-50%, 103%);
+    background: var(--sheet);
+    border: 1px solid var(--hairline); border-bottom: none;
+    border-radius: 18px 18px 0 0;
+    box-shadow: var(--shadow);
+    display: flex; flex-direction: column;
+    transition: transform .3s cubic-bezier(.32,.72,.25,1);
+    font-family: var(--sans);
+  }
+  .sheet.on { transform: translate(-50%, 0); }
+  .sheet-head {
+    display: flex; align-items: center; gap: 12px;
+    padding: 14px 18px 12px;
+    border-bottom: 1px solid var(--hairline);
+    flex: none;
+  }
+  .sheet-title { font-size: 15px; font-weight: 600; flex: 1; }
+  .sheet-close {
+    display: grid; place-items: center;
+    width: 30px; height: 30px;
+    border: none; border-radius: 999px;
+    background: var(--accent-soft); color: var(--text-secondary);
+    cursor: pointer; font-size: 14px;
+  }
+  .sheet-body { overflow-y: auto; overscroll-behavior: contain; padding: 8px 10px 24px; }
+
+  .search-input {
+    flex: 1;
+    font-family: var(--sans); font-size: 16px;
+    color: var(--text);
+    background: var(--accent-soft);
+    border: 1px solid var(--hairline);
+    border-radius: 10px;
+    padding: 9px 13px;
+    outline: none;
+  }
+  .search-input:focus { border-color: var(--accent); }
+  .search-input::placeholder { color: var(--text-tertiary); }
+
+  .group-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--text-tertiary);
+    padding: 14px 10px 6px;
+  }
+  .row {
+    display: block; width: 100%; text-align: left;
+    border: none; background: none; color: var(--text);
+    font-family: var(--sans);
+    padding: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background .14s ease;
+  }
+  .row:hover { background: var(--accent-soft); }
+  .row .r-title { font-size: 15px; font-weight: 500; margin-bottom: 2px; }
+  .row .r-title .gk { font-family: var(--serif); color: var(--accent); }
+  .row .r-sub { font-size: 13px; color: var(--text-secondary); line-height: 1.45; }
+  .row .r-sub b { color: var(--text); font-weight: 600; }
+  .empty-note { padding: 26px 10px; text-align: center; color: var(--text-tertiary); font-size: 14px; }
+
+  .idx-ms { padding: 12px 10px 4px; }
+  .idx-ms .r-title { font-size: 16px; font-weight: 600; }
+  .idx-ms .r-sub { margin-top: 3px; }
+
+  @media (max-width: 480px) {
+    h1.title { font-size: 28px; }
+    .english-block { font-size: 18px; }
+    .pager .label { min-width: 84px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <button class="wordmark" id="homeBtn" title="Go to the beginning">ΚΟΙΝΟΣ <span>· The Koinos Project</span></button>
+  <button class="greek-toggle" id="greekBtn" aria-pressed="true" title="Show or hide the Greek text">Αα Greek</button>
+</header>
+
+<main id="content" aria-live="polite"></main>
+
+<div class="bar">
+  <button class="bar-btn" id="searchBtn" title="Search words (press /)" aria-label="Search words">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8"/></svg>
+  </button>
+  <div class="pager">
+    <button class="chev" id="prevBtn" aria-label="Previous page">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <div class="label" id="pageLabel"></div>
+    <button class="chev" id="nextBtn" aria-label="Next page">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+  <button class="bar-btn" id="indexBtn" title="Index" aria-label="Index">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+  </button>
+</div>
+
+<div id="popover" role="dialog" aria-label="Word lookup"></div>
+<div class="scrim" id="scrim"></div>
+
+<section class="sheet" id="searchSheet" role="dialog" aria-label="Search words">
+  <div class="sheet-head">
+    <input class="search-input" id="searchInput" type="search" placeholder="Search a word — English or Greek" autocomplete="off" spellcheck="false">
+    <button class="sheet-close" data-close aria-label="Close">✕</button>
+  </div>
+  <div class="sheet-body" id="searchResults"><div class="empty-note">Type to search the lexicon and the text.</div></div>
+</section>
+
+<section class="sheet" id="indexSheet" role="dialog" aria-label="Index">
+  <div class="sheet-head">
+    <div class="sheet-title">Index</div>
+    <button class="sheet-close" data-close aria-label="Close">✕</button>
+  </div>
+  <div class="sheet-body" id="indexBody"></div>
+</section>
+
+<script src="koinos_data.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Data ================= */
+  function boot(data) {
+    if (!data) { document.getElementById("content").innerHTML = '<div class="empty-note">Could not load koinos_data.json</div>'; return; }
+    App.init(data);
+  }
+  var App = {};
+
+  /* ---------- helpers ---------- */
+  var esc = function (s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  };
+  var reEsc = function (s) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); };
+  var norm = function (s) { return s.toLowerCase().replace(/[’']/g, "'"); };
+
+  App.init = function (data) {
+    var D = data;
+    var spreads = [];           // flat reading order
+    var lexPhrases = [];        // multi-word lexicon keys
+    var lexSingle = Object.create(null);
+    var stemIndex = Object.create(null);
+    var textIndex = null;       // lazy search index
+    var cur = 0;
+    var pendingQuery = null;    // highlight after jump
+
+    /* ----- build reading order ----- */
+    spreads.push({ type: "intro" });
+    D.manuscripts.forEach(function (ms, mi) {
+      spreads.push({ type: "cover", mi: mi });
+      ms.pages.forEach(function (p, pi) {
+        spreads.push({ type: "page", mi: mi, pi: pi });
+      });
+    });
+
+    /* ----- build lexicon lookup ----- */
+    Object.keys(D.lexicon || {}).forEach(function (key) {
+      var k = norm(key);
+      if (k.indexOf(" ") !== -1) lexPhrases.push(k);
+      else lexSingle[k] = key;
+      // light stemming: index base forms so inflections resolve
+      ["s", "es", "ed", "d", "ing", "er"].forEach(function (suf) {
+        stemIndex[k + suf] = key;
+      });
+      if (k.slice(-1) === "e") stemIndex[k.slice(0, -1) + "ing"] = key;
+      stemIndex[k] = key;
+    });
+    lexPhrases.sort(function (a, b) { return b.length - a.length; });
+    var phraseRe = lexPhrases.length
+      ? new RegExp("\\b(" + lexPhrases.map(reEsc).join("|") + ")\\b", "gi")
+      : null;
+
+    function lookupToken(tok) {
+      var t = norm(tok).replace(/^[^a-z']+|[^a-z']+$/g, "");
+      if (!t) return null;
+      if (stemIndex[t]) return stemIndex[t];
+      if (t.slice(-1) === "s" && stemIndex[t.slice(0, -1)]) return stemIndex[t.slice(0, -1)];
+      return null;
+    }
+
+    /* ----- render English with clickable words ----- */
+    function clickable(text) {
+      var parts = [];
+      var last = 0;
+      var marks = [];
+      if (phraseRe) {
+        phraseRe.lastIndex = 0;
+        var m;
+        while ((m = phraseRe.exec(text))) marks.push([m.index, m.index + m[0].length, norm(m[0])]);
+      }
+      var out = "";
+      var idx = 0;
+      function emitPlain(seg) {
+        out += seg.replace(/[A-Za-z][A-Za-z’'-]*/g, function (w) {
+          var key = lookupToken(w);
+          return key ? '<span class="w" data-k="' + esc(key) + '">' + esc(w) + "</span>" : esc(w);
+        });
+      }
+      marks.forEach(function (mk) {
+        if (mk[0] > idx) emitPlain(text.slice(idx, mk[0]));
+        var key = stemIndex[mk[2]] || mk[2];
+        out += '<span class="w" data-k="' + esc(key) + '">' + esc(text.slice(mk[0], mk[1])) + "</span>";
+        idx = mk[1];
+      });
+      emitPlain(text.slice(idx));
+      return out;
+    }
+
+    function paras(text, cls, doClick, highlight) {
+      return text.split(/\n\n+/).map(function (p) {
+        var html = doClick ? clickable(p) : esc(p);
+        if (highlight) {
+          var hre = new RegExp("(>[^<]*?)\\b(" + reEsc(highlight) + ")", "gi");
+          html = ("&gt;" + html).replace(new RegExp("\\b(" + reEsc(highlight) + ")\\b(?![^<]*>)", "gi"), "<mark>$1</mark>").slice(4);
+        }
+        return "<p>" + html + "</p>";
+      }).join("");
+    }
+
+    /* ----- spreads ----- */
+    function render() {
+      var s = spreads[cur];
+      var html = "";
+      if (s.type === "intro") {
+        html = '<div class="spread"><div class="kicker"><b>' + esc(D.project) + "</b></div>" +
+          '<h1 class="title">' + esc(D.introduction.title) + "</h1>" +
+          '<div class="subtitle">' + esc(D.subtitle) + "</div>" +
+          '<div class="prose">' + paras(D.introduction.text, "", false, null) + "</div></div>";
+      } else if (s.type === "cover") {
+        var ms = D.manuscripts[s.mi];
+        html = '<div class="spread"><div class="kicker"><b>Manuscript</b></div>' +
+          '<h1 class="title">' + esc(ms.name) + "</h1>" +
+          '<div class="ms-summary">' + esc(ms.summary) + "</div>" +
+          '<div class="subtitle">Turn the page to begin reading.</div></div>';
+      } else {
+        var ms2 = D.manuscripts[s.mi];
+        var p = ms2.pages[s.pi];
+        html = '<div class="spread"><div class="kicker"><b>' + esc(ms2.name.split(" (")[0]) + "</b> · Page " + p.page + "</div>" +
+          '<div class="greek-block">' + esc(p.greek) + "</div>" +
+          '<div class="english-block">' + paras(p.english, "", true, pendingQuery) + "</div></div>";
+      }
+      var content = document.getElementById("content");
+      content.innerHTML = html;
+      pendingQuery = null;
+      document.getElementById("prevBtn").disabled = cur === 0;
+      document.getElementById("nextBtn").disabled = cur === spreads.length - 1;
+      var label = s.type === "intro" ? "Introduction"
+        : s.type === "cover" ? "Title page"
+        : "Page " + (s.pi + 1) + " of " + D.manuscripts[s.mi].pages.length;
+      document.getElementById("pageLabel").textContent = label;
+      window.scrollTo({ top: 0 });
+      hidePopover();
+    }
+
+    function go(i) {
+      if (i < 0 || i >= spreads.length || i === cur) return;
+      cur = i;
+      render();
+    }
+
+    /* ----- popover ----- */
+    var pop = document.getElementById("popover");
+    var popShownAt = 0;
+    function showPopover(el, key) {
+      popShownAt = performance.now();
+      var e = D.lexicon[key];
+      if (!e) return;
+      pop.innerHTML =
+        '<div class="pop-label">Greek</div><div class="pop-greek">' + esc(e.greek) + "</div>" +
+        '<div class="pop-label">Ordinary range</div><div class="pop-variants">' + esc(e.variants.join(" · ")) + "</div>" +
+        '<div class="pop-example">' + esc(e.secular_example) + "</div>";
+      var r = el.getBoundingClientRect();
+      pop.classList.add("on");
+      var pw = pop.offsetWidth, ph = pop.offsetHeight;
+      var x = Math.min(Math.max(12, r.left + r.width / 2 - pw / 2), window.innerWidth - pw - 12);
+      var below = r.bottom + 10;
+      var y = below + ph > window.innerHeight - 70 ? r.top - ph - 10 : below;
+      pop.style.left = x + "px";
+      pop.style.top = Math.max(12, y) + "px";
+    }
+    function hidePopover() { pop.classList.remove("on"); }
+
+    document.getElementById("content").addEventListener("click", function (ev) {
+      var w = ev.target.closest(".w");
+      if (w) { ev.stopPropagation(); showPopover(w, w.dataset.k); }
+    });
+    document.addEventListener("click", function (ev) {
+      if (!ev.target.closest("#popover") && !ev.target.closest(".w")) hidePopover();
+    });
+    window.addEventListener("scroll", function () {
+      if (performance.now() - popShownAt > 300) hidePopover();
+    }, { passive: true });
+
+    /* ----- sheets ----- */
+    var scrim = document.getElementById("scrim");
+    var sheets = { search: document.getElementById("searchSheet"), index: document.getElementById("indexSheet") };
+    var openSheet = null;
+    function open(name) {
+      close();
+      openSheet = name;
+      sheets[name].classList.add("on");
+      scrim.classList.add("on");
+      if (name === "search") setTimeout(function () { document.getElementById("searchInput").focus(); }, 220);
+      if (name === "index") buildIndex();
+    }
+    function close() {
+      if (!openSheet) return;
+      sheets[openSheet].classList.remove("on");
+      scrim.classList.remove("on");
+      openSheet = null;
+    }
+    scrim.addEventListener("click", close);
+    document.querySelectorAll("[data-close]").forEach(function (b) { b.addEventListener("click", close); });
+    document.getElementById("searchBtn").addEventListener("click", function () { open("search"); });
+    document.getElementById("indexBtn").addEventListener("click", function () { open("index"); });
+
+    /* ----- index sheet ----- */
+    var indexBuilt = false;
+    function buildIndex() {
+      if (indexBuilt) return;
+      indexBuilt = true;
+      var out = ['<button class="row" data-go="0"><div class="r-title">Introduction</div><div class="r-sub">What this book is and why it exists</div></button>'];
+      spreads.forEach(function (s, i) {
+        if (s.type === "cover") {
+          var ms = D.manuscripts[s.mi];
+          out.push('<div class="idx-ms"><div class="r-title">' + esc(ms.name) + '</div><div class="r-sub">' + esc(ms.summary.split(". ").slice(0, 1).join(".")) + '.</div></div>');
+          out.push('<button class="row" data-go="' + i + '"><div class="r-sub">Title page &amp; manuscript summary</div></button>');
+        } else if (s.type === "page") {
+          var p = D.manuscripts[s.mi].pages[s.pi];
+          var preview = p.english.replace(/\n+/g, " ").split(/\s+/).slice(0, 10).join(" ");
+          out.push('<button class="row" data-go="' + i + '"><div class="r-title">Page ' + p.page + '</div><div class="r-sub">' + esc(preview) + "…</div></button>");
+        }
+      });
+      document.getElementById("indexBody").innerHTML = out.join("");
+    }
+    document.getElementById("indexBody").addEventListener("click", function (ev) {
+      var row = ev.target.closest("[data-go]");
+      if (row) { close(); go(+row.dataset.go); }
+    });
+
+    /* ----- search ----- */
+    function ensureTextIndex() {
+      if (textIndex) return textIndex;
+      textIndex = [];
+      spreads.forEach(function (s, i) {
+        if (s.type !== "page") return;
+        var p = D.manuscripts[s.mi].pages[s.pi];
+        textIndex.push({ i: i, page: p.page, en: p.english, enLow: norm(p.english), gk: p.greek });
+      });
+      return textIndex;
+    }
+    function snippet(text, pos, qlen) {
+      var start = Math.max(0, pos - 44);
+      var end = Math.min(text.length, pos + qlen + 56);
+      var s = (start > 0 ? "…" : "") + text.slice(start, end) + (end < text.length ? "…" : "");
+      return s.replace(/\n+/g, " ");
+    }
+    var debounce;
+    document.getElementById("searchInput").addEventListener("input", function (ev) {
+      clearTimeout(debounce);
+      var q = ev.target.value.trim();
+      debounce = setTimeout(function () { runSearch(q); }, 110);
+    });
+    function runSearch(q) {
+      var box = document.getElementById("searchResults");
+      if (q.length < 2) { box.innerHTML = '<div class="empty-note">Type to search the lexicon and the text.</div>'; return; }
+      var nq = norm(q);
+      var out = [];
+
+      // Lexicon matches (English keys, variants, Greek)
+      var lexHits = [];
+      Object.keys(D.lexicon).forEach(function (key) {
+        var e = D.lexicon[key];
+        var hay = norm(key + " " + e.variants.join(" ") + " " + e.greek);
+        if (hay.indexOf(nq) !== -1) lexHits.push([key, e]);
+      });
+      if (lexHits.length) {
+        out.push('<div class="group-label">Lexicon</div>');
+        lexHits.slice(0, 8).forEach(function (h) {
+          out.push('<button class="row" data-word="' + esc(h[0]) + '"><div class="r-title">' + esc(h[0]) +
+            ' <span class="gk">' + esc(h[1].greek) + '</span></div><div class="r-sub">' + esc(h[1].variants.join(" · ")) + "</div></button>");
+        });
+      }
+
+      // Text matches
+      var hits = [];
+      ensureTextIndex().forEach(function (t) {
+        var pos = t.enLow.indexOf(nq);
+        var isGk = false;
+        if (pos === -1 && /[Ͱ-Ͽἀ-῿]/.test(q)) { pos = t.gk.indexOf(q); isGk = true; }
+        if (pos !== -1) hits.push({ t: t, pos: pos, gk: isGk });
+      });
+      if (hits.length) {
+        out.push('<div class="group-label">In the text</div>');
+        hits.slice(0, 20).forEach(function (h) {
+          var src = h.gk ? h.t.gk : h.t.en;
+          var snip = esc(snippet(src, h.pos, q.length)).replace(new RegExp("(" + reEsc(esc(q)) + ")", "i"), "<b>$1</b>");
+          out.push('<button class="row" data-goq="' + h.t.i + '" data-q="' + esc(q) + '"><div class="r-title">Page ' + h.t.page + '</div><div class="r-sub">' + snip + "</div></button>");
+        });
+      }
+      box.innerHTML = out.length ? out.join("") : '<div class="empty-note">No matches for “' + esc(q) + "”.</div>";
+    }
+    document.getElementById("searchResults").addEventListener("click", function (ev) {
+      var wordRow = ev.target.closest("[data-word]");
+      if (wordRow) {
+        close();
+        var key = wordRow.dataset.word;
+        // show as centered popover
+        var e = D.lexicon[key];
+        pop.innerHTML =
+          '<div class="pop-label">Greek</div><div class="pop-greek">' + esc(e.greek) + "</div>" +
+          '<div class="pop-label">Ordinary range</div><div class="pop-variants">' + esc(e.variants.join(" · ")) + "</div>" +
+          '<div class="pop-example">' + esc(e.secular_example) + "</div>";
+        popShownAt = performance.now();
+        pop.classList.add("on");
+        pop.style.left = Math.max(12, (window.innerWidth - pop.offsetWidth) / 2) + "px";
+        pop.style.top = "120px";
+        return;
+      }
+      var pageRow = ev.target.closest("[data-goq]");
+      if (pageRow) {
+        pendingQuery = pageRow.dataset.q;
+        close();
+        go(+pageRow.dataset.goq);
+      }
+    });
+
+    /* ----- chrome ----- */
+    document.getElementById("prevBtn").addEventListener("click", function () { go(cur - 1); });
+    document.getElementById("nextBtn").addEventListener("click", function () { go(cur + 1); });
+    document.getElementById("homeBtn").addEventListener("click", function () { go(0); });
+    var greekBtn = document.getElementById("greekBtn");
+    greekBtn.addEventListener("click", function () {
+      var hidden = document.body.classList.toggle("hide-greek");
+      greekBtn.setAttribute("aria-pressed", String(!hidden));
+    });
+    document.addEventListener("keydown", function (ev) {
+      if (ev.key === "Escape") { close(); hidePopover(); return; }
+      if (ev.target.tagName === "INPUT") return;
+      if (ev.key === "ArrowLeft") go(cur - 1);
+      else if (ev.key === "ArrowRight") go(cur + 1);
+      else if (ev.key === "/") { ev.preventDefault(); open("search"); }
+    });
+
+    render();
+  };
+
+  /* ----- load data: inline first, fetch fallback ----- */
+  if (window.KOINOS_DATA) boot(window.KOINOS_DATA);
+  else fetch("koinos_data.json").then(function (r) { return r.json(); }).then(boot).catch(function () { boot(null); });
+})();
+</script>
+</body>
+</html>
