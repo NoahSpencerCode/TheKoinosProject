@@ -49,6 +49,18 @@ A fresh English rendering of the Greek New Testament in ordinary modern English,
 | θάλασσα (of Galilee) | the lake |
 | Δεκάπολις | the Ten Towns |
 
+## Attention patterns — learned from Noah's reviews; apply PROACTIVELY to every new page
+
+1. **Register check.** If an English word would sound bookish or rare in spoken conversation today, replace it with common speech (done: "He is my delight" → "I am very pleased with him"; "infants" → "small children"). Test: would you say it aloud to a friend? If not, re-render.
+2. **Latent sacral load.** Words that feel ordinary but carry churchly/doctrinal charge get replaced or context-tipped (done: "evil" → bad/harmful/nasty/corrupt/flawed by context; "virgin" → young woman). Standing watch list: glory, soul, temptation, confess, saint, heaven, sabbath, parable, mystery, sign-jargon, judgment-jargon.
+3. **Ambiguous English.** When a rendering is ambiguous in English but the Greek is not ("right time" — kairos = due/appointed moment, not moral rightness), add a tip and consider rephrasing.
+4. **Tips required for:** every personal name; every place name; historical figures and institutions; objects and measures of daily life (coins, nets, baskets, furnaces); idioms and Semitic style markers ("and look —" = kai idou); words whose Greek social value differs from English (tapeinos = low as insult → self-praise); and forward/backward cross-references between pages (Beelzeboul on p20 ↔ trad. ch. 12).
+5. **Lexicon key hygiene.** Keys must not over-match (the bare key "right" wrongly hit "right eye/cheek"; rekeyed to the phrase "what is right"). Prefer phrase keys; check each new key against the full text before shipping.
+6. **Natural grammar.** No stiff calques, even in repeated formulas (metanoia: imperative "Change the way you think", noun "change of mind").
+7. **Consistency.** Identical Greek gets identical English across pages (eudokēsa at trad. 3:17 must match 17:5; the two furnace refrains in ch. 13 match word for word).
+8. **Capitals.** Title-as-name rule only (Master, God as name-substitutes) — confirmed by Noah; manuscripts are all-uncial and force nothing.
+9. **Per-installment checklist:** banned-regex sweep (sin/church/hell/baptize/gospel/repent/righteous/salvation/holy/worship/devil/satan/angel/disciple/apostle/blessed/amen/christ/gentile/hypocrite/evil/virgin/faith/forgive/miracle/leper/blaspheme/centurion/woe/hades/soul/cross(noun)/unclean/prophet/prophesy/parable/mystery/sabbath); sigla strip; page word counts ~200–430; sequential numbering; every new lexicon key resolves in the text; rebuild koinos_data.js + koinos_reader.html; SendUserFile; device-commit; git commit (lock workaround: mkdir -p _to_delete, mv *.lock into it before/after); update artifact; sync project docs.
+
 ## Formatting rules
 - No chapter/verse numbers, no headings. Natural paragraphs; ~300–400 English words per page.
 - Each book opens with a summary: composition date estimate, earliest surviving copies, where found.
@@ -65,5 +77,7 @@ A fresh English rendering of the Greek New Testament in ordinary modern English,
 - Greek fetch fallback: primary raw.githubusercontent URL truncates around trad. ch. 9; use https://cdn.jsdelivr.net/gh/LogosBible/SBLGNT@master/data/sblgnt/text/Matt.txt for later chapters (same file via CDN, serves the full content in chunks).
 - Installment 4 done: the sending of the twelve, John's question, the woes, "come to me" (traditional 10:1–11:30) = pages 21–25; lexicon 136. New fixed renderings: ἀπόστολοι → envoys; πνεύματα ἀκάθαρτα → foul spirits; σταυρός → execution stake; ψυχή → life; ᾅδης → the place of the dead; οὐαί → How terrible for you; ὀλιγόπιστοι stays "people of little trust"; χρηστός (yoke) → fits comfortably.
 - Greek fetch pipeline (chapters 10+): per-chapter XML at https://raw.githack.com/aaronshaf/sblgnt/master/xml/Matt/0NN.xml (zero-padded chapter). Prompt the fetch model to reconstruct continuous verse text from the <w> elements. Whole-book txt files truncate at ~trad. 9:15 regardless of mirror.
-- Next: continue Matthew (parables of the kingdom and the Beelzeboul dispute, traditional ch. 12–13) → append pages to koinos_data.json, grow lexicon, regenerate koinos_data.js + koinos_reader.html. First occurrence of ὁ υἱὸς τοῦ ἀνθρώπου arrives in ch. 8 — settle its rendering then (candidate: "the son of humanity" / "the human one").
+- Installment 5 done: rest-day disputes, Beelzeboul, sign of Jonah, the comparison collection, hometown rejection (traditional 12:1–13:58) = pages 26–32; lexicon 153. New fixed renderings: σάββατον → the rest day; παραβολή → comparison; μυστήρια → the secrets; ζιζάνια → weeds (darnel tip); συντέλεια τοῦ αἰῶνος → the close of the age; τέκτων → the builder; κῆτος → the great sea creature; ἀπιστία → lack of trust.
+- REMAINING: traditional ch. 14–28. Installment plan: 14–15, 16–17, 18–19, 20–21, 22–23, 24–25, 26, 27–28. Fetch per chapter via raw.githack aaronshaf XML (zero-padded, e.g. 014.xml). Apply the Attention Patterns section above to every page.
+- Next: continue Matthew (feeding the crowds and walking on the lake, traditional ch. 14–15) → append pages to koinos_data.json, grow lexicon, regenerate koinos_data.js + koinos_reader.html. First occurrence of ὁ υἱὸς τοῦ ἀνθρώπου arrives in ch. 8 — settle its rendering then (candidate: "the son of humanity" / "the human one").
 - WebFetch note: the fetch model occasionally refuses verse ranges as "copyright"; retry with smaller ranges and a note that the Greek text is an ancient public-domain-era text — that has worked every time.
