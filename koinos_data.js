@@ -1688,6 +1688,101 @@ window.KOINOS_DATA = {
         "the keying stone"
       ],
       "secular_example": "The 'head of the corner' is the stone that ties two walls together — builders tested and rejected stones for it, which is the whole reversal of the quoted line."
+    },
+    "caesar": {
+      "greek": "Καῖσαρ (Kaisar)",
+      "variants": [
+        "Caesar",
+        "the Roman emperor",
+        "the family name turned title"
+      ],
+      "secular_example": "Caesar began as one family's name and became the emperor's title; every head-tax coin carried his portrait and inscription — which is the whole point of asking whose image is on it."
+    },
+    "head-tax": {
+      "greek": "κῆνσος (kēnsos)",
+      "variants": [
+        "head-tax",
+        "census tax",
+        "the poll tax paid to Rome"
+      ],
+      "secular_example": "Kēnsos is the Latin census turned Greek: the per-head tax Rome levied on subject peoples — the most hated everyday symbol of occupation, payable only in Caesar's coin."
+    },
+    "rising from the dead": {
+      "greek": "ἀνάστασις (anastasis)",
+      "variants": [
+        "the rising",
+        "standing up again",
+        "resurrection"
+      ],
+      "secular_example": "Anastasis is ordinary Greek for standing up or getting up — from bed, from a seat. Applied to the dead it is exactly that concrete: the dead standing up again."
+    },
+    "moses' seat": {
+      "greek": "καθέδρα Μωϋσέως (kathedra Mōuseōs)",
+      "variants": [
+        "Moses' seat",
+        "the teaching chair",
+        "the chair of authority"
+      ],
+      "secular_example": "A kathedra is a teacher's chair (the root of 'cathedral' and 'chair' of a department); to sit in Moses' seat was to claim his teaching authority."
+    },
+    "scripture-boxes": {
+      "greek": "φυλακτήρια (phylaktēria)",
+      "variants": [
+        "scripture-boxes",
+        "tefillin",
+        "amulet-cases worn while praying"
+      ],
+      "secular_example": "Small leather boxes holding scripture passages, strapped to forehead and arm for prayer — the Greek word means 'safeguards,' i.e. amulets. Widening them made piety visible from across the street."
+    },
+    "tassels": {
+      "greek": "κράσπεδα (kraspeda)",
+      "variants": [
+        "tassels",
+        "fringes",
+        "corner-cords"
+      ],
+      "secular_example": "The corner-tassels the law prescribed on a cloak as reminders — the same 'edge of his coat' the sick reached for; lengthening them advertised how much reminding one did."
+    },
+    "convert": {
+      "greek": "προσήλυτος (prosēlytos)",
+      "variants": [
+        "convert",
+        "newcomer",
+        "one who has come over"
+      ],
+      "secular_example": "Prosēlytos is literally 'one who has come over' — the ordinary word for an outsider who joined the Judean way of life (whence English 'proselyte')."
+    },
+    "whitewashed tombs": {
+      "greek": "τάφοι κεκονιαμένοι (taphoi kekoniamenoi)",
+      "variants": [
+        "whitewashed tombs",
+        "lime-painted graves"
+      ],
+      "secular_example": "Tombs were whitewashed with lime before festivals precisely so pilgrims could see and avoid them — grave-contact made a person ritually unfit. Bright white on the outside advertised death inside."
+    },
+    "gnat and camel": {
+      "greek": "κώνωψ / κάμηλος (kōnōps / kamēlos)",
+      "variants": [
+        "the gnat and the camel",
+        "smallest and largest impure animals"
+      ],
+      "secular_example": "Wine was strained through cloth to catch the gnat — the smallest thing the law counted impure; the camel was the largest. In Aramaic the two words even rhyme (galma / gamla): a street-level joke about scale."
+    },
+    "zechariah": {
+      "greek": "Ζαχαρίας (Zacharias)",
+      "variants": [
+        "a murdered spokesman",
+        "killed in the temple court"
+      ],
+      "secular_example": "The old writings tell of a Zechariah stoned in the temple court for speaking out — with Abel, the bookends of every murder story on the scroll shelf: first blood to last."
+    },
+    "abel": {
+      "greek": "Ἅβελ (Habel)",
+      "variants": [
+        "Abel",
+        "the first murder victim of the old story"
+      ],
+      "secular_example": "Abel is the first person killed in the old story — a brother murdered by a brother; his name opens humanity's ledger of spilled blood."
     }
   },
   "manuscripts": [
@@ -1934,6 +2029,31 @@ window.KOINOS_DATA = {
           "page": 48,
           "greek": "Ἄλλην παραβολὴν ἀκούσατε. Ἄνθρωπος ἦν οἰκοδεσπότης ὅστις ἐφύτευσεν ἀμπελῶνα καὶ φραγμὸν αὐτῷ περιέθηκεν καὶ ὤρυξεν ἐν αὐτῷ ληνὸν καὶ ᾠκοδόμησεν πύργον, καὶ ἐξέδετο αὐτὸν γεωργοῖς, καὶ ἀπεδήμησεν. ὅτε δὲ ἤγγισεν ὁ καιρὸς τῶν καρπῶν, ἀπέστειλεν τοὺς δούλους αὐτοῦ πρὸς τοὺς γεωργοὺς λαβεῖν τοὺς καρποὺς αὐτοῦ. καὶ λαβόντες οἱ γεωργοὶ τοὺς δούλους αὐτοῦ ὃν μὲν ἔδειραν, ὃν δὲ ἀπέκτειναν, ὃν δὲ ἐλιθοβόλησαν. πάλιν ἀπέστειλεν ἄλλους δούλους πλείονας τῶν πρώτων, καὶ ἐποίησαν αὐτοῖς ὡσαύτως. ὕστερον δὲ ἀπέστειλεν πρὸς αὐτοὺς τὸν υἱὸν αὐτοῦ λέγων· Ἐντραπήσονται τὸν υἱόν μου. οἱ δὲ γεωργοὶ ἰδόντες τὸν υἱὸν εἶπον ἐν ἑαυτοῖς· Οὗτός ἐστιν ὁ κληρονόμος· δεῦτε ἀποκτείνωμεν αὐτὸν καὶ σχῶμεν τὴν κληρονομίαν αὐτοῦ· καὶ λαβόντες αὐτὸν ἐξέβαλον ἔξω τοῦ ἀμπελῶνος καὶ ἀπέκτειναν. ὅταν οὖν ἔλθῃ ὁ κύριος τοῦ ἀμπελῶνος, τί ποιήσει τοῖς γεωργοῖς ἐκείνοις; λέγουσιν αὐτῷ· Κακοὺς κακῶς ἀπολέσει αὐτούς, καὶ τὸν ἀμπελῶνα ἐκδώσεται ἄλλοις γεωργοῖς, οἵτινες ἀποδώσουσιν αὐτῷ τοὺς καρποὺς ἐν τοῖς καιροῖς αὐτῶν. Λέγει αὐτοῖς ὁ Ἰησοῦς· Οὐδέποτε ἀνέγνωτε ἐν ταῖς γραφαῖς· Λίθον ὃν ἀπεδοκίμασαν οἱ οἰκοδομοῦντες οὗτος ἐγενήθη εἰς κεφαλὴν γωνίας· παρὰ κυρίου ἐγένετο αὕτη, καὶ ἔστιν θαυμαστὴ ἐν ὀφθαλμοῖς ἡμῶν; διὰ τοῦτο λέγω ὑμῖν ὅτι ἀρθήσεται ἀφʼ ὑμῶν ἡ βασιλεία τοῦ θεοῦ καὶ δοθήσεται ἔθνει ποιοῦντι τοὺς καρποὺς αὐτῆς. Καὶ ὁ πεσὼν ἐπὶ τὸν λίθον τοῦτον συνθλασθήσεται· ἐφʼ ὃν δʼ ἂν πέσῃ λικμήσει αὐτόν. Καὶ ἀκούσαντες οἱ ἀρχιερεῖς καὶ οἱ Φαρισαῖοι τὰς παραβολὰς αὐτοῦ ἔγνωσαν ὅτι περὶ αὐτῶν λέγει· καὶ ζητοῦντες αὐτὸν κρατῆσαι ἐφοβήθησαν τοὺς ὄχλους, ἐπεὶ εἰς προφήτην αὐτὸν εἶχον.",
           "english": "'Listen to another comparison. There was a head of a house who planted a vineyard, put a fence around it, dug a winepress in it, and built a watchtower. Then he leased it to tenant farmers and went abroad. When the season for the fruit came near, he sent his slaves to the tenant farmers to collect his fruit. But the tenants took his slaves: one they beat, one they killed, one they stoned. Again he sent other slaves, more than the first — and they did the same to them. Finally he sent them his son, telling himself: They will respect my son. But when the tenants saw the son, they said among themselves: This is the heir. Come on — let's kill him and take his inheritance. And they seized him, threw him out of the vineyard, and killed him. So when the owner of the vineyard comes — what will he do to those tenant farmers?' They said to him: 'He will wipe those wretches out wretchedly, and lease the vineyard to other tenants — ones who will hand over his fruit when the seasons come.'\n\nJesus said to them: 'Have you never read in the writings: The stone the builders rejected — this very one became the cornerstone. This came from the Master, and it is amazing in our eyes? That is why I tell you: the kingdom of God will be taken away from you and given to a nation that produces its fruit. And the one who falls on this stone will be shattered — and anyone it falls on, it will grind him to dust.'\n\nWhen the chief priests and the Pharisees heard his comparisons, they knew he was talking about them. They wanted to arrest him — but they were afraid of the crowds, because the crowds held him to be a spokesman."
+        },
+        {
+          "page": 49,
+          "greek": "Καὶ ἀποκριθεὶς ὁ Ἰησοῦς πάλιν εἶπεν ἐν παραβολαῖς αὐτοῖς λέγων· Ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ βασιλεῖ, ὅστις ἐποίησεν γάμους τῷ υἱῷ αὐτοῦ. καὶ ἀπέστειλεν τοὺς δούλους αὐτοῦ καλέσαι τοὺς κεκλημένους εἰς τοὺς γάμους, καὶ οὐκ ἤθελον ἐλθεῖν. πάλιν ἀπέστειλεν ἄλλους δούλους λέγων· Εἴπατε τοῖς κεκλημένοις· Ἰδοὺ τὸ ἄριστόν μου ἡτοίμακα, οἱ ταῦροί μου καὶ τὰ σιτιστὰ τεθυμένα, καὶ πάντα ἕτοιμα· δεῦτε εἰς τοὺς γάμους. οἱ δὲ ἀμελήσαντες ἀπῆλθον, ὃς μὲν εἰς τὸν ἴδιον ἀγρόν, ὃς δὲ ἐπὶ τὴν ἐμπορίαν αὐτοῦ· οἱ δὲ λοιποὶ κρατήσαντες τοὺς δούλους αὐτοῦ ὕβρισαν καὶ ἀπέκτειναν. ὁ δὲ βασιλεὺς ὠργίσθη, καὶ πέμψας τὰ στρατεύματα αὐτοῦ ἀπώλεσεν τοὺς φονεῖς ἐκείνους καὶ τὴν πόλιν αὐτῶν ἐνέπρησεν. τότε λέγει τοῖς δούλοις αὐτοῦ· Ὁ μὲν γάμος ἕτοιμός ἐστιν, οἱ δὲ κεκλημένοι οὐκ ἦσαν ἄξιοι· πορεύεσθε οὖν ἐπὶ τὰς διεξόδους τῶν ὁδῶν, καὶ ὅσους ἐὰν εὕρητε καλέσατε εἰς τοὺς γάμους. καὶ ἐξελθόντες οἱ δοῦλοι ἐκεῖνοι εἰς τὰς ὁδοὺς συνήγαγον πάντας οὓς εὗρον, πονηρούς τε καὶ ἀγαθούς· καὶ ἐπλήσθη ὁ γάμος ἀνακειμένων. εἰσελθὼν δὲ ὁ βασιλεὺς θεάσασθαι τοὺς ἀνακειμένους εἶδεν ἐκεῖ ἄνθρωπον οὐκ ἐνδεδυμένον ἔνδυμα γάμου· καὶ λέγει αὐτῷ· Ἑταῖρε, πῶς εἰσῆλθες ὧδε μὴ ἔχων ἔνδυμα γάμου; ὁ δὲ ἐφιμώθη. τότε ὁ βασιλεὺς εἶπεν τοῖς διακόνοις· Δήσαντες αὐτοῦ πόδας καὶ χεῖρας ἐκβάλετε αὐτὸν εἰς τὸ σκότος τὸ ἐξώτερον· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων. πολλοὶ γάρ εἰσιν κλητοὶ ὀλίγοι δὲ ἐκλεκτοί.",
+          "english": "Jesus answered them again in comparisons: 'The kingdom of the skies is like a king who put on a wedding feast for his son. He sent his slaves to call the invited guests to the feast — and they refused to come. Again he sent other slaves: Tell the invited guests, Look, I have my banquet ready; my bulls and my fattened animals are butchered, and everything is set. Come to the feast. But they shrugged it off and went away — one to his own field, another to his business. And the rest grabbed his slaves, abused them, and killed them. The king was furious: he sent his troops, destroyed those murderers, and burned their city. Then he said to his slaves: The feast is ready, but the invited guests did not deserve it. So go out to where the roads leave the city, and invite everyone you find to the feast. Those slaves went out into the roads and brought in everyone they found, bad and good alike — and the wedding hall was filled with guests.\n\n'But when the king came in to look at the guests, he saw a man there not dressed in wedding clothes. Friend, he said to him, how did you get in here without wedding clothes? The man had nothing to say. Then the king told the servants: Tie him hand and foot and throw him out into the outer darkness — out there, there will be crying and grinding of teeth. Because many are invited — but few are chosen.'"
+        },
+        {
+          "page": 50,
+          "greek": "Τότε πορευθέντες οἱ Φαρισαῖοι συμβούλιον ἔλαβον ὅπως αὐτὸν παγιδεύσωσιν ἐν λόγῳ. καὶ ἀποστέλλουσιν αὐτῷ τοὺς μαθητὰς αὐτῶν μετὰ τῶν Ἡρῳδιανῶν λέγοντες· Διδάσκαλε, οἴδαμεν ὅτι ἀληθὴς εἶ καὶ τὴν ὁδὸν τοῦ θεοῦ ἐν ἀληθείᾳ διδάσκεις, καὶ οὐ μέλει σοι περὶ οὐδενός, οὐ γὰρ βλέπεις εἰς πρόσωπον ἀνθρώπων· εἰπὸν οὖν ἡμῖν τί σοι δοκεῖ· ἔξεστιν δοῦναι κῆνσον Καίσαρι ἢ οὔ; γνοὺς δὲ ὁ Ἰησοῦς τὴν πονηρίαν αὐτῶν εἶπεν· Τί με πειράζετε, ὑποκριταί; ἐπιδείξατέ μοι τὸ νόμισμα τοῦ κήνσου. οἱ δὲ προσήνεγκαν αὐτῷ δηνάριον. καὶ λέγει αὐτοῖς· Τίνος ἡ εἰκὼν αὕτη καὶ ἡ ἐπιγραφή; λέγουσιν αὐτῷ· Καίσαρος. τότε λέγει αὐτοῖς· Ἀπόδοτε οὖν τὰ Καίσαρος Καίσαρι καὶ τὰ τοῦ θεοῦ τῷ θεῷ. καὶ ἀκούσαντες ἐθαύμασαν, καὶ ἀφέντες αὐτὸν ἀπῆλθαν. Ἐν ἐκείνῃ τῇ ἡμέρᾳ προσῆλθον αὐτῷ Σαδδουκαῖοι, λέγοντες μὴ εἶναι ἀνάστασιν, καὶ ἐπηρώτησαν αὐτὸν λέγοντες· Διδάσκαλε, Μωϋσῆς εἶπεν· Ἐάν τις ἀποθάνῃ μὴ ἔχων τέκνα, ἐπιγαμβρεύσει ὁ ἀδελφὸς αὐτοῦ τὴν γυναῖκα αὐτοῦ καὶ ἀναστήσει σπέρμα τῷ ἀδελφῷ αὐτοῦ. ἦσαν δὲ παρʼ ἡμῖν ἑπτὰ ἀδελφοί· καὶ ὁ πρῶτος γήμας ἐτελεύτησεν, καὶ μὴ ἔχων σπέρμα ἀφῆκεν τὴν γυναῖκα αὐτοῦ τῷ ἀδελφῷ αὐτοῦ· ὁμοίως καὶ ὁ δεύτερος καὶ ὁ τρίτος, ἕως τῶν ἑπτά· ὕστερον δὲ πάντων ἀπέθανεν ἡ γυνή. ἐν τῇ ἀναστάσει οὖν τίνος τῶν ἑπτὰ ἔσται γυνή; πάντες γὰρ ἔσχον αὐτήν. Ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν αὐτοῖς· Πλανᾶσθε μὴ εἰδότες τὰς γραφὰς μηδὲ τὴν δύναμιν τοῦ θεοῦ· ἐν γὰρ τῇ ἀναστάσει οὔτε γαμοῦσιν οὔτε γαμίζονται, ἀλλʼ ὡς ἄγγελοι θεοῦ ἐν τῷ οὐρανῷ εἰσιν· περὶ δὲ τῆς ἀναστάσεως τῶν νεκρῶν οὐκ ἀνέγνωτε τὸ ῥηθὲν ὑμῖν ὑπὸ τοῦ θεοῦ λέγοντος· Ἐγώ εἰμι ὁ θεὸς Ἀβραὰμ καὶ ὁ θεὸς Ἰσαὰκ καὶ ὁ θεὸς Ἰακώβ; οὐκ ἔστιν ὁ θεὸς νεκρῶν ἀλλὰ ζώντων. καὶ ἀκούσαντες οἱ ὄχλοι ἐξεπλήσσοντο ἐπὶ τῇ διδαχῇ αὐτοῦ.",
+          "english": "Then the Pharisees went off and made a plan to trap him in his own words. They sent their students to him, along with Herod's people: 'Teacher, we know you are honest and teach God's road truthfully, and you defer to no one — you don't look at people's faces. So tell us what you think: is it allowed to pay the head-tax to Caesar, or not?' Jesus saw through their corrupt game and said: 'Why are you testing me, you actors? Show me the tax coin.' They brought him a day's-pay silver piece. 'Whose image is this,' he asked them, 'and whose inscription?' 'Caesar's,' they said. Then he told them: 'So give back to Caesar what is Caesar's — and to God what is God's.' Hearing that, they were amazed; they left him and went away.\n\nThat same day Sadducees — who say there is no rising from the dead — came and questioned him: 'Teacher, Moses said: If a man dies childless, his brother must marry the widow and raise up descendants for his brother. Now, among us there were seven brothers. The first married and died, and having no children he left his wife to his brother. The same happened with the second, and the third, down to all seven. Last of all the woman died. So — in the rising, whose wife of the seven will she be? They all had her.' Jesus answered them: 'You are lost, because you know neither the writings nor the power of God. In the rising, people neither marry nor are given in marriage — they are like God's messengers in the sky. And about the rising of the dead — have you not read what God said to you: I am the God of Abraham and the God of Isaac and the God of Jacob? He is not the God of the dead, but of the living.' And the crowds who heard it were staggered by his teaching."
+        },
+        {
+          "page": 51,
+          "greek": "Οἱ δὲ Φαρισαῖοι ἀκούσαντες ὅτι ἐφίμωσεν τοὺς Σαδδουκαίους συνήχθησαν ἐπὶ τὸ αὐτό. καὶ ἐπηρώτησεν εἷς ἐξ αὐτῶν νομικὸς πειράζων αὐτόν· Διδάσκαλε, ποία ἐντολὴ μεγάλη ἐν τῷ νόμῳ; ὁ δὲ ἔφη αὐτῷ· Ἀγαπήσεις κύριον τὸν θεόν σου ἐν ὅλῃ τῇ καρδίᾳ σου καὶ ἐν ὅλῃ τῇ ψυχῇ σου καὶ ἐν ὅλῃ τῇ διανοίᾳ σου· αὕτη ἐστὶν ἡ μεγάλη καὶ πρώτη ἐντολή. Δευτέρα δὲ ὁμοία αὐτῇ· Ἀγαπήσεις τὸν πλησίον σου ὡς σεαυτόν. ἐν ταύταις ταῖς δυσὶν ἐντολαῖς ὅλος ὁ νόμος κρέμαται καὶ οἱ προφῆται. Συνηγμένων δὲ τῶν Φαρισαίων ἐπηρώτησεν αὐτοὺς ὁ Ἰησοῦς λέγων· Τί ὑμῖν δοκεῖ περὶ τοῦ χριστοῦ; τίνος υἱός ἐστιν; λέγουσιν αὐτῷ· Τοῦ Δαυίδ. λέγει αὐτοῖς· Πῶς οὖν Δαυὶδ ἐν πνεύματι καλεῖ αὐτὸν κύριον λέγων· Εἶπεν κύριος τῷ κυρίῳ μου· Κάθου ἐκ δεξιῶν μου ἕως ἂν θῶ τοὺς ἐχθρούς σου ὑποκάτω τῶν ποδῶν σου; εἰ οὖν Δαυὶδ καλεῖ αὐτὸν κύριον, πῶς υἱὸς αὐτοῦ ἐστιν; καὶ οὐδεὶς ἐδύνατο ἀποκριθῆναι αὐτῷ λόγον, οὐδὲ ἐτόλμησέν τις ἀπʼ ἐκείνης τῆς ἡμέρας ἐπερωτῆσαι αὐτὸν οὐκέτι. Τότε ὁ Ἰησοῦς ἐλάλησεν τοῖς ὄχλοις καὶ τοῖς μαθηταῖς αὐτοῦ λέγων· Ἐπὶ τῆς Μωϋσέως καθέδρας ἐκάθισαν οἱ γραμματεῖς καὶ οἱ Φαρισαῖοι. πάντα οὖν ὅσα ἐὰν εἴπωσιν ὑμῖν ποιήσατε καὶ τηρεῖτε, κατὰ δὲ τὰ ἔργα αὐτῶν μὴ ποιεῖτε, λέγουσιν γὰρ καὶ οὐ ποιοῦσιν. δεσμεύουσιν δὲ φορτία βαρέα καὶ ἐπιτιθέασιν ἐπὶ τοὺς ὤμους τῶν ἀνθρώπων, αὐτοὶ δὲ τῷ δακτύλῳ αὐτῶν οὐ θέλουσιν κινῆσαι αὐτά. πάντα δὲ τὰ ἔργα αὐτῶν ποιοῦσιν πρὸς τὸ θεαθῆναι τοῖς ἀνθρώποις· πλατύνουσι γὰρ τὰ φυλακτήρια αὐτῶν καὶ μεγαλύνουσι τὰ κράσπεδα, φιλοῦσι δὲ τὴν πρωτοκλισίαν ἐν τοῖς δείπνοις καὶ τὰς πρωτοκαθεδρίας ἐν ταῖς συναγωγαῖς καὶ τοὺς ἀσπασμοὺς ἐν ταῖς ἀγοραῖς καὶ καλεῖσθαι ὑπὸ τῶν ἀνθρώπων· Ῥαββί. ὑμεῖς δὲ μὴ κληθῆτε· Ῥαββί, εἷς γάρ ἐστιν ὑμῶν ὁ διδάσκαλος, πάντες δὲ ὑμεῖς ἀδελφοί ἐστε· καὶ πατέρα μὴ καλέσητε ὑμῶν ἐπὶ τῆς γῆς, εἷς γάρ ἐστιν ὑμῶν ὁ πατὴρ ὁ οὐράνιος· μηδὲ κληθῆτε καθηγηταί, ὅτι καθηγητὴς ὑμῶν ἐστιν εἷς ὁ χριστός· ὁ δὲ μείζων ὑμῶν ἔσται ὑμῶν διάκονος. ὅστις δὲ ὑψώσει ἑαυτὸν ταπεινωθήσεται, καὶ ὅστις ταπεινώσει ἑαυτὸν ὑψωθήσεται.",
+          "english": "When the Pharisees heard that he had silenced the Sadducees, they gathered in one place, and one of them, a law expert, tested him with a question: 'Teacher, which command in the law is the great one?' He told him: 'You will love the Master your God with your whole heart, your whole life, and your whole mind. This is the great and first command. And the second is like it: you will love the person next to you as yourself. The whole law hangs on these two commands — and the spokesmen too.'\n\nWhile the Pharisees were still gathered, Jesus asked them: 'What do you think about the anointed? Whose son is he?' 'David's,' they told him. He said to them: 'Then how is it that David, in the breath, calls him master, saying: The Master said to my master, Sit at my right until I put your enemies under your feet? If David calls him master, how is he his son?' And no one could answer him a word — and from that day on, no one dared question him any further.\n\nThen Jesus spoke to the crowds and to his students: 'The scholars and the Pharisees sit in Moses' seat. So do and keep everything they tell you — but do not do what they do, because they talk and do not act. They tie up heavy loads and set them on people's shoulders, but they themselves will not move them with one finger. Everything they do, they do to be watched by people: they widen their scripture-boxes and lengthen their tassels; they love the head couch at dinners, the front seats in the meeting halls, the greetings in the marketplaces, and being called Rabbi by everyone. But you are not to be called Rabbi — you have one teacher, and you are all brothers. And do not call anyone on earth your father — you have one father, the one in the sky. And do not be called masters of studies either, because you have one such master: the anointed. The greatest among you will be your servant. Whoever lifts himself up will be brought low — and whoever makes himself low will be lifted up.'"
+        },
+        {
+          "page": 52,
+          "greek": "Οὐαὶ δὲ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι ὑποκριταί, ὅτι κλείετε τὴν βασιλείαν τῶν οὐρανῶν ἔμπροσθεν τῶν ἀνθρώπων· ὑμεῖς γὰρ οὐκ εἰσέρχεσθε, οὐδὲ τοὺς εἰσερχομένους ἀφίετε εἰσελθεῖν. Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι ὑποκριταί, ὅτι περιάγετε τὴν θάλασσαν καὶ τὴν ξηρὰν ποιῆσαι ἕνα προσήλυτον, καὶ ὅταν γένηται ποιεῖτε αὐτὸν υἱὸν γεέννης διπλότερον ὑμῶν. Οὐαὶ ὑμῖν, ὁδηγοὶ τυφλοὶ οἱ λέγοντες· Ὃς ἂν ὀμόσῃ ἐν τῷ ναῷ, οὐδέν ἐστιν, ὃς δʼ ἂν ὀμόσῃ ἐν τῷ χρυσῷ τοῦ ναοῦ ὀφείλει. μωροὶ καὶ τυφλοί, τίς γὰρ μείζων ἐστίν, ὁ χρυσὸς ἢ ὁ ναὸς ὁ ἁγιάσας τὸν χρυσόν; καί· Ὃς ἂν ὀμόσῃ ἐν τῷ θυσιαστηρίῳ, οὐδέν ἐστιν, ὃς δʼ ἂν ὀμόσῃ ἐν τῷ δώρῳ τῷ ἐπάνω αὐτοῦ ὀφείλει. τυφλοί, τί γὰρ μεῖζον, τὸ δῶρον ἢ τὸ θυσιαστήριον τὸ ἁγιάζον τὸ δῶρον; ὁ οὖν ὀμόσας ἐν τῷ θυσιαστηρίῳ ὀμνύει ἐν αὐτῷ καὶ ἐν πᾶσι τοῖς ἐπάνω αὐτοῦ· καὶ ὁ ὀμόσας ἐν τῷ ναῷ ὀμνύει ἐν αὐτῷ καὶ ἐν τῷ κατοικοῦντι αὐτόν· καὶ ὁ ὀμόσας ἐν τῷ οὐρανῷ ὀμνύει ἐν τῷ θρόνῳ τοῦ θεοῦ καὶ ἐν τῷ καθημένῳ ἐπάνω αὐτοῦ. Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι ὑποκριταί, ὅτι ἀποδεκατοῦτε τὸ ἡδύοσμον καὶ τὸ ἄνηθον καὶ τὸ κύμινον, καὶ ἀφήκατε τὰ βαρύτερα τοῦ νόμου, τὴν κρίσιν καὶ τὸ ἔλεος καὶ τὴν πίστιν· ταῦτα ἔδει ποιῆσαι κἀκεῖνα μὴ ἀφιέναι. ὁδηγοὶ τυφλοί, οἱ διϋλίζοντες τὸν κώνωπα τὴν δὲ κάμηλον καταπίνοντες. Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι ὑποκριταί, ὅτι καθαρίζετε τὸ ἔξωθεν τοῦ ποτηρίου καὶ τῆς παροψίδος, ἔσωθεν δὲ γέμουσιν ἐξ ἁρπαγῆς καὶ ἀκρασίας. Φαρισαῖε τυφλέ, καθάρισον πρῶτον τὸ ἐντὸς τοῦ ποτηρίου καὶ τῆς παροψίδος, ἵνα γένηται καὶ τὸ ἐκτὸς αὐτοῦ καθαρόν. Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι ὑποκριταί, ὅτι παρομοιάζετε τάφοις κεκονιαμένοις, οἵτινες ἔξωθεν μὲν φαίνονται ὡραῖοι ἔσωθεν δὲ γέμουσιν ὀστέων νεκρῶν καὶ πάσης ἀκαθαρσίας· οὕτως καὶ ὑμεῖς ἔξωθεν μὲν φαίνεσθε τοῖς ἀνθρώποις δίκαιοι, ἔσωθεν δέ ἐστε μεστοὶ ὑποκρίσεως καὶ ἀνομίας.",
+          "english": "'How terrible for you, scholars and Pharisees — you actors! You lock the kingdom of the skies in front of people: you do not go in yourselves, and you do not let those entering go in. How terrible for you, scholars and Pharisees — you actors! You travel over sea and dry land to make one convert, and when he becomes one, you make him twice the son of the burning valley that you are. How terrible for you, blind guides! You say: whoever swears by the temple hall — that is nothing; but whoever swears by the gold of the temple hall — he is bound. You blind fools: which is greater, the gold, or the temple hall that makes the gold sacred? And you say: whoever swears by the altar — that is nothing; but whoever swears by the gift lying on it — he is bound. You blind men: which is greater, the gift, or the altar that makes the gift sacred? So whoever swears by the altar swears by it and by everything on it; whoever swears by the temple hall swears by it and by the one who lives in it; and whoever swears by the sky swears by God's throne and by the one seated on it.\n\n'How terrible for you, scholars and Pharisees — you actors! You give a tenth of your mint and dill and cumin, and you have dropped the weightier matters of the law: justice, mercy, and trust. These you should have done — without dropping the others. Blind guides! You strain the gnat out of your cup, and gulp down the camel.\n\n'How terrible for you, scholars and Pharisees — you actors! You clean the outside of the cup and the dish, but inside they are full of what you grabbed from others and could not restrain yourselves from. Blind Pharisee: first clean the inside of the cup, so that its outside becomes clean too.\n\n'How terrible for you, scholars and Pharisees — you actors! You are like whitewashed tombs: beautiful on the outside, but inside full of dead men's bones and every kind of filth. You are the same — on the outside you look fair to people, but inside you are stuffed with acting and lawlessness.'"
+        },
+        {
+          "page": 53,
+          "greek": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι ὑποκριταί, ὅτι οἰκοδομεῖτε τοὺς τάφους τῶν προφητῶν καὶ κοσμεῖτε τὰ μνημεῖα τῶν δικαίων, καὶ λέγετε· Εἰ ἤμεθα ἐν ταῖς ἡμέραις τῶν πατέρων ἡμῶν, οὐκ ἂν ἤμεθα αὐτῶν κοινωνοὶ ἐν τῷ αἵματι τῶν προφητῶν· ὥστε μαρτυρεῖτε ἑαυτοῖς ὅτι υἱοί ἐστε τῶν φονευσάντων τοὺς προφήτας. καὶ ὑμεῖς πληρώσατε τὸ μέτρον τῶν πατέρων ὑμῶν. ὄφεις γεννήματα ἐχιδνῶν, πῶς φύγητε ἀπὸ τῆς κρίσεως τῆς γεέννης; διὰ τοῦτο ἰδοὺ ἐγὼ ἀποστέλλω πρὸς ὑμᾶς προφήτας καὶ σοφοὺς καὶ γραμματεῖς· ἐξ αὐτῶν ἀποκτενεῖτε καὶ σταυρώσετε, καὶ ἐξ αὐτῶν μαστιγώσετε ἐν ταῖς συναγωγαῖς ὑμῶν καὶ διώξετε ἀπὸ πόλεως εἰς πόλιν· ὅπως ἔλθῃ ἐφʼ ὑμᾶς πᾶν αἷμα δίκαιον ἐκχυννόμενον ἐπὶ τῆς γῆς ἀπὸ τοῦ αἵματος Ἅβελ τοῦ δικαίου ἕως τοῦ αἵματος Ζαχαρίου υἱοῦ Βαραχίου, ὃν ἐφονεύσατε μεταξὺ τοῦ ναοῦ καὶ τοῦ θυσιαστηρίου. ἀμὴν λέγω ὑμῖν, ἥξει ταῦτα πάντα ἐπὶ τὴν γενεὰν ταύτην. Ἰερουσαλὴμ Ἰερουσαλήμ, ἡ ἀποκτείνουσα τοὺς προφήτας καὶ λιθοβολοῦσα τοὺς ἀπεσταλμένους πρὸς αὐτήν— ποσάκις ἠθέλησα ἐπισυναγαγεῖν τὰ τέκνα σου, ὃν τρόπον ὄρνις ἐπισυνάγει τὰ νοσσία αὐτῆς ὑπὸ τὰς πτέρυγας, καὶ οὐκ ἠθελήσατε; ἰδοὺ ἀφίεται ὑμῖν ὁ οἶκος ὑμῶν ἔρημος. λέγω γὰρ ὑμῖν, οὐ μή με ἴδητε ἀπʼ ἄρτι ἕως ἂν εἴπητε· Εὐλογημένος ὁ ἐρχόμενος ἐν ὀνόματι κυρίου.",
+          "english": "'How terrible for you, scholars and Pharisees — you actors! You build the tombs of the spokesmen and decorate the monuments of the fair, and you say: If we had lived in the days of our fathers, we would not have shared with them in the blood of the spokesmen. So you testify against yourselves — that you are the sons of the men who murdered the spokesmen. Then finish what your fathers started! You snakes, you children of poisonous snakes — how will you escape the trial of the burning valley? That is why — look — I am sending you spokesmen and wise men and scholars. Some of them you will kill and nail up on stakes; some of them you will whip in your meeting halls and hound from town to town — so that all the fair blood poured out on the earth comes down on you, from the blood of fair Abel to the blood of Zechariah son of Barachiah, whom you murdered between the temple hall and the altar. I tell you truly: all of this will land on this generation.\n\n'Jerusalem, Jerusalem — the city that kills the spokesmen and stones the ones sent to her! How many times I wanted to gather your children together, the way a hen gathers her chicks under her wings — and you refused. Look: your house is left to you, deserted. Because I tell you, you will not see me from now on, until you say: Praise the one who comes in the Master's name.'"
         }
       ]
     }
