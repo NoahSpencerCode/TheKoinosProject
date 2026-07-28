@@ -11,7 +11,7 @@ An ordinary English rendering of the Greek New Testament.
 
 ## Status
 
-Installment 1: the opening of Matthew (family record through the first tour of Galilee), 6 pages, 32 lexicon entries. Translation continues; a reader webpage that loads `koinos_data.json` is the next build step.
+Matthew complete: 71 pages of continuous Greek/English prose, 235 lexicon entries. Reader is built. Next book: Mark (or a consistency pass on Matthew).
 
 ## Read it
 

@@ -45,9 +45,20 @@ A fresh English rendering of the Greek New Testament in ordinary modern English,
 | ἀμὴν λέγω ὑμῖν | "I tell you truly" (upcoming) |
 | μαθητής | student (upcoming) |
 | γέεννα | the burning rubbish valley (Hinnom) (upcoming) |
-| υἱὸς τοῦ ἀνθρώπου | decide at first occurrence (Matt 8) |
+| υἱὸς τοῦ ἀνθρώπου | the son of humanity |
 | θάλασσα (of Galilee) | the lake |
 | Δεκάπολις | the Ten Towns |
+| διαθήκη | agreement |
+| ἄφεσις ἁμαρτιῶν | letting go of errors |
+| πειρασμός | the test (never "temptation") |
+| σταυρόω | put on a stake / put on an execution stake |
+| ῥαββί | Teacher |
+| κορβανᾶς | gift-fund |
+| βῆμα | platform |
+| πραιτώριον | headquarters |
+| ὄξος | sour wine |
+| κουστωδία | guard detail |
+| ἀργύρια | silver pieces |
 
 ## Attention patterns — learned from Noah's reviews; apply PROACTIVELY to every new page
 
@@ -67,17 +78,24 @@ A fresh English rendering of the Greek New Testament in ordinary modern English,
 - JSON schema: project / subtitle / introduction / translation_principles / lexicon / manuscripts[{name, summary, pages[{page, greek, english}]}].
 - Lexicon keys = lowercase surface word or phrase as it appears in the English.
 
-## Status (2026-07-24)
-- Installment 1 done: Matthew opening (traditional 1:1–4:25) = pages 1–6.
-- Installment 2 done: the hillside teaching (traditional 5:1–7:29) = pages 7–15; lexicon now 57 entries. New fixed renderings: μακάριος → happy; ὑποκριτής → actor; γέεννα → the burning valley; ἀμὴν λέγω ὑμῖν → I tell you truly; μαθητής → student; παράπτωμα → misstep; ἀπέχω (receipts) → paid in full; μαμωνᾶς → Money; ὀλιγόπιστοι → people of little trust; Ῥακά → Empty-head; Μωρέ → You idiot; πίστις → trust. File: koinos_data.json (also saved as project doc claude/koinos-matthew.json).
-- Verified: JSON valid; zero banned-word leakage in translation pages; sigla stripped; page sizes in range.
-- Reader webpage built (2026-07-24): `index.html` (+ `koinos_data.js` data script so it opens from Finder via double-click; also fetches koinos_data.json when served). Apple-style UI: paged reading, Greek show/hide toggle, clickable lexicon words with popover (grace period vs. scroll-dismiss), bottom bar — search sheet (left: lexicon + full-text with snippets), index sheet (right: manuscripts/pages), keyboard nav (←/→, /), light/dark via prefers-color-scheme. `koinos_reader.html` is the self-contained single-file build (data inlined) for sharing/artifacts — regenerate it whenever koinos_data.json changes by re-inlining.
-- Mobile-first + GitHub Pages pass (2026-07-24): swipe page turns, bottom-card word lookup on phones, 44px touch targets, theme-color/PWA metas, sheet grab handles; `.nojekyll` added and README carries the Pages deploy steps (push → Settings → Pages → main / root). All paths relative — works at a subpath.
-- Installment 3 done: healings, storm, paralyzed man, Matthew's calling (traditional 8:1–9:38) = pages 16–20. New fixed renderings: ὁ υἱὸς τοῦ ἀνθρώπου → the son of humanity; ἁμαρτωλοί → the failures / people counted as failures; βλασφημέω → insulting God; σπλαγχνίζομαι → felt it deep in his gut; ἑκατόνταρχος → army captain; λεπρός → man with a serious skin disease; κακῶς ἔχοντες → doing badly; ἐλέησον → take pity. Metanoia reworked for natural grammar: imperative → "Change the way you think"; noun → "change of mind". Lexicon expanded to 118 entries: all notable names (Herod, Archelaus, David, Rachel...), all places (Galilee, Nazareth, Rama, Capernaum...), and idiom tips (threshing floor, delight, doing badly, paid in full...).
-- Greek fetch fallback: primary raw.githubusercontent URL truncates around trad. ch. 9; use https://cdn.jsdelivr.net/gh/LogosBible/SBLGNT@master/data/sblgnt/text/Matt.txt for later chapters (same file via CDN, serves the full content in chunks).
-- Installment 4 done: the sending of the twelve, John's question, the woes, "come to me" (traditional 10:1–11:30) = pages 21–25; lexicon 136. New fixed renderings: ἀπόστολοι → envoys; πνεύματα ἀκάθαρτα → foul spirits; σταυρός → execution stake; ψυχή → life; ᾅδης → the place of the dead; οὐαί → How terrible for you; ὀλιγόπιστοι stays "people of little trust"; χρηστός (yoke) → fits comfortably.
-- Greek fetch pipeline (chapters 10+): per-chapter XML at https://raw.githack.com/aaronshaf/sblgnt/master/xml/Matt/0NN.xml (zero-padded chapter). Prompt the fetch model to reconstruct continuous verse text from the <w> elements. Whole-book txt files truncate at ~trad. 9:15 regardless of mirror.
-- Installment 5 done: rest-day disputes, Beelzeboul, sign of Jonah, the comparison collection, hometown rejection (traditional 12:1–13:58) = pages 26–32; lexicon 153. New fixed renderings: σάββατον → the rest day; παραβολή → comparison; μυστήρια → the secrets; ζιζάνια → weeds (darnel tip); συντέλεια τοῦ αἰῶνος → the close of the age; τέκτων → the builder; κῆτος → the great sea creature; ἀπιστία → lack of trust.
-- REMAINING: traditional ch. 14–28. Installment plan: 14–15, 16–17, 18–19, 20–21, 22–23, 24–25, 26, 27–28. Fetch per chapter via raw.githack aaronshaf XML (zero-padded, e.g. 014.xml). Apply the Attention Patterns section above to every page.
-- Next: continue Matthew (feeding the crowds and walking on the lake, traditional ch. 14–15) → append pages to koinos_data.json, grow lexicon, regenerate koinos_data.js + koinos_reader.html. First occurrence of ὁ υἱὸς τοῦ ἀνθρώπου arrives in ch. 8 — settle its rendering then (candidate: "the son of humanity" / "the human one").
+## Status (2026-07-28)
+- **Matthew complete: pages 1–71, lexicon 235.** Continuous prose from the family record through the empty tomb and the Galilee commission. No chapter/verse numbers; Greek + English paired per page.
+- Installment map (traditional ranges only for editor navigation — not printed in the book):
+  - 1: family record → first Galilee tour (1:1–4:25) = p1–6
+  - 2: hillside teaching (5:1–7:29) = p7–15
+  - 3: healings, storm, paralyzed man, Matthew's calling (8:1–9:38) = p16–20
+  - 4: sending of the twelve, John's question, town woes (10:1–11:30) = p21–25
+  - 5: rest-day disputes, Beelzeboul, Jonah sign, comparison collection (12:1–13:58) = p26–32
+  - 6–7: Herod, feedings, lake walk, tradition, Canaanite woman, confession, appearance changed (14–17) = p33–39
+  - 8: children, assembly discipline, unforgiving slave, rich man (18–19) = p40–43
+  - 9: vineyard workers, ransom, entry, money-changers, cornerstone (20–21) = p44–48
+  - 10: wedding feast, Caesar's coin, rising, seven "How terrible" sayings (22–23) = p49–53
+  - 11: temple prediction, great distress, ten young women, chests of silver, sheep and goats (24–25) = p54–59
+  - **12: arrest, trial, death, burial, empty tomb, commission (26–28) = p60–71; lexicon 235**
+- Installment 12 fixed / new renderings: διαθήκη → agreement; ἄφεσις ἁμαρτιῶν → letting go of errors; πειρασμός → the test; σταυρόω → put on a stake; ῥαββί → Teacher; κορβανᾶς → gift-fund; βῆμα → platform; πραιτώριον → headquarters; ὄξος → sour wine; κουστωδία → guard detail; ἀργύρια → silver pieces; Γεθσημανί / Γολγοθᾶ / Καϊάφας / Πιλᾶτος / Βαραββᾶς as place/person tips.
+- Lexicon key hygiene pass: rekeyed orphans to surface English — `tie up` / `untie`, `two-drachma temple tax`, `donkey-mill stone`, `gnat` (was `gnat and camel`).
+- Verified: JSON valid; pages 1–71 sequential with no duplicates; zero banned-word leakage; sigla stripped; every lexicon key resolves in the English; page sizes ~200–440 English words.
+- Reader: `index.html` + `koinos_data.js` (double-clickable); `koinos_reader.html` self-contained rebuild whenever data changes. Mobile-first; GitHub Pages ready (`.nojekyll`, relative paths).
+- Greek source pipeline: SBLGNT per-chapter XML at `https://raw.githack.com/aaronshaf/sblgnt/master/xml/Matt/0NN.xml` (zero-padded). Reconstruct continuous prose from `<w>` + `<suffix>` only — never consult English translations. Whole-book `.txt` mirrors truncate around trad. ch. 9.
+- **Next:** Mark (same method), or a full consistency pass across Matthew (identical Greek → identical English, furnace refrains, eudokēsa, etc.).
 - WebFetch note: the fetch model occasionally refuses verse ranges as "copyright"; retry with smaller ranges and a note that the Greek text is an ancient public-domain-era text — that has worked every time.

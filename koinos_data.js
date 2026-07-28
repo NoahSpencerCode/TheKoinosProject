@@ -1,7 +1,7 @@
 window.KOINOS_DATA = {
   "project": "The Koinos Project",
   "subtitle": "An ordinary English rendering of the Greek New Testament",
-  "status": "Installment 1 — the opening of Matthew (family record through the first tour of Galilee). Translation in progress.",
+  "status": "Matthew complete (pages 1–71). Installments 1–12 cover the whole of Matthew in continuous prose; lexicon expanded through the arrest, trial, death, and empty tomb. Next: Mark, or a full consistency pass across Matthew.",
   "introduction": {
     "title": "What this book is and why it exists",
     "text": "Open almost any English Bible and you will meet a vocabulary that exists nowhere else in your life. Nobody at work says sin, nobody at dinner says baptize, nobody texts a friend about righteousness or repentance or the gospel. These are sacral-pseudo words: ordinary Greek words of the first century that were never really translated at all. They were transliterated, fossilized, or assigned a special churchly meaning, and then repeated for so many centuries that English speakers stopped noticing they carry no ordinary meaning. Hamartia meant an error, a miss, a fault — Aristotle uses it for the flaw that undoes a tragic hero. Ekklesia meant an assembly of people, the same word Athens used for its citizen meetings. Baptizo meant to dip or immerse — Polybius uses it for ships going under in a sea battle. Euangelion meant good news, the kind a runner brings from a battlefield. Christos meant a person smeared with oil, an anointed one. Kyrios meant a master, an owner, a sir. None of these were religious code words. They were the plain furniture of everyday speech.\n\nA word with no ordinary meaning is a word each reader must furnish privately. That is the quiet damage sacral-pseudo vocabulary does: because the words mean nothing in modern conversation, their meaning is supplied by imagination, by childhood associations, by the last sermon a reader heard. The meaning shifts from person to person and decade to decade. The text stops behaving like literature and starts behaving like theater — grand, echoing, and unaccountable, a fabled parody of the plain documents underneath. And because every group furnishes the empty words differently, the result is division: denominations built on conflicting privately-imagined meanings of words that once meant nothing more mysterious than error, assembly, dip, and good news.\n\nThe Koinos Project takes the opposite path. Koinos is the Greek word for common, shared, ordinary — the very word scholars use for the everyday Greek of this period, Koine. These documents were ordinary literature in their own time, written in the common speech of shopkeepers, soldiers, and letter-writers. This translation restores that register. Every word is rendered the way translators render non-religious Greek texts of the same era — histories, private letters, medical manuals, contracts. Where tradition writes baptize, this book writes immerse. Where tradition writes sin, this book writes error or failure. Where tradition writes repent, this book writes change your thinking. Where tradition writes Christ, this book writes the anointed. No traditional English rendering was consulted or followed; the English here answers only to the Greek and to ordinary modern usage.\n\nThe formatting also follows the originals. The early manuscripts have no chapter numbers, no verse numbers, no headings — those were added between the 13th and 16th centuries. And verse numbers do quiet damage of their own. They invite readers, consciously or unconsciously, to lift single sentences out of their surroundings and pass them around with no context at all — a numbered line feels quotable in a way a paragraph never does. Worse, the numbering plants the false idea that each verse is its own complete thought, a free-standing statement that needs nothing around it to be understood, when in reality most verses are torn mid-sentence from a running argument. A letter chopped into numbered fragments stops reading like a letter and starts functioning like a deck of slogan cards, each one ready to be dealt out alone to mean whatever the dealer needs. So this book has none. The text runs as continuous prose, divided into natural paragraphs and paginated like an ordinary printed book, with the Greek and the new English paired on every page. Each document opens with a short note on when it was likely composed and where its earliest surviving copies were found. The Greek text printed here follows a modern critical edition assembled from the earliest surviving manuscripts, chiefly the great fourth-century codices Sinaiticus and Vaticanus and the earlier papyri. Click any highlighted word in the English to see the Greek behind it, its ordinary range of meaning, and a sentence showing the same word at work in non-religious Greek writing.\n\nNothing has been added and nothing softened. The aim is simply this: that reading these pages should feel the way reading them felt in the first century — like reading something written by ordinary people, in ordinary words, about things they thought mattered."
@@ -61,7 +61,19 @@ window.KOINOS_DATA = {
       "συναγωγή": "meeting hall",
       "δαιμονιζόμενοι": "plagued by spirits",
       "μάγοι": "astrologers",
-      "ἔρημος": "the open country"
+      "ἔρημος": "the open country",
+      "σταυρός / σταυρόω": "execution stake / put on a stake",
+      "ὁ υἱὸς τοῦ ἀνθρώπου": "the son of humanity",
+      "διαθήκη": "agreement",
+      "ἄφεσις ἁμαρτιῶν": "letting go of errors",
+      "πειρασμός": "test",
+      "βλασφημέω": "insult God",
+      "σάββατον": "the rest day",
+      "παραβολή": "comparison",
+      "ἀπόστολοι": "envoys",
+      "μαθητής": "student",
+      "πίστις": "trust",
+      "οὐαί": "How terrible for you"
     }
   },
   "lexicon": {
@@ -1507,15 +1519,6 @@ window.KOINOS_DATA = {
       ],
       "secular_example": "Keys were the badge of a household steward — the servant trusted to open and close the master's house. Handing over the keys meant handing over day-to-day authority."
     },
-    "tie up and untie": {
-      "greek": "δέω / λύω (deō / lyō)",
-      "variants": [
-        "tie up and untie",
-        "forbid and permit",
-        "bind and release"
-      ],
-      "secular_example": "Tying and untying was teachers' idiom for ruling on conduct: a thing 'tied' was forbidden, a thing 'untied' allowed — a schoolroom expression, not a cosmic one."
-    },
     "appearance changed": {
       "greek": "μετεμορφώθη (metemorphōthē)",
       "variants": [
@@ -1534,14 +1537,6 @@ window.KOINOS_DATA = {
       ],
       "secular_example": "A skēnē is a tent or field-hut — the harvest-season shelter farmers threw up in a day; the same word gave Greek theater its 'scene' building."
     },
-    "two-drachma tax": {
-      "greek": "δίδραχμον (didrachmon)",
-      "variants": [
-        "the two-drachma temple tax",
-        "annual half-shekel dues"
-      ],
-      "secular_example": "Every adult Judean male owed two drachmas a year — about two days' wages — for the upkeep of the Jerusalem temple; collectors made their rounds even in Galilee."
-    },
     "stater": {
       "greek": "στατήρ (statēr)",
       "variants": [
@@ -1550,14 +1545,6 @@ window.KOINOS_DATA = {
         "double payment"
       ],
       "secular_example": "A statēr was worth four drachmas — exactly the two-drachma tax for two people, which is the quiet arithmetic of the fish story."
-    },
-    "millstone": {
-      "greek": "μύλος ὀνικός (mylos onikos)",
-      "variants": [
-        "donkey-mill stone",
-        "the big upper millstone"
-      ],
-      "secular_example": "Not the hand-mill a woman turned at home but the great stone turned by a donkey at the village mill — the heaviest everyday object a listener could picture."
     },
     "eunuchs": {
       "greek": "εὐνοῦχοι (eunouchoi)",
@@ -1760,14 +1747,6 @@ window.KOINOS_DATA = {
       ],
       "secular_example": "Tombs were whitewashed with lime before festivals precisely so pilgrims could see and avoid them — grave-contact made a person ritually unfit. Bright white on the outside advertised death inside."
     },
-    "gnat and camel": {
-      "greek": "κώνωψ / κάμηλος (kōnōps / kamēlos)",
-      "variants": [
-        "the gnat and the camel",
-        "smallest and largest impure animals"
-      ],
-      "secular_example": "Wine was strained through cloth to catch the gnat — the smallest thing the law counted impure; the camel was the largest. In Aramaic the two words even rhyme (galma / gamla): a street-level joke about scale."
-    },
     "zechariah": {
       "greek": "Ζαχαρίας (Zacharias)",
       "variants": [
@@ -1867,6 +1846,265 @@ window.KOINOS_DATA = {
         "corrective penalty of the age"
       ],
       "secular_example": "Kolasis began as a gardener's word — pruning back — and became the common word for punishment, often the correcting kind, which Greek writers distinguish from vengeance (timōria). With aiōnios it is the penalty belonging to the coming age — the traditional 'everlasting punishment' loads both words beyond their range."
+    },
+    "tie up": {
+      "greek": "δέω (deō)",
+      "variants": [
+        "tie up",
+        "bind",
+        "forbid by ruling"
+      ],
+      "secular_example": "Tying and untying was teachers' idiom for ruling on conduct: a thing 'tied' was forbidden, a thing 'untied' allowed — a schoolroom expression, not a cosmic one."
+    },
+    "untie": {
+      "greek": "λύω (lyō)",
+      "variants": [
+        "untie",
+        "release",
+        "permit by ruling"
+      ],
+      "secular_example": "The paired opposite of tying: to untie a ruling was to allow the practice. The same verb simply undoes a knot on a donkey or a bag."
+    },
+    "two-drachma temple tax": {
+      "greek": "δίδραχμον (didrachmon)",
+      "variants": [
+        "the two-drachma temple tax",
+        "annual half-shekel dues"
+      ],
+      "secular_example": "Every adult Judean male owed two drachmas a year — about two days' wages — for the upkeep of the Jerusalem temple; collectors made their rounds even in Galilee."
+    },
+    "donkey-mill stone": {
+      "greek": "μύλος ὀνικός (mylos onikos)",
+      "variants": [
+        "donkey-mill stone",
+        "the big upper millstone"
+      ],
+      "secular_example": "Not the hand-mill a woman turned at home but the great stone turned by a donkey at the village mill — the heaviest everyday object a listener could picture."
+    },
+    "gnat": {
+      "greek": "κώνωψ (kōnōps)",
+      "variants": [
+        "gnat",
+        "tiny flying insect"
+      ],
+      "secular_example": "Wine was strained through cloth to catch the gnat — the smallest thing the purity rules counted as impure — while the camel was the largest. In Aramaic the two words even rhyme: a street-level joke about scale."
+    },
+    "passover": {
+      "greek": "πάσχα (pascha, from Aramaic/Hebrew)",
+      "variants": [
+        "Passover",
+        "the Passover meal",
+        "the spring festival"
+      ],
+      "secular_example": "The annual Judean festival marking the old story of leaving Egypt; households ate a roasted lamb with unleavened bread. Greek writers simply borrow the local name."
+    },
+    "caiaphas": {
+      "greek": "Καϊάφας (Kaiaphas)",
+      "variants": [
+        "Caiaphas",
+        "the high priest of the period"
+      ],
+      "secular_example": "Joseph Caiaphas held the high priesthood under Roman prefects from about 18 to 36 CE; his name appears on an inscribed ossuary found near Jerusalem."
+    },
+    "judas iscariot": {
+      "greek": "Ἰούδας Ἰσκαριώτης (Ioudas Iskariōtēs)",
+      "variants": [
+        "Judas Iscariot",
+        "Judas the man of Kerioth"
+      ],
+      "secular_example": "Iskariōtēs likely marks a place of origin (a man from Kerioth) the way other surnames mark hometowns; one of the twelve, later the one who hands Jesus over."
+    },
+    "silver pieces": {
+      "greek": "ἀργύρια (argyria)",
+      "variants": [
+        "silver pieces",
+        "silver coins",
+        "pieces of silver"
+      ],
+      "secular_example": "Argyrion is simply a silver coin or a sum in silver; thirty of them is a concrete price, the kind of figure that shows up on receipts and slave sales."
+    },
+    "unleavened bread": {
+      "greek": "ἄζυμα (azyma)",
+      "variants": [
+        "Unleavened Bread",
+        "the flatbread days",
+        "the festival without yeast"
+      ],
+      "secular_example": "The week-long spring festival when Judean households cleared yeast from the house and ate only flat bread — a calendar name, not a metaphor."
+    },
+    "agreement": {
+      "greek": "διαθήκη (diathēkē)",
+      "variants": [
+        "agreement",
+        "binding arrangement",
+        "last will"
+      ],
+      "secular_example": "In ordinary Greek a diathēkē is a will or a formal binding arrangement between parties — the word on legal documents, not a special religious coinage."
+    },
+    "letting go of errors": {
+      "greek": "ἄφεσις ἁμαρτιῶν (aphesis hamartiōn)",
+      "variants": [
+        "letting go of errors",
+        "release from failures",
+        "cancellation of misses"
+      ],
+      "secular_example": "Aphesis is the ordinary word for release — of a prisoner, of a debt, of a ship from harbor. Paired with hamartia (miss, failure) it is release from the failures that bind a person."
+    },
+    "rooster": {
+      "greek": "ἀλέκτωρ (alektōr)",
+      "variants": [
+        "rooster",
+        "cock",
+        "the bird that crows at dawn"
+      ],
+      "secular_example": "The common farmyard rooster, whose crow marked the end of the night watches in a world without clocks."
+    },
+    "gethsemane": {
+      "greek": "Γεθσημανί (Gethsēmani, from Aramaic)",
+      "variants": [
+        "Gethsemane",
+        "oil-press place"
+      ],
+      "secular_example": "An olive-oil press (gat shemanim) on the slope of the Mount of Olives — a working place name, not a temple title."
+    },
+    "the test": {
+      "greek": "πειρασμός (peirasmos)",
+      "variants": [
+        "the test",
+        "a trial of resolve",
+        "being put to the proof"
+      ],
+      "secular_example": "Peirasmos is a test or proving — the way metal is tested by fire or a person by hardship. Greek has no separate special word here for a uniquely religious trial."
+    },
+    "legions": {
+      "greek": "λεγεών (legeōn, Latin loanword)",
+      "variants": [
+        "legions",
+        "Roman army units",
+        "divisions of thousands"
+      ],
+      "secular_example": "A Roman legion was a full army division of several thousand soldiers — the largest military unit a first-century listener could name."
+    },
+    "pilate": {
+      "greek": "Πιλᾶτος (Pilatos)",
+      "variants": [
+        "Pilate",
+        "the Roman governor"
+      ],
+      "secular_example": "Pontius Pilate, prefect of Judea under Tiberius (about 26–36 CE). A damaged inscription from Caesarea confirms his title as prefect."
+    },
+    "potter's field": {
+      "greek": "ἀγρὸς τοῦ κεραμέως (agros tou kerameōs)",
+      "variants": [
+        "Potter's Field",
+        "the potter's plot",
+        "burial ground for strangers"
+      ],
+      "secular_example": "A field belonging to a potter — clay ground of little farming value, later remembered as a burial place for foreigners who died in the city."
+    },
+    "barabbas": {
+      "greek": "Βαραββᾶς (Barabbas, from Aramaic Bar-Abba)",
+      "variants": [
+        "Barabbas",
+        "son of Abba"
+      ],
+      "secular_example": "An Aramaic patronymic, 'son of Abba' (father). A well-known prisoner held at festival time."
+    },
+    "platform": {
+      "greek": "βῆμα (bēma)",
+      "variants": [
+        "platform",
+        "judgment seat",
+        "raised tribunal"
+      ],
+      "secular_example": "The bēma is the raised platform a magistrate sat on to hear cases and give rulings — the ordinary furniture of a Roman court day."
+    },
+    "headquarters": {
+      "greek": "πραιτώριον (praitōrion, from Latin praetorium)",
+      "variants": [
+        "headquarters",
+        "the governor's residence",
+        "praetorium"
+      ],
+      "secular_example": "The praetorium was the official residence and headquarters of a Roman governor — part house, part command post."
+    },
+    "golgotha": {
+      "greek": "Γολγοθᾶ (Golgotha, from Aramaic)",
+      "variants": [
+        "Golgotha",
+        "Place of the Skull"
+      ],
+      "secular_example": "An Aramaic place-name meaning skull — the execution ground outside the city wall, rendered into Greek for readers who did not speak Aramaic."
+    },
+    "sour wine": {
+      "greek": "ὄξος (oxos)",
+      "variants": [
+        "sour wine",
+        "posca",
+        "cheap vinegar-wine"
+      ],
+      "secular_example": "Oxos is the sharp, watered vinegar-wine that soldiers and laborers drank as a daily ration — not fine table wine."
+    },
+    "curtain of the temple hall": {
+      "greek": "καταπέτασμα τοῦ ναοῦ (katapetasma tou naou)",
+      "variants": [
+        "curtain of the temple hall",
+        "the inner veil",
+        "hanging before the inner room"
+      ],
+      "secular_example": "A heavy hanging that screened the innermost room of the Jerusalem temple hall; tearing it top to bottom is a concrete architectural image."
+    },
+    "mary the magdalene": {
+      "greek": "Μαρία ἡ Μαγδαληνή (Maria hē Magdalēnē)",
+      "variants": [
+        "Mary the Magdalene",
+        "Mary from Magdala"
+      ],
+      "secular_example": "A woman identified by her town, Magdala on the lake of Galilee — the ordinary way of distinguishing one Mary from another."
+    },
+    "arimathea": {
+      "greek": "Ἁριμαθαία (Harimathaia)",
+      "variants": [
+        "Arimathea",
+        "a Judean town"
+      ],
+      "secular_example": "A town in the Judean hill country; Joseph of Arimathea is identified by his hometown the way others are."
+    },
+    "preparation day": {
+      "greek": "παρασκευή (paraskeuē)",
+      "variants": [
+        "Preparation Day",
+        "the day of getting ready",
+        "Friday before the rest day"
+      ],
+      "secular_example": "The weekday of preparing food and arrangements before the rest day, when work stopped — the ordinary name for that day of the week."
+    },
+    "guard detail": {
+      "greek": "κουστωδία (koustōdia, from Latin custodia)",
+      "variants": [
+        "guard detail",
+        "watch squad",
+        "custody unit"
+      ],
+      "secular_example": "A Latin loanword for a detail of guards assigned to watch a place or a prisoner — military and civic paperwork language."
+    },
+    "alabaster jar": {
+      "greek": "ἀλάβαστρον (alabastron)",
+      "variants": [
+        "alabaster jar",
+        "perfume flask",
+        "sealed scent bottle"
+      ],
+      "secular_example": "A small flask of alabaster stone used for costly scented oil; once opened, the contents were meant to be used, not resealed."
+    },
+    "gift-fund": {
+      "greek": "κορβανᾶς (korbanas, from Hebrew qorbān)",
+      "variants": [
+        "gift-fund",
+        "temple treasury",
+        "dedicated offerings chest"
+      ],
+      "secular_example": "Korban is a gift dedicated to the temple; the korbanas is the treasury that held those dedicated monies, which could not be spent on ordinary costs."
     }
   },
   "manuscripts": [
@@ -2168,6 +2406,66 @@ window.KOINOS_DATA = {
           "page": 59,
           "greek": "Ὅταν δὲ ἔλθῃ ὁ υἱὸς τοῦ ἀνθρώπου ἐν τῇ δόξῃ αὐτοῦ καὶ πάντες οἱ ἄγγελοι μετʼ αὐτοῦ, τότε καθίσει ἐπὶ θρόνου δόξης αὐτοῦ· καὶ συναχθήσονται ἔμπροσθεν αὐτοῦ πάντα τὰ ἔθνη, καὶ ἀφορίσει αὐτοὺς ἀπʼ ἀλλήλων, ὥσπερ ὁ ποιμὴν ἀφορίζει τὰ πρόβατα ἀπὸ τῶν ἐρίφων, καὶ στήσει τὰ μὲν πρόβατα ἐκ δεξιῶν αὐτοῦ τὰ δὲ ἐρίφια ἐξ εὐωνύμων. τότε ἐρεῖ ὁ βασιλεὺς τοῖς ἐκ δεξιῶν αὐτοῦ· Δεῦτε, οἱ εὐλογημένοι τοῦ πατρός μου, κληρονομήσατε τὴν ἡτοιμασμένην ὑμῖν βασιλείαν ἀπὸ καταβολῆς κόσμου. ἐπείνασα γὰρ καὶ ἐδώκατέ μοι φαγεῖν, ἐδίψησα καὶ ἐποτίσατέ με, ξένος ἤμην καὶ συνηγάγετέ με, γυμνὸς καὶ περιεβάλετέ με, ἠσθένησα καὶ ἐπεσκέψασθέ με, ἐν φυλακῇ ἤμην καὶ ἤλθατε πρός με. τότε ἀποκριθήσονται αὐτῷ οἱ δίκαιοι λέγοντες· Κύριε, πότε σε εἴδομεν πεινῶντα καὶ ἐθρέψαμεν, ἢ διψῶντα καὶ ἐποτίσαμεν; πότε δέ σε εἴδομεν ξένον καὶ συνηγάγομεν, ἢ γυμνὸν καὶ περιεβάλομεν; πότε δέ σε εἴδομεν ἀσθενοῦντα ἢ ἐν φυλακῇ καὶ ἤλθομεν πρός σε; καὶ ἀποκριθεὶς ὁ βασιλεὺς ἐρεῖ αὐτοῖς· Ἀμὴν λέγω ὑμῖν, ἐφʼ ὅσον ἐποιήσατε ἑνὶ τούτων τῶν ἀδελφῶν μου τῶν ἐλαχίστων, ἐμοὶ ἐποιήσατε. τότε ἐρεῖ καὶ τοῖς ἐξ εὐωνύμων· Πορεύεσθε ἀπʼ ἐμοῦ οἱ κατηραμένοι εἰς τὸ πῦρ τὸ αἰώνιον τὸ ἡτοιμασμένον τῷ διαβόλῳ καὶ τοῖς ἀγγέλοις αὐτοῦ. ἐπείνασα γὰρ καὶ οὐκ ἐδώκατέ μοι φαγεῖν, ἐδίψησα καὶ οὐκ ἐποτίσατέ με, ξένος ἤμην καὶ οὐ συνηγάγετέ με, γυμνὸς καὶ οὐ περιεβάλετέ με, ἀσθενὴς καὶ ἐν φυλακῇ καὶ οὐκ ἐπεσκέψασθέ με. τότε ἀποκριθήσονται καὶ αὐτοὶ λέγοντες· Κύριε, πότε σε εἴδομεν πεινῶντα ἢ διψῶντα ἢ ξένον ἢ γυμνὸν ἢ ἀσθενῆ ἢ ἐν φυλακῇ καὶ οὐ διηκονήσαμέν σοι; τότε ἀποκριθήσεται αὐτοῖς λέγων· Ἀμὴν λέγω ὑμῖν, ἐφʼ ὅσον οὐκ ἐποιήσατε ἑνὶ τούτων τῶν ἐλαχίστων, οὐδὲ ἐμοὶ ἐποιήσατε. καὶ ἀπελεύσονται οὗτοι εἰς κόλασιν αἰώνιον, οἱ δὲ δίκαιοι εἰς ζωὴν αἰώνιον.",
           "english": "'When the son of humanity comes in his splendor, and all the messengers with him, he will sit on his throne of splendor, and all the nations will be gathered in front of him. And he will separate people from one another the way a shepherd separates the sheep from the goats: he will stand the sheep at his right and the goats at his left. Then the king will say to those at his right: Come, you whom my father has spoken well of — inherit the kingdom prepared for you since the founding of the world. Because I was hungry, and you gave me something to eat. I was thirsty, and you gave me a drink. I was a stranger, and you took me in. I was naked, and you put clothes on me. I was sick, and you came to look after me. I was in prison, and you came to me. Then the fair will answer him: Master, when did we see you hungry and feed you, or thirsty and give you a drink? When did we see you a stranger and take you in, or naked and clothe you? When did we see you sick, or in prison, and come to you? And the king will answer them: I tell you truly — whatever you did for one of the least of these brothers of mine, you did for me.\n\n'Then he will say to those at his left: Get away from me, you who are under the curse, into the fire of the coming age, prepared for the slanderer and his messengers. Because I was hungry, and you gave me nothing to eat. I was thirsty, and you gave me nothing to drink. I was a stranger, and you did not take me in; naked, and you did not clothe me; sick, and in prison, and you did not look after me. Then they too will answer: Master, when did we see you hungry or thirsty or a stranger or naked or sick or in prison, and not take care of you? And he will answer them: I tell you truly — whatever you did not do for one of the least of these, you did not do for me. And these will go away into the punishment of the coming age — and the fair into the life of the coming age.'"
+        },
+        {
+          "page": 60,
+          "greek": "Καὶ ἐγένετο ὅτε ἐτέλεσεν ὁ Ἰησοῦς πάντας τοὺς λόγους τούτους, εἶπεν τοῖς μαθηταῖς αὐτοῦ· Οἴδατε ὅτι μετὰ δύο ἡμέρας τὸ πάσχα γίνεται, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς τὸ σταυρωθῆναι. Τότε συνήχθησαν οἱ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι τοῦ λαοῦ εἰς τὴν αὐλὴν τοῦ ἀρχιερέως τοῦ λεγομένου Καϊάφα, καὶ συνεβουλεύσαντο ἵνα τὸν Ἰησοῦν δόλῳ κρατήσωσιν καὶ ἀποκτείνωσιν· ἔλεγον δέ· Μὴ ἐν τῇ ἑορτῇ, ἵνα μὴ θόρυβος γένηται ἐν τῷ λαῷ. Τοῦ δὲ Ἰησοῦ γενομένου ἐν Βηθανίᾳ ἐν οἰκίᾳ Σίμωνος τοῦ λεπροῦ, προσῆλθεν αὐτῷ γυνὴ ἔχουσα ἀλάβαστρον μύρου βαρυτίμου καὶ κατέχεεν ἐπὶ τῆς κεφαλῆς αὐτοῦ ἀνακειμένου. ἰδόντες δὲ οἱ μαθηταὶ ἠγανάκτησαν λέγοντες· Εἰς τί ἡ ἀπώλεια αὕτη; ἐδύνατο γὰρ τοῦτο πραθῆναι πολλοῦ καὶ δοθῆναι πτωχοῖς. γνοὺς δὲ ὁ Ἰησοῦς εἶπεν αὐτοῖς· Τί κόπους παρέχετε τῇ γυναικί; ἔργον γὰρ καλὸν ἠργάσατο εἰς ἐμέ· πάντοτε γὰρ τοὺς πτωχοὺς ἔχετε μεθ’ ἑαυτῶν, ἐμὲ δὲ οὐ πάντοτε ἔχετε· βαλοῦσα γὰρ αὕτη τὸ μύρον τοῦτο ἐπὶ τοῦ σώματός μου πρὸς τὸ ἐνταφιάσαι με ἐποίησεν. ἀμὴν λέγω ὑμῖν, ὅπου ἐὰν κηρυχθῇ τὸ εὐαγγέλιον τοῦτο ἐν ὅλῳ τῷ κόσμῳ, λαληθήσεται καὶ ὃ ἐποίησεν αὕτη εἰς μνημόσυνον αὐτῆς. Τότε πορευθεὶς εἷς τῶν δώδεκα, ὁ λεγόμενος Ἰούδας Ἰσκαριώτης, πρὸς τοὺς ἀρχιερεῖς εἶπεν· Τί θέλετέ μοι δοῦναι κἀγὼ ὑμῖν παραδώσω αὐτόν; οἱ δὲ ἔστησαν αὐτῷ τριάκοντα ἀργύρια. καὶ ἀπὸ τότε ἐζήτει εὐκαιρίαν ἵνα αὐτὸν παραδῷ.",
+          "english": "When Jesus had finished all these sayings, he said to his students: 'You know that after two days the Passover comes, and the son of humanity is handed over to be put on an execution stake.' Then the chief priests and the elders of the people gathered in the courtyard of the high priest called Caiaphas, and they plotted to seize Jesus by a trick and kill him. But they said: 'Not during the festival, or there will be an uproar among the people.'\n\nWhile Jesus was in Bethany, in the house of Simon who had had a serious skin disease, a woman came up to him with an alabaster jar of very costly perfume and poured it on his head as he reclined at table. Seeing this, the students were angry and said: 'What is the point of this waste? This could have been sold for a high price and given to the poor.' Knowing it, Jesus said to them: 'Why are you giving the woman trouble? She has done a fine thing for me. You always have the poor with you, but you do not always have me. When she poured this perfume on my body, she did it to prepare me for burial. I tell you truly: wherever this good news is announced in the whole world, what she has done will also be told, in memory of her.'\n\nThen one of the twelve, the one called Judas Iscariot, went to the chief priests and said: 'What are you willing to give me, and I will hand him over to you?' They weighed out thirty silver pieces for him. And from then on he looked for a good chance to hand him over."
+        },
+        {
+          "page": 61,
+          "greek": "Τῇ δὲ πρώτῃ τῶν ἀζύμων προσῆλθον οἱ μαθηταὶ τῷ Ἰησοῦ λέγοντες· Ποῦ θέλεις ἑτοιμάσωμέν σοι φαγεῖν τὸ πάσχα; ὁ δὲ εἶπεν· Ὑπάγετε εἰς τὴν πόλιν πρὸς τὸν δεῖνα καὶ εἴπατε αὐτῷ· Ὁ διδάσκαλος λέγει· Ὁ καιρός μου ἐγγύς ἐστιν· πρὸς σὲ ποιῶ τὸ πάσχα μετὰ τῶν μαθητῶν μου. καὶ ἐποίησαν οἱ μαθηταὶ ὡς συνέταξεν αὐτοῖς ὁ Ἰησοῦς, καὶ ἡτοίμασαν τὸ πάσχα. Ὀψίας δὲ γενομένης ἀνέκειτο μετὰ τῶν δώδεκα μαθητῶν καὶ ἐσθιόντων αὐτῶν εἶπεν· Ἀμὴν λέγω ὑμῖν ὅτι εἷς ἐξ ὑμῶν παραδώσει με. καὶ λυπούμενοι σφόδρα ἤρξαντο λέγειν αὐτῷ εἷς ἕκαστος· Μήτι ἐγώ εἰμι, κύριε; ὁ δὲ ἀποκριθεὶς εἶπεν· Ὁ ἐμβάψας μετ’ ἐμοῦ τὴν χεῖρα ἐν τῷ τρυβλίῳ οὗτός με παραδώσει· ὁ μὲν υἱὸς τοῦ ἀνθρώπου ὑπάγει καθὼς γέγραπται περὶ αὐτοῦ, οὐαὶ δὲ τῷ ἀνθρώπῳ ἐκείνῳ δι’ οὗ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται· καλὸν ἦν αὐτῷ εἰ οὐκ ἐγεννήθη ὁ ἄνθρωπος ἐκεῖνος. ἀποκριθεὶς δὲ Ἰούδας ὁ παραδιδοὺς αὐτὸν εἶπεν· Μήτι ἐγώ εἰμι, ῥαββί; λέγει αὐτῷ· Σὺ εἶπας.",
+          "english": "On the first day of Unleavened Bread the students came to Jesus and said: 'Where do you want us to get things ready for you to eat the Passover?' He said: 'Go into the city to a certain man and tell him: The teacher says — My time is close. I am keeping the Passover at your house with my students.' And the students did as Jesus directed them, and they got the Passover ready.\n\nWhen evening came he reclined at table with the twelve students. And as they were eating he said: 'I tell you truly: one of you will hand me over.' Deeply distressed, they began to say to him one by one: 'Surely not I, Master?' He answered: 'The one who dipped his hand in the dish with me — that is the one who will hand me over. The son of humanity is going the way the writings say about him — but how terrible for that man through whom the son of humanity is handed over. It would have been better for that man if he had never been born.' Judas, the one handing him over, answered: 'Surely not I, Teacher?' Jesus said to him: 'You have said it.'"
+        },
+        {
+          "page": 62,
+          "greek": "Ἐσθιόντων δὲ αὐτῶν λαβὼν ὁ Ἰησοῦς ἄρτον καὶ εὐλογήσας ἔκλασεν καὶ δοὺς τοῖς μαθηταῖς εἶπεν· Λάβετε φάγετε, τοῦτό ἐστιν τὸ σῶμά μου. καὶ λαβὼν ποτήριον καὶ εὐχαριστήσας ἔδωκεν αὐτοῖς λέγων· Πίετε ἐξ αὐτοῦ πάντες, τοῦτο γάρ ἐστιν τὸ αἷμά μου τῆς διαθήκης τὸ περὶ πολλῶν ἐκχυννόμενον εἰς ἄφεσιν ἁμαρτιῶν· λέγω δὲ ὑμῖν, οὐ μὴ πίω ἀπ’ ἄρτι ἐκ τούτου τοῦ γενήματος τῆς ἀμπέλου ἕως τῆς ἡμέρας ἐκείνης ὅταν αὐτὸ πίνω μεθ’ ὑμῶν καινὸν ἐν τῇ βασιλείᾳ τοῦ πατρός μου. καὶ ὑμνήσαντες ἐξῆλθον εἰς τὸ Ὄρος τῶν Ἐλαιῶν. Τότε λέγει αὐτοῖς ὁ Ἰησοῦς· Πάντες ὑμεῖς σκανδαλισθήσεσθε ἐν ἐμοὶ ἐν τῇ νυκτὶ ταύτῃ, γέγραπται γάρ· Πατάξω τὸν ποιμένα, καὶ διασκορπισθήσονται τὰ πρόβατα τῆς ποίμνης· μετὰ δὲ τὸ ἐγερθῆναί με προάξω ὑμᾶς εἰς τὴν Γαλιλαίαν. ἀποκριθεὶς δὲ ὁ Πέτρος εἶπεν αὐτῷ· Εἰ πάντες σκανδαλισθήσονται ἐν σοί, ἐγὼ οὐδέποτε σκανδαλισθήσομαι. ἔφη αὐτῷ ὁ Ἰησοῦς· Ἀμὴν λέγω σοι ὅτι ἐν ταύτῃ τῇ νυκτὶ πρὶν ἀλέκτορα φωνῆσαι τρὶς ἀπαρνήσῃ με. λέγει αὐτῷ ὁ Πέτρος· Κἂν δέῃ με σὺν σοὶ ἀποθανεῖν, οὐ μή σε ἀπαρνήσομαι. ὁμοίως καὶ πάντες οἱ μαθηταὶ εἶπαν.",
+          "english": "As they were eating, Jesus took bread, gave a blessing, broke it, and gave it to the students, saying: 'Take, eat; this is my body.' And he took a cup, gave thanks, and gave it to them, saying: 'Drink from it, all of you. For this is my blood of the agreement, poured out for many for the letting go of errors. I tell you: from now on I will not drink of this product of the vine until that day when I drink it new with you in my father's kingdom.' And after singing a hymn, they went out to the Mount of Olives.\n\nThen Jesus said to them: 'All of you will trip over me tonight. For it is written: I will strike the shepherd, and the sheep of the flock will be scattered. But after I am raised, I will go ahead of you into Galilee.' Peter answered him: 'Even if everyone trips over you, I never will.' Jesus said to him: 'I tell you truly: this very night, before a rooster crows, you will disown me three times.' Peter said to him: 'Even if I have to die with you, I will never disown you.' And all the students said the same."
+        },
+        {
+          "page": 63,
+          "greek": "Τότε ἔρχεται μετ’ αὐτῶν ὁ Ἰησοῦς εἰς χωρίον λεγόμενον Γεθσημανὶ, καὶ λέγει τοῖς μαθηταῖς· Καθίσατε αὐτοῦ ἕως οὗ ἀπελθὼν ἐκεῖ προσεύξωμαι. καὶ παραλαβὼν τὸν Πέτρον καὶ τοὺς δύο υἱοὺς Ζεβεδαίου ἤρξατο λυπεῖσθαι καὶ ἀδημονεῖν. τότε λέγει αὐτοῖς· Περίλυπός ἐστιν ἡ ψυχή μου ἕως θανάτου· μείνατε ὧδε καὶ γρηγορεῖτε μετ’ ἐμοῦ. καὶ προελθὼν μικρὸν ἔπεσεν ἐπὶ πρόσωπον αὐτοῦ προσευχόμενος καὶ λέγων· Πάτερ μου, εἰ δυνατόν ἐστιν, παρελθάτω ἀπ’ ἐμοῦ τὸ ποτήριον τοῦτο· πλὴν οὐχ ὡς ἐγὼ θέλω ἀλλ’ ὡς σύ. καὶ ἔρχεται πρὸς τοὺς μαθητὰς καὶ εὑρίσκει αὐτοὺς καθεύδοντας, καὶ λέγει τῷ Πέτρῳ· Οὕτως οὐκ ἰσχύσατε μίαν ὥραν γρηγορῆσαι μετ’ ἐμοῦ; γρηγορεῖτε καὶ προσεύχεσθε, ἵνα μὴ εἰσέλθητε εἰς πειρασμόν· τὸ μὲν πνεῦμα πρόθυμον ἡ δὲ σὰρξ ἀσθενής. πάλιν ἐκ δευτέρου ἀπελθὼν προσηύξατο λέγων· Πάτερ μου, εἰ οὐ δύναται τοῦτο παρελθεῖν ἐὰν μὴ αὐτὸ πίω, γενηθήτω τὸ θέλημά σου. καὶ ἐλθὼν πάλιν εὗρεν αὐτοὺς καθεύδοντας, ἦσαν γὰρ αὐτῶν οἱ ὀφθαλμοὶ βεβαρημένοι. καὶ ἀφεὶς αὐτοὺς πάλιν ἀπελθὼν προσηύξατο ἐκ τρίτου τὸν αὐτὸν λόγον εἰπὼν πάλιν. τότε ἔρχεται πρὸς τοὺς μαθητὰς καὶ λέγει αὐτοῖς· Καθεύδετε τὸ λοιπὸν καὶ ἀναπαύεσθε· ἰδοὺ ἤγγικεν ἡ ὥρα καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς χεῖρας ἁμαρτωλῶν. ἐγείρεσθε ἄγωμεν· ἰδοὺ ἤγγικεν ὁ παραδιδούς με.",
+          "english": "Then Jesus came with them to a place called Gethsemane, and he said to the students: 'Sit here while I go over there and pray.' Taking Peter and the two sons of Zebedee with him, he began to be grieved and distressed. Then he said to them: 'My life is deeply grieved, to the point of death. Stay here and stay awake with me.' Going a little farther, he fell on his face, praying: 'My father, if it is possible, let this cup pass me by — yet not as I want, but as you want.' He came to the students and found them sleeping, and said to Peter: 'So you could not stay awake with me one hour? Stay awake and pray, so that you do not enter the test. The breath is eager, but the flesh is weak.'\n\nGoing away a second time, he prayed: 'My father, if this cannot pass unless I drink it, let what you want be done.' Coming again, he found them sleeping, for their eyes were heavy. Leaving them, he went away again and prayed a third time, saying the same words again. Then he came to the students and said to them: 'Are you still sleeping and resting? Look — the hour has come, and the son of humanity is being handed over into the hands of failures. Get up, let us go. Look — the one handing me over is close.'"
+        },
+        {
+          "page": 64,
+          "greek": "Καὶ ἔτι αὐτοῦ λαλοῦντος ἰδοὺ Ἰούδας εἷς τῶν δώδεκα ἦλθεν καὶ μετ’ αὐτοῦ ὄχλος πολὺς μετὰ μαχαιρῶν καὶ ξύλων ἀπὸ τῶν ἀρχιερέων καὶ πρεσβυτέρων τοῦ λαοῦ. ὁ δὲ παραδιδοὺς αὐτὸν ἔδωκεν αὐτοῖς σημεῖον λέγων· Ὃν ἂν φιλήσω αὐτός ἐστιν· κρατήσατε αὐτόν. καὶ εὐθέως προσελθὼν τῷ Ἰησοῦ εἶπεν· Χαῖρε, ῥαββί· καὶ κατεφίλησεν αὐτόν. ὁ δὲ Ἰησοῦς εἶπεν αὐτῷ· Ἑταῖρε, ἐφ’ ὃ πάρει. τότε προσελθόντες ἐπέβαλον τὰς χεῖρας ἐπὶ τὸν Ἰησοῦν καὶ ἐκράτησαν αὐτόν. καὶ ἰδοὺ εἷς τῶν μετὰ Ἰησοῦ ἐκτείνας τὴν χεῖρα ἀπέσπασεν τὴν μάχαιραν αὐτοῦ καὶ πατάξας τὸν δοῦλον τοῦ ἀρχιερέως ἀφεῖλεν αὐτοῦ τὸ ὠτίον. τότε λέγει αὐτῷ ὁ Ἰησοῦς· Ἀπόστρεψον τὴν μάχαιράν σου εἰς τὸν τόπον αὐτῆς, πάντες γὰρ οἱ λαβόντες μάχαιραν ἐν μαχαίρῃ ἀπολοῦνται· ἢ δοκεῖς ὅτι οὐ δύναμαι παρακαλέσαι τὸν πατέρα μου, καὶ παραστήσει μοι ἄρτι πλείω δώδεκα λεγιῶνας ἀγγέλων; πῶς οὖν πληρωθῶσιν αἱ γραφαὶ ὅτι οὕτως δεῖ γενέσθαι; ἐν ἐκείνῃ τῇ ὥρᾳ εἶπεν ὁ Ἰησοῦς τοῖς ὄχλοις· Ὡς ἐπὶ λῃστὴν ἐξήλθατε μετὰ μαχαιρῶν καὶ ξύλων συλλαβεῖν με; καθ’ ἡμέραν ἐν τῷ ἱερῷ ἐκαθεζόμην διδάσκων καὶ οὐκ ἐκρατήσατέ με. τοῦτο δὲ ὅλον γέγονεν ἵνα πληρωθῶσιν αἱ γραφαὶ τῶν προφητῶν. τότε οἱ μαθηταὶ πάντες ἀφέντες αὐτὸν ἔφυγον.",
+          "english": "While he was still speaking, look — Judas, one of the twelve, arrived, and with him a large crowd with swords and clubs, from the chief priests and elders of the people. The one handing him over had given them a signal: 'The one I kiss is the man — seize him.' And right away he came up to Jesus and said: 'Hello, Teacher,' and kissed him warmly. Jesus said to him: 'Friend, do what you are here for.' Then they came forward, laid hands on Jesus, and seized him.\n\nAnd look — one of those with Jesus reached out his hand, drew his sword, struck the high priest's slave, and cut off his ear. Then Jesus said to him: 'Put your sword back in its place. For all who take up the sword will be destroyed by the sword. Or do you think I cannot call on my father, and he would put at my side right now more than twelve legions of messengers? But then how would the writings be fulfilled, that it must happen this way?'\n\nAt that hour Jesus said to the crowds: 'Have you come out with swords and clubs to arrest me as if I were a bandit? Day after day I sat in the temple teaching, and you did not seize me. But all this has happened so that the writings of the spokesmen would be fulfilled.' Then all the students left him and ran."
+        },
+        {
+          "page": 65,
+          "greek": "Οἱ δὲ κρατήσαντες τὸν Ἰησοῦν ἀπήγαγον πρὸς Καϊάφαν τὸν ἀρχιερέα, ὅπου οἱ γραμματεῖς καὶ οἱ πρεσβύτεροι συνήχθησαν. ὁ δὲ Πέτρος ἠκολούθει αὐτῷ ἀπὸ μακρόθεν ἕως τῆς αὐλῆς τοῦ ἀρχιερέως, καὶ εἰσελθὼν ἔσω ἐκάθητο μετὰ τῶν ὑπηρετῶν ἰδεῖν τὸ τέλος. οἱ δὲ ἀρχιερεῖς καὶ τὸ συνέδριον ὅλον ἐζήτουν ψευδομαρτυρίαν κατὰ τοῦ Ἰησοῦ ὅπως αὐτὸν θανατώσωσιν, καὶ οὐχ εὗρον πολλῶν προσελθόντων ψευδομαρτύρων. ὕστερον δὲ προσελθόντες δύο εἶπαν· Οὗτος ἔφη· Δύναμαι καταλῦσαι τὸν ναὸν τοῦ θεοῦ καὶ διὰ τριῶν ἡμερῶν οἰκοδομῆσαι. καὶ ἀναστὰς ὁ ἀρχιερεὺς εἶπεν αὐτῷ· Οὐδὲν ἀποκρίνῃ; τί οὗτοί σου καταμαρτυροῦσιν; ὁ δὲ Ἰησοῦς ἐσιώπα. καὶ ὁ ἀρχιερεὺς εἶπεν αὐτῷ· Ἐξορκίζω σε κατὰ τοῦ θεοῦ τοῦ ζῶντος ἵνα ἡμῖν εἴπῃς εἰ σὺ εἶ ὁ χριστὸς ὁ υἱὸς τοῦ θεοῦ. λέγει αὐτῷ ὁ Ἰησοῦς· Σὺ εἶπας· πλὴν λέγω ὑμῖν, ἀπ’ ἄρτι ὄψεσθε τὸν υἱὸν τοῦ ἀνθρώπου καθήμενον ἐκ δεξιῶν τῆς δυνάμεως καὶ ἐρχόμενον ἐπὶ τῶν νεφελῶν τοῦ οὐρανοῦ. τότε ὁ ἀρχιερεὺς διέρρηξεν τὰ ἱμάτια αὐτοῦ λέγων· Ἐβλασφήμησεν· τί ἔτι χρείαν ἔχομεν μαρτύρων; ἴδε νῦν ἠκούσατε τὴν βλασφημίαν· τί ὑμῖν δοκεῖ; οἱ δὲ ἀποκριθέντες εἶπαν· Ἔνοχος θανάτου ἐστίν. τότε ἐνέπτυσαν εἰς τὸ πρόσωπον αὐτοῦ καὶ ἐκολάφισαν αὐτόν, οἱ δὲ ἐράπισαν λέγοντες· Προφήτευσον ἡμῖν, χριστέ, τίς ἐστιν ὁ παίσας σε; Ὁ δὲ Πέτρος ἐκάθητο ἔξω ἐν τῇ αὐλῇ· καὶ προσῆλθεν αὐτῷ μία παιδίσκη λέγουσα· Καὶ σὺ ἦσθα μετὰ Ἰησοῦ τοῦ Γαλιλαίου· ὁ δὲ ἠρνήσατο ἔμπροσθεν πάντων λέγων· Οὐκ οἶδα τί λέγεις. ἐξελθόντα δὲ εἰς τὸν πυλῶνα εἶδεν αὐτὸν ἄλλη καὶ λέγει τοῖς ἐκεῖ· Οὗτος ἦν μετὰ Ἰησοῦ τοῦ Ναζωραίου· καὶ πάλιν ἠρνήσατο μετὰ ὅρκου ὅτι Οὐκ οἶδα τὸν ἄνθρωπον. μετὰ μικρὸν δὲ προσελθόντες οἱ ἑστῶτες εἶπον τῷ Πέτρῳ· Ἀληθῶς καὶ σὺ ἐξ αὐτῶν εἶ, καὶ γὰρ ἡ λαλιά σου δῆλόν σε ποιεῖ· τότε ἤρξατο καταθεματίζειν καὶ ὀμνύειν ὅτι Οὐκ οἶδα τὸν ἄνθρωπον. καὶ εὐθέως ἀλέκτωρ ἐφώνησεν· καὶ ἐμνήσθη ὁ Πέτρος τοῦ ῥήματος Ἰησοῦ εἰρηκότος ὅτι Πρὶν ἀλέκτορα φωνῆσαι τρὶς ἀπαρνήσῃ με, καὶ ἐξελθὼν ἔξω ἔκλαυσεν πικρῶς.",
+          "english": "Those who had seized Jesus led him away to Caiaphas the high priest, where the scholars and the elders had gathered. Peter followed him at a distance as far as the high priest's courtyard, and going inside he sat with the attendants to see how it would end.\n\nThe chief priests and the whole high council were looking for false testimony against Jesus so they could put him to death, and they found none, though many false witnesses came forward. Later two came forward and said: 'This man said: I can tear down God's temple hall and build it in three days.' The high priest stood up and said to him: 'Have you no answer? What is this they are testifying against you?' But Jesus was silent. The high priest said to him: 'I put you under oath by the living God to tell us if you are the anointed, the son of God.' Jesus said to him: 'You have said it. But I tell you: from now on you will see the son of humanity seated at the right hand of the Power and coming on the clouds of the sky.' Then the high priest tore his clothes and said: 'He has insulted God! Why do we still need witnesses? Look — now you have heard the insult. What do you think?' They answered: 'He deserves death.' Then they spat in his face and hit him with their fists; others slapped him and said: 'Speak as a spokesman for us, anointed one — who is it that hit you?'\n\nPeter was sitting outside in the courtyard. A servant girl came up to him and said: 'You too were with Jesus the Galilean.' But he denied it in front of everyone: 'I do not know what you are talking about.' When he went out to the gateway, another girl saw him and said to the people there: 'This man was with Jesus the Nazorean.' And again he denied it with an oath: 'I do not know the man.' A little later the bystanders came up and said to Peter: 'Truly you are one of them too — your accent gives you away.' Then he began to call down curses and to swear: 'I do not know the man.' And right away a rooster crowed. And Peter remembered the word Jesus had spoken: 'Before a rooster crows, you will disown me three times.' And he went outside and wept bitterly."
+        },
+        {
+          "page": 66,
+          "greek": "Πρωΐας δὲ γενομένης συμβούλιον ἔλαβον πάντες οἱ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι τοῦ λαοῦ κατὰ τοῦ Ἰησοῦ ὥστε θανατῶσαι αὐτόν· καὶ δήσαντες αὐτὸν ἀπήγαγον καὶ παρέδωκαν Πιλάτῳ τῷ ἡγεμόνι. Τότε ἰδὼν Ἰούδας ὁ παραδιδοὺς αὐτὸν ὅτι κατεκρίθη μεταμεληθεὶς ἔστρεψεν τὰ τριάκοντα ἀργύρια τοῖς ἀρχιερεῦσιν καὶ πρεσβυτέροις λέγων· Ἥμαρτον παραδοὺς αἷμα ἀθῷον. οἱ δὲ εἶπαν· Τί πρὸς ἡμᾶς; σὺ ὄψῃ. καὶ ῥίψας τὰ ἀργύρια εἰς τὸν ναὸν ἀνεχώρησεν, καὶ ἀπελθὼν ἀπήγξατο. οἱ δὲ ἀρχιερεῖς λαβόντες τὰ ἀργύρια εἶπαν· Οὐκ ἔξεστιν βαλεῖν αὐτὰ εἰς τὸν κορβανᾶν, ἐπεὶ τιμὴ αἵματός ἐστιν· συμβούλιον δὲ λαβόντες ἠγόρασαν ἐξ αὐτῶν τὸν Ἀγρὸν τοῦ Κεραμέως εἰς ταφὴν τοῖς ξένοις. διὸ ἐκλήθη ὁ ἀγρὸς ἐκεῖνος Ἀγρὸς Αἵματος ἕως τῆς σήμερον. τότε ἐπληρώθη τὸ ῥηθὲν διὰ Ἰερεμίου τοῦ προφήτου λέγοντος· Καὶ ἔλαβον τὰ τριάκοντα ἀργύρια, τὴν τιμὴν τοῦ τετιμημένου ὃν ἐτιμήσαντο ἀπὸ υἱῶν Ἰσραήλ, καὶ ἔδωκαν αὐτὰ εἰς τὸν ἀγρὸν τοῦ κεραμέως, καθὰ συνέταξέν μοι κύριος.",
+          "english": "When morning came, all the chief priests and the elders of the people took counsel against Jesus to put him to death. They bound him, led him away, and handed him over to Pilate the governor.\n\nThen Judas, the one who had handed him over, seeing that he had been condemned, was filled with regret and brought the thirty silver pieces back to the chief priests and elders, saying: 'I have made a failure — I handed over innocent blood.' They said: 'What is that to us? See to it yourself.' And throwing the silver pieces into the temple hall, he left, and went and hanged himself. The chief priests picked up the silver pieces and said: 'It is not allowed to put these into the gift-fund, since they are blood money.' So after taking counsel they bought with them the Potter's Field as a burial place for foreigners. That is why that field has been called Blood Field to this day. Then what was said through Jeremiah the spokesman came true: And they took the thirty silver pieces, the price of the one priced, whom some of the sons of Israel had priced, and they gave them for the potter's field, as the Master directed me."
+        },
+        {
+          "page": 67,
+          "greek": "Ὁ δὲ Ἰησοῦς ἐστάθη ἔμπροσθεν τοῦ ἡγεμόνος· καὶ ἐπηρώτησεν αὐτὸν ὁ ἡγεμὼν λέγων· Σὺ εἶ ὁ βασιλεὺς τῶν Ἰουδαίων; ὁ δὲ Ἰησοῦς ἔφη· Σὺ λέγεις. καὶ ἐν τῷ κατηγορεῖσθαι αὐτὸν ὑπὸ τῶν ἀρχιερέων καὶ πρεσβυτέρων οὐδὲν ἀπεκρίνατο. τότε λέγει αὐτῷ ὁ Πιλᾶτος· Οὐκ ἀκούεις πόσα σου καταμαρτυροῦσιν; καὶ οὐκ ἀπεκρίθη αὐτῷ πρὸς οὐδὲ ἓν ῥῆμα, ὥστε θαυμάζειν τὸν ἡγεμόνα λίαν. Κατὰ δὲ ἑορτὴν εἰώθει ὁ ἡγεμὼν ἀπολύειν ἕνα τῷ ὄχλῳ δέσμιον ὃν ἤθελον. εἶχον δὲ τότε δέσμιον ἐπίσημον λεγόμενον Ἰησοῦν Βαραββᾶν. συνηγμένων οὖν αὐτῶν εἶπεν αὐτοῖς ὁ Πιλᾶτος· Τίνα θέλετε ἀπολύσω ὑμῖν, Ἰησοῦν τὸν Βαραββᾶν ἢ Ἰησοῦν τὸν λεγόμενον χριστόν; ᾔδει γὰρ ὅτι διὰ φθόνον παρέδωκαν αὐτόν. Καθημένου δὲ αὐτοῦ ἐπὶ τοῦ βήματος ἀπέστειλεν πρὸς αὐτὸν ἡ γυνὴ αὐτοῦ λέγουσα· Μηδὲν σοὶ καὶ τῷ δικαίῳ ἐκείνῳ, πολλὰ γὰρ ἔπαθον σήμερον κατ’ ὄναρ δι’ αὐτόν. Οἱ δὲ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι ἔπεισαν τοὺς ὄχλους ἵνα αἰτήσωνται τὸν Βαραββᾶν τὸν δὲ Ἰησοῦν ἀπολέσωσιν. ἀποκριθεὶς δὲ ὁ ἡγεμὼν εἶπεν αὐτοῖς· Τίνα θέλετε ἀπὸ τῶν δύο ἀπολύσω ὑμῖν; οἱ δὲ εἶπαν· Τὸν Βαραββᾶν. λέγει αὐτοῖς ὁ Πιλᾶτος· Τί οὖν ποιήσω Ἰησοῦν τὸν λεγόμενον χριστόν; λέγουσιν πάντες· Σταυρωθήτω. ὁ δὲ ἔφη· Τί γὰρ κακὸν ἐποίησεν; οἱ δὲ περισσῶς ἔκραζον λέγοντες· Σταυρωθήτω. ἰδὼν δὲ ὁ Πιλᾶτος ὅτι οὐδὲν ὠφελεῖ ἀλλὰ μᾶλλον θόρυβος γίνεται λαβὼν ὕδωρ ἀπενίψατο τὰς χεῖρας ἀπέναντι τοῦ ὄχλου λέγων· Ἀθῷός εἰμι ἀπὸ τοῦ αἵματος τούτου· ὑμεῖς ὄψεσθε. καὶ ἀποκριθεὶς πᾶς ὁ λαὸς εἶπεν· Τὸ αἷμα αὐτοῦ ἐφ’ ἡμᾶς καὶ ἐπὶ τὰ τέκνα ἡμῶν. τότε ἀπέλυσεν αὐτοῖς τὸν Βαραββᾶν, τὸν δὲ Ἰησοῦν φραγελλώσας παρέδωκεν ἵνα σταυρωθῇ.",
+          "english": "Jesus stood before the governor, and the governor asked him: 'Are you the king of the Judeans?' Jesus said: 'You say so.' And while he was being accused by the chief priests and elders, he answered nothing. Then Pilate said to him: 'Do you not hear how many things they are testifying against you?' And he gave him no answer, not even to a single charge, so that the governor was very surprised.\n\nAt festival time the governor was in the habit of releasing to the crowd one prisoner, whomever they wanted. They had at that time a well-known prisoner called Jesus Barabbas. So when they had gathered, Pilate said to them: 'Whom do you want me to release to you — Jesus Barabbas, or Jesus who is called the anointed?' For he knew they had handed him over out of envy. While he was sitting on the platform, his wife sent word to him: 'Have nothing to do with that fair man. I have suffered a great deal today in a dream because of him.'\n\nBut the chief priests and the elders persuaded the crowds to ask for Barabbas and to have Jesus destroyed. The governor answered them: 'Which of the two do you want me to release to you?' They said: 'Barabbas.' Pilate said to them: 'Then what shall I do with Jesus who is called the anointed?' They all said: 'Put him on a stake!' He said: 'Why? What harm has he done?' But they shouted all the more: 'Put him on a stake!' When Pilate saw that he was getting nowhere, but that a riot was starting instead, he took water and washed his hands in front of the crowd and said: 'I am innocent of this man's blood. See to it yourselves.' And all the people answered: 'His blood be on us and on our children.' Then he released Barabbas to them. But Jesus he had flogged, and handed him over to be put on a stake."
+        },
+        {
+          "page": 68,
+          "greek": "Τότε οἱ στρατιῶται τοῦ ἡγεμόνος παραλαβόντες τὸν Ἰησοῦν εἰς τὸ πραιτώριον συνήγαγον ἐπ’ αὐτὸν ὅλην τὴν σπεῖραν. καὶ ἐκδύσαντες αὐτὸν χλαμύδα κοκκίνην περιέθηκαν αὐτῷ, καὶ πλέξαντες στέφανον ἐξ ἀκανθῶν ἐπέθηκαν ἐπὶ τῆς κεφαλῆς αὐτοῦ καὶ κάλαμον ἐν τῇ δεξιᾷ αὐτοῦ, καὶ γονυπετήσαντες ἔμπροσθεν αὐτοῦ ἐνέπαιξαν αὐτῷ λέγοντες· Χαῖρε, βασιλεῦ τῶν Ἰουδαίων, καὶ ἐμπτύσαντες εἰς αὐτὸν ἔλαβον τὸν κάλαμον καὶ ἔτυπτον εἰς τὴν κεφαλὴν αὐτοῦ. καὶ ὅτε ἐνέπαιξαν αὐτῷ, ἐξέδυσαν αὐτὸν τὴν χλαμύδα καὶ ἐνέδυσαν αὐτὸν τὰ ἱμάτια αὐτοῦ καὶ ἀπήγαγον αὐτὸν εἰς τὸ σταυρῶσαι. Ἐξερχόμενοι δὲ εὗρον ἄνθρωπον Κυρηναῖον ὀνόματι Σίμωνα· τοῦτον ἠγγάρευσαν ἵνα ἄρῃ τὸν σταυρὸν αὐτοῦ. Καὶ ἐλθόντες εἰς τόπον λεγόμενον Γολγοθᾶ, ὅ ἐστιν Κρανίου Τόπος λεγόμενος, ἔδωκαν αὐτῷ πιεῖν οἶνον μετὰ χολῆς μεμιγμένον· καὶ γευσάμενος οὐκ ἠθέλησεν πιεῖν. σταυρώσαντες δὲ αὐτὸν διεμερίσαντο τὰ ἱμάτια αὐτοῦ βάλλοντες κλῆρον, καὶ καθήμενοι ἐτήρουν αὐτὸν ἐκεῖ. καὶ ἐπέθηκαν ἐπάνω τῆς κεφαλῆς αὐτοῦ τὴν αἰτίαν αὐτοῦ γεγραμμένην· Οὗτός ἐστιν Ἰησοῦς ὁ βασιλεῦς τῶν Ἰουδαίων. Τότε σταυροῦνται σὺν αὐτῷ δύο λῃσταί, εἷς ἐκ δεξιῶν καὶ εἷς ἐξ εὐωνύμων. οἱ δὲ παραπορευόμενοι ἐβλασφήμουν αὐτὸν κινοῦντες τὰς κεφαλὰς αὐτῶν καὶ λέγοντες· Ὁ καταλύων τὸν ναὸν καὶ ἐν τρισὶν ἡμέραις οἰκοδομῶν, σῶσον σεαυτόν· εἰ υἱὸς εἶ τοῦ θεοῦ, κατάβηθι ἀπὸ τοῦ σταυροῦ. ὁμοίως καὶ οἱ ἀρχιερεῖς ἐμπαίζοντες μετὰ τῶν γραμματέων καὶ πρεσβυτέρων ἔλεγον· Ἄλλους ἔσωσεν, ἑαυτὸν οὐ δύναται σῶσαι· βασιλεὺς Ἰσραήλ ἐστιν, καταβάτω νῦν ἀπὸ τοῦ σταυροῦ καὶ πιστεύσομεν ἐπ’ αὐτόν. πέποιθεν ἐπὶ τὸν θεόν, ῥυσάσθω νῦν εἰ θέλει αὐτόν· εἶπεν γὰρ ὅτι Θεοῦ εἰμι υἱός. τὸ δ’ αὐτὸ καὶ οἱ λῃσταὶ οἱ συσταυρωθέντες σὺν αὐτῷ ὠνείδιζον αὐτόν.",
+          "english": "Then the governor's soldiers took Jesus into the headquarters and gathered the whole company around him. They stripped him and put a scarlet military cloak on him, and twisting a wreath out of thorns they set it on his head and put a reed in his right hand, and kneeling before him they mocked him: 'Hello, king of the Judeans!' And they spat on him, took the reed, and hit him on the head. When they had finished mocking him, they took the cloak off him, put his own clothes on him, and led him away to be put on a stake.\n\nAs they went out they found a man from Cyrene named Simon. They pressed him into service to carry his execution stake. And when they came to a place called Golgotha — which means Place of the Skull — they gave him wine mixed with bitter gall to drink; and when he tasted it he would not drink. After putting him on the stake they divided his clothes by casting lots, and sitting down they kept watch over him there. Above his head they placed the written charge against him: This is Jesus, the king of the Judeans. Then two bandits were put on stakes with him, one on the right and one on the left.\n\nThe people passing by insulted him, shaking their heads and saying: 'You who tear down the temple hall and build it in three days — rescue yourself! If you are the son of God, come down from the execution stake.' In the same way the chief priests, mocking with the scholars and elders, said: 'He rescued others — he cannot rescue himself. He is king of Israel; let him come down from the execution stake now, and we will trust him. He has put his trust in God; let God pull him out now if he wants him — for he said, I am God's son.' The bandits who had been put on stakes with him also heaped insults on him in the same way."
+        },
+        {
+          "page": 69,
+          "greek": "Ἀπὸ δὲ ἕκτης ὥρας σκότος ἐγένετο ἐπὶ πᾶσαν τὴν γῆν ἕως ὥρας ἐνάτης. περὶ δὲ τὴν ἐνάτην ὥραν ἀνεβόησεν ὁ Ἰησοῦς φωνῇ μεγάλῃ λέγων· Ἠλὶ ἠλὶ λεμὰ σαβαχθάνι; τοῦτ’ ἔστιν· Θεέ μου θεέ μου, ἱνατί με ἐγκατέλιπες; τινὲς δὲ τῶν ἐκεῖ ἑστηκότων ἀκούσαντες ἔλεγον ὅτι Ἠλίαν φωνεῖ οὗτος. καὶ εὐθέως δραμὼν εἷς ἐξ αὐτῶν καὶ λαβὼν σπόγγον πλήσας τε ὄξους καὶ περιθεὶς καλάμῳ ἐπότιζεν αὐτόν. οἱ δὲ λοιποὶ ἔλεγον· Ἄφες ἴδωμεν εἰ ἔρχεται Ἠλίας σώσων αὐτόν. ὁ δὲ Ἰησοῦς πάλιν κράξας φωνῇ μεγάλῃ ἀφῆκεν τὸ πνεῦμα. καὶ ἰδοὺ τὸ καταπέτασμα τοῦ ναοῦ ἐσχίσθη ἀπ’ ἄνωθεν ἕως κάτω εἰς δύο, καὶ ἡ γῆ ἐσείσθη, καὶ αἱ πέτραι ἐσχίσθησαν, καὶ τὰ μνημεῖα ἀνεῴχθησαν καὶ πολλὰ σώματα τῶν κεκοιμημένων ἁγίων ἠγέρθησαν, καὶ ἐξελθόντες ἐκ τῶν μνημείων μετὰ τὴν ἔγερσιν αὐτοῦ εἰσῆλθον εἰς τὴν ἁγίαν πόλιν καὶ ἐνεφανίσθησαν πολλοῖς. Ὁ δὲ ἑκατόνταρχος καὶ οἱ μετ’ αὐτοῦ τηροῦντες τὸν Ἰησοῦν ἰδόντες τὸν σεισμὸν καὶ τὰ γενόμενα ἐφοβήθησαν σφόδρα λέγοντες· Ἀληθῶς θεοῦ υἱὸς ἦν οὗτος. Ἦσαν δὲ ἐκεῖ γυναῖκες πολλαὶ ἀπὸ μακρόθεν θεωροῦσαι, αἵτινες ἠκολούθησαν τῷ Ἰησοῦ ἀπὸ τῆς Γαλιλαίας διακονοῦσαι αὐτῷ· ἐν αἷς ἦν Μαρία ἡ Μαγδαληνὴ καὶ Μαρία ἡ τοῦ Ἰακώβου καὶ Ἰωσὴφ μήτηρ καὶ ἡ μήτηρ τῶν υἱῶν Ζεβεδαίου.",
+          "english": "From the sixth hour darkness came over the whole land until the ninth hour. And about the ninth hour Jesus cried out with a loud voice: 'Eli, Eli, lema sabachthani?' — that is, 'My God, my God, why have you left me?' Some of those standing there, hearing it, said: 'This man is calling Elijah.' And right away one of them ran and took a sponge, filled it with sour wine, put it on a reed, and offered him a drink. But the rest said: 'Leave him alone — let us see if Elijah comes to rescue him.' But Jesus cried out again with a loud voice and let out his breath.\n\nAnd look — the curtain of the temple hall was torn in two from top to bottom, the earth shook, the rocks split, the tombs were opened, and many bodies of the sacred ones who had fallen asleep were raised. Coming out of the tombs after his raising, they went into the sacred city and appeared to many. The army captain and those with him who were watching Jesus, seeing the earthquake and what had happened, were very afraid and said: 'Truly this man was God's son.'\n\nMany women were there, watching from a distance — women who had followed Jesus from Galilee and waited on him. Among them were Mary the Magdalene, Mary the mother of James and Joseph, and the mother of the sons of Zebedee."
+        },
+        {
+          "page": 70,
+          "greek": "Ὀψίας δὲ γενομένης ἦλθεν ἄνθρωπος πλούσιος ἀπὸ Ἁριμαθαίας, τοὔνομα Ἰωσήφ, ὃς καὶ αὐτὸς ἐμαθητεύθη τῷ Ἰησοῦ· οὗτος προσελθὼν τῷ Πιλάτῳ ᾐτήσατο τὸ σῶμα τοῦ Ἰησοῦ. τότε ὁ Πιλᾶτος ἐκέλευσεν ἀποδοθῆναι. καὶ λαβὼν τὸ σῶμα ὁ Ἰωσὴφ ἐνετύλιξεν αὐτὸ σινδόνι καθαρᾷ, καὶ ἔθηκεν αὐτὸ ἐν τῷ καινῷ αὐτοῦ μνημείῳ ὃ ἐλατόμησεν ἐν τῇ πέτρᾳ, καὶ προσκυλίσας λίθον μέγαν τῇ θύρᾳ τοῦ μνημείου ἀπῆλθεν. ἦν δὲ ἐκεῖ Μαριὰμ ἡ Μαγδαληνὴ καὶ ἡ ἄλλη Μαρία καθήμεναι ἀπέναντι τοῦ τάφου. Τῇ δὲ ἐπαύριον, ἥτις ἐστὶν μετὰ τὴν παρασκευήν, συνήχθησαν οἱ ἀρχιερεῖς καὶ οἱ Φαρισαῖοι πρὸς Πιλᾶτον λέγοντες· Κύριε, ἐμνήσθημεν ὅτι ἐκεῖνος ὁ πλάνος εἶπεν ἔτι ζῶν· Μετὰ τρεῖς ἡμέρας ἐγείρομαι· κέλευσον οὖν ἀσφαλισθῆναι τὸν τάφον ἕως τῆς τρίτης ἡμέρας, μήποτε ἐλθόντες οἱ μαθηταὶ αὐτοῦ κλέψωσιν αὐτὸν καὶ εἴπωσιν τῷ λαῷ· Ἠγέρθη ἀπὸ τῶν νεκρῶν, καὶ ἔσται ἡ ἐσχάτη πλάνη χείρων τῆς πρώτης. ἔφη αὐτοῖς ὁ Πιλᾶτος· Ἔχετε κουστωδίαν· ὑπάγετε ἀσφαλίσασθε ὡς οἴδατε. οἱ δὲ πορευθέντες ἠσφαλίσαντο τὸν τάφον σφραγίσαντες τὸν λίθον μετὰ τῆς κουστωδίας.",
+          "english": "When evening came, a rich man from Arimathea arrived, named Joseph, who had himself become a student of Jesus. This man went to Pilate and asked for the body of Jesus. Then Pilate ordered that it be given over. Joseph took the body, wrapped it in a clean linen cloth, and laid it in his own new tomb, which he had cut in the rock. He rolled a large stone against the door of the tomb and went away. Mary the Magdalene and the other Mary were there, sitting opposite the tomb.\n\nThe next day — the one after Preparation Day — the chief priests and the Pharisees gathered before Pilate and said: 'Sir, we remember that while he was still alive that deceiver said: After three days I am raised. So order the tomb to be made secure until the third day, or his students may come and steal him and tell the people: He has been raised from the dead — and the last deception will be worse than the first.' Pilate said to them: 'You have a guard detail. Go, make it as secure as you know how.' So they went and secured the tomb by sealing the stone and setting the guard."
+        },
+        {
+          "page": 71,
+          "greek": "Ὀψὲ δὲ σαββάτων, τῇ ἐπιφωσκούσῃ εἰς μίαν σαββάτων, ἦλθεν Μαριὰμ ἡ Μαγδαληνὴ καὶ ἡ ἄλλη Μαρία θεωρῆσαι τὸν τάφον. καὶ ἰδοὺ σεισμὸς ἐγένετο μέγας· ἄγγελος γὰρ κυρίου καταβὰς ἐξ οὐρανοῦ καὶ προσελθὼν ἀπεκύλισε τὸν λίθον καὶ ἐκάθητο ἐπάνω αὐτοῦ. ἦν δὲ ἡ εἰδέα αὐτοῦ ὡς ἀστραπὴ καὶ τὸ ἔνδυμα αὐτοῦ λευκὸν ὡς χιών. ἀπὸ δὲ τοῦ φόβου αὐτοῦ ἐσείσθησαν οἱ τηροῦντες καὶ ἐγενήθησαν ὡς νεκροί. ἀποκριθεὶς δὲ ὁ ἄγγελος εἶπεν ταῖς γυναιξίν· Μὴ φοβεῖσθε ὑμεῖς, οἶδα γὰρ ὅτι Ἰησοῦν τὸν ἐσταυρωμένον ζητεῖτε· οὐκ ἔστιν ὧδε, ἠγέρθη γὰρ καθὼς εἶπεν· δεῦτε ἴδετε τὸν τόπον ὅπου ἔκειτο· καὶ ταχὺ πορευθεῖσαι εἴπατε τοῖς μαθηταῖς αὐτοῦ ὅτι Ἠγέρθη ἀπὸ τῶν νεκρῶν, καὶ ἰδοὺ προάγει ὑμᾶς εἰς τὴν Γαλιλαίαν, ἐκεῖ αὐτὸν ὄψεσθε· ἰδοὺ εἶπον ὑμῖν. καὶ ἀπελθοῦσαι ταχὺ ἀπὸ τοῦ μνημείου μετὰ φόβου καὶ χαρᾶς μεγάλης ἔδραμον ἀπαγγεῖλαι τοῖς μαθηταῖς αὐτοῦ. καὶ ἰδοὺ Ἰησοῦς ὑπήντησεν αὐταῖς λέγων· Χαίρετε· αἱ δὲ προσελθοῦσαι ἐκράτησαν αὐτοῦ τοὺς πόδας καὶ προσεκύνησαν αὐτῷ. τότε λέγει αὐταῖς ὁ Ἰησοῦς· Μὴ φοβεῖσθε· ὑπάγετε ἀπαγγείλατε τοῖς ἀδελφοῖς μου ἵνα ἀπέλθωσιν εἰς τὴν Γαλιλαίαν, κἀκεῖ με ὄψονται. Πορευομένων δὲ αὐτῶν ἰδού τινες τῆς κουστωδίας ἐλθόντες εἰς τὴν πόλιν ἀπήγγειλαν τοῖς ἀρχιερεῦσιν ἅπαντα τὰ γενόμενα. καὶ συναχθέντες μετὰ τῶν πρεσβυτέρων συμβούλιόν τε λαβόντες ἀργύρια ἱκανὰ ἔδωκαν τοῖς στρατιώταις λέγοντες· Εἴπατε ὅτι Οἱ μαθηταὶ αὐτοῦ νυκτὸς ἐλθόντες ἔκλεψαν αὐτὸν ἡμῶν κοιμωμένων· καὶ ἐὰν ἀκουσθῇ τοῦτο ἐπὶ τοῦ ἡγεμόνος, ἡμεῖς πείσομεν αὐτὸν καὶ ὑμᾶς ἀμερίμνους ποιήσομεν. οἱ δὲ λαβόντες τὰ ἀργύρια ἐποίησαν ὡς ἐδιδάχθησαν. Καὶ διεφημίσθη ὁ λόγος οὗτος παρὰ Ἰουδαίοις μέχρι τῆς σήμερον ἡμέρας. Οἱ δὲ ἕνδεκα μαθηταὶ ἐπορεύθησαν εἰς τὴν Γαλιλαίαν εἰς τὸ ὄρος οὗ ἐτάξατο αὐτοῖς ὁ Ἰησοῦς, καὶ ἰδόντες αὐτὸν προσεκύνησαν, οἱ δὲ ἐδίστασαν. καὶ προσελθὼν ὁ Ἰησοῦς ἐλάλησεν αὐτοῖς λέγων· Ἐδόθη μοι πᾶσα ἐξουσία ἐν οὐρανῷ καὶ ἐπὶ τῆς γῆς· πορευθέντες οὖν μαθητεύσατε πάντα τὰ ἔθνη, βαπτίζοντες αὐτοὺς εἰς τὸ ὄνομα τοῦ πατρὸς καὶ τοῦ υἱοῦ καὶ τοῦ ἁγίου πνεύματος, διδάσκοντες αὐτοὺς τηρεῖν πάντα ὅσα ἐνετειλάμην ὑμῖν· καὶ ἰδοὺ ἐγὼ μεθ’ ὑμῶν εἰμι πάσας τὰς ἡμέρας ἕως τῆς συντελείας τοῦ αἰῶνος.",
+          "english": "After the rest day, as the first day of the week was dawning, Mary the Magdalene and the other Mary came to look at the tomb. And look — there was a great earthquake. For a messenger of the Master came down from the sky, came and rolled back the stone, and sat on it. His appearance was like lightning, and his clothing white as snow. For fear of him the guards shook and became like dead men. The messenger said to the women: 'Do not be afraid. I know you are looking for Jesus, the one who was put on the stake. He is not here — he has been raised, just as he said. Come, see the place where he lay. Then go quickly and tell his students: He has been raised from the dead, and look — he is going ahead of you into Galilee; you will see him there. Look — I have told you.'\n\nThey left the tomb quickly, with fear and great joy, and ran to report to his students. And look — Jesus met them and said: 'Hello.' They came up, took hold of his feet, and bowed down before him. Then Jesus said to them: 'Do not be afraid. Go, tell my brothers to leave for Galilee — they will see me there.'\n\nWhile they were on their way, look — some of the guard detail went into the city and reported to the chief priests everything that had happened. After gathering with the elders and taking counsel, they gave the soldiers a good sum of silver pieces and said: 'Tell people: His students came by night and stole him while we were asleep. And if this reaches the governor's ears, we will talk him round and keep you out of trouble.' The soldiers took the silver and did as they were told. And this story has been spread among Judeans to this very day.\n\nThe eleven students went to Galilee, to the mountain Jesus had directed them to. When they saw him they bowed down — but some doubted. Jesus came up and spoke to them: 'All authority in sky and on earth has been given to me. So go and make students of all the nations, immersing them into the name of the father and of the son and of the sacred breath, teaching them to keep everything I commanded you. And look — I am with you all the days, to the close of the age.'"
         }
       ]
     }
