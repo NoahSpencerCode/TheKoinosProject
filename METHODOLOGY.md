@@ -144,7 +144,7 @@ Defaults keep the book consistent. They are **starting points**, not a vow.
 | πτωχοὶ τῷ πνεύματι | those who are poor in breath | |
 | ἀμὴν λέγω ὑμῖν | I tell you truly | translating the loan’s force; *Amen* optional as sound |
 | μαθητής | student | pupil of a teacher |
-| γέεννα | the burning valley (Hinnom) | place-image; not “hell” cosmology |
+| γέεννα | the burning landfill (Hinnom) | place-image of the dump-fires; not “hell” cosmology |
 | ᾅδης | place of the dead / Hades | name or sense; not “hell” |
 | υἱὸς τοῦ ἀνθρώπου | the human one | Semitic “human being”; not abstract “humanity” |
 | διαθήκη | covenant | binding disposition / solemn compact; stronger than casual “agreement” |
