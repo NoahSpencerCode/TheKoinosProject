@@ -140,7 +140,8 @@ Defaults keep the book consistent. They are **starting points**, not a vow.
 | ἔρημος | the open country | |
 | πονηρός | bad / harmful / nasty / corrupt / flawed / rotten | by context; avoid cosmic “evil” unless forced |
 | παρθένος | young woman | virgin only if context forces; Isaiah background is ʿalmāh |
-| μακάριος | happy, fortunate | |
+| μακάριος | happy, fortunate |
+| πτωχοὶ τῷ πνεύματι | those who are poor in breath | |
 | ἀμὴν λέγω ὑμῖν | I tell you truly | translating the loan’s force; *Amen* optional as sound |
 | μαθητής | student | pupil of a teacher |
 | γέεννα | the burning valley (Hinnom) | place-image; not “hell” cosmology |
