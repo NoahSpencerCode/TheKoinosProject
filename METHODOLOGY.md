@@ -1,107 +1,231 @@
 # The Koinos Project — Working Methodology & Status
 
 ## Goal
-A fresh English rendering of the Greek New Testament as ordinary literature — the way non-religious Koine texts (histories, letters, papyri) are translated. No chapter/verse numbers; continuous prose paginated like a normal book; Greek and English paired per page; clickable lexicon (Greek word, up to 3 ordinary variants, one secular usage example). Output: JSON per the agreed schema, then a reader webpage.
 
-## Source of truth (Noah, 2026-07-28)
-- **There is no enforced banned-word list.** If the English is a correct rendering of the Greek as literature, it is fine — even if a traditional "Bible word" happens to be the ordinary English for that Greek.
-- Prefer ordinary modern usage when the Greek is ordinary. The fixed glossary and attention patterns are **defaults and consistency aids**, not a police list.
-- Never consult English Bible translations; answer only to the Greek and to ordinary literary English.
+An English rendering of the Greek New Testament that a careful modern reader can meet as **ancient literature in ordinary words** — continuous prose, no chapter or verse numbers, Greek and English paired per page, with a clickable lexicon (Greek form, ordinary range, one secular or period usage note).
 
-## Source pipeline (works in Claude cloud sessions)
-- Greek base text: **SBL Greek New Testament** (Greek only; no English translation is ever consulted).
-- GitHub cloning is blocked in the sandbox; fetch chapters via WebFetch on
-  `https://raw.githubusercontent.com/LogosBible/SBLGNT/master/data/sblgnt/text/Matt.txt`
-  (other books: same directory, e.g. `Mark.txt`, `Luke.txt`, `1Cor.txt`...). Ask for verbatim reproduction of a verse range per call (a chapter at a time works well).
-- Strip text-critical sigla ⸂ ⸃ ⸀ and verse refs; join into continuous prose.
+This is a **specialized literary reconstruction**, not a claim to be the only true translation. Every translation is a theory. Ours is stated below so it can be followed, challenged, and improved.
 
-## Honesty notes (agreed with Noah)
-- No AI can literally have "never seen" English Bibles; the method is to render from the Greek with ordinary-usage checks, not to run a blocklist.
-- Base text is a critical edition of the earliest manuscripts (Sinaiticus/Vaticanus + papyri), stated plainly in the book's intro and manuscript summaries.
+---
 
-## Fixed glossary (keep consistent everywhere)
-| Greek | Rendering |
-|---|---|
-| ἁμαρτία | error, failure |
-| ἐκκλησία | assembly |
-| βαπτίζω / βαπτιστής | immerse / the Immerser |
-| εὐαγγέλιον | good news |
-| Χριστός | the anointed |
-| κύριος | the Master (God); master/sir (people) |
-| ἄγγελος | messenger |
-| πνεῦμα (ἅγιον) | (sacred) breath |
-| ἅγιος | sacred |
-| μετανοέω / μετάνοια | change your thinking / change of thinking |
-| βασιλεία τῶν οὐρανῶν | the kingdom of the skies |
-| προφήτης | spokesman |
-| προσκυνέω | bow down before |
-| διάβολος / ὁ πειράζων / Σατανᾶς | the slanderer / the tester / adversary |
-| δίκαιος / δικαιοσύνη | fair / what is right |
-| σῴζω | rescue |
-| δόξα | splendor, reputation |
-| συναγωγή | meeting hall |
-| δαιμονιζόμενοι / δαιμόνιον | plagued by spirits / spirit |
-| μάγοι | astrologers |
-| ἔρημος | the open country |
-| πονηρός | never "evil" — by context: bad, harmful, nasty, corrupt, flawed (root: ponos, hardship) |
-| παρθένος | young woman (never "virgin" — doctrinally loaded; Hebrew behind Isaiah quote is ʿalmāh, young woman) |
-| Capitalization | Master/God capitalized only by the ordinary title-as-name rule (like "the Captain"); manuscripts are all-uncial and make no distinction. Noah confirmed keeping capitals. |
-| μακάριος | happy, fortunate (upcoming, Matt 5) |
-| ἀμὴν λέγω ὑμῖν | "I tell you truly" (upcoming) |
-| μαθητής | student (upcoming) |
-| γέεννα | the burning rubbish valley (Hinnom) (upcoming) |
-| υἱὸς τοῦ ἀνθρώπου | the son of humanity |
-| θάλασσα (of Galilee) | the lake |
-| Δεκάπολις | the Ten Towns |
-| διαθήκη | agreement |
-| ἄφεσις ἁμαρτιῶν | letting go of errors |
-| πειρασμός | the test (never "temptation") |
-| σταυρόω | put on a stake / put on an execution stake |
-| ῥαββί | Teacher |
-| κορβανᾶς | gift-fund |
-| βῆμα | platform |
-| πραιτώριον | headquarters |
-| ὄξος | sour wine |
-| κουστωδία | guard detail |
-| ἀργύρια | silver pieces |
+## What this method is (and is not)
 
-## Attention patterns — learned from Noah's reviews; apply PROACTIVELY to every new page
+### It is
+- **Greek-first.** English Bibles are not consulted as sources or models. The base is the Greek text and ordinary usage of Koine (and, where the Greek forces it, Jewish Greek / LXX resonance).
+- **Period-oriented.** Prefer what first-century speakers could get from the words in ordinary use, not what later ecclesiastical English made of them.
+- **Literature-shaped.** Continuous prose, natural paragraphs, modern spoken register where the Greek is ordinary speech.
 
-1. **Register check.** If an English word would sound bookish or rare in spoken conversation today, replace it with common speech (done: "He is my delight" → "I am very pleased with him"; "infants" → "small children"). Test: would you say it aloud to a friend? If not, re-render.
-2. **Latent sacral load (soft).** When a traditional rendering would be jargon rather than a fair literary translation of the Greek, prefer ordinary English or add a lexicon tip. This is judgment from the Greek, not a forbidden-word list — if the ordinary literary English for that Greek happens to be a familiar "Bible word," that is allowed.
-3. **Ambiguous English.** When a rendering is ambiguous in English but the Greek is not ("right time" — kairos = due/appointed moment, not moral rightness), add a tip and consider rephrasing.
-4. **Tips required for:** every personal name; every place name; historical figures and institutions; objects and measures of daily life (coins, nets, baskets, furnaces); idioms and Semitic style markers ("and look —" = kai idou); words whose Greek social value differs from English (tapeinos = low as insult → self-praise); and forward/backward cross-references between pages (Beelzeboul on p20 ↔ trad. ch. 12).
-5. **Lexicon key hygiene.** Keys must not over-match (the bare key "right" wrongly hit "right eye/cheek"; "and look" wrongly hit "and look down"). Prefer phrase keys; every key must resolve only where the intended Greek is present. After new tips, re-check for false positives.
-6. **Natural grammar.** No stiff calques, even in repeated formulas (metanoia: imperative "Change the way you think", noun "change of mind").
-7. **Consistency.** Identical Greek gets identical English across pages (eudokēsa at trad. 3:17 must match 17:5; the two furnace refrains in ch. 13 match word for word).
-8. **Capitals.** Title-as-name rule only (Master, God as name-substitutes) — confirmed by Noah; manuscripts are all-uncial and force nothing.
-9. **Per-installment checklist:** Greek fidelity (literary, not interlinear); sigla strip; page word counts ~200–430; sequential numbering; every lexicon key resolves in the text and only on pages with the matching Greek; rebuild koinos_data.js + koinos_reader.html; git commit (lock workaround: mkdir -p _to_delete, mv *.lock into it before/after); sync project docs.
+### It is not
+- A **banned-word police list.** If ordinary English for that Greek happens to be a familiar “Bible word,” that English is allowed.
+- A claim of **innocent ears.** Translators (and models) have heard traditional English. The safeguard is Greek + usage + stated rules, not purity of mind.
+- A claim that **one hearer** stood for the whole ancient world. See “Who is listening?” below.
+- A claim that **secular shop-Greek** exhausts every line. These authors also write inside Jewish scripture and Jesus-movement argument. See “Two layers of meaning.”
 
-## Formatting rules
-- No chapter/verse numbers, no headings. Natural paragraphs; ~300–400 English words per page.
-- Each book opens with a summary: composition date estimate, earliest surviving copies, where found.
-- JSON schema: project / subtitle / introduction / translation_principles / lexicon / manuscripts[{name, summary, pages[{page, greek, english}]}].
-- Lexicon keys = lowercase surface word or phrase as it appears in the English.
+---
+
+## Who is listening? (compromise on the single-hearer problem)
+
+There was no single first-century audience. A pagan in Corinth, a Greek-speaking Judean steeped in the LXX, and a Pharisee’s student could hear the same sentence differently.
+
+**Working compromise — two default ears, in order:**
+
+1. **Primary ear: non-specialist Greek speaker**  
+   What would the plain vocabulary mean in ordinary Koine (contracts, letters, histories, medical prose)? This is the default gloss.
+
+2. **Secondary ear: Greek-speaking Judean**  
+   When the Greek itself is Hebraizing, cites or echoes scripture, uses loanwords (*pascha*, *satana*, *amēn*), or depends on LXX usage, allow that resonance in the English **or** in a lexicon tip. Do not invent later Christian dogma; do not erase Jewish Greek either.
+
+**Rule of thumb:**  
+Start with ordinary Greek sense. Add Jewish/scriptural color only when the **Greek wording or context** forces it — not when later tradition wants it.
+
+---
+
+## Two layers of meaning (compromise on “flattening”)
+
+| Layer | Question | English should… |
+|---|---|---|
+| **A. Lexical** | What did this word normally mean? | Carry ordinary range (assembly, immerse, trust, messenger…). |
+| **B. Discourse** | What is this author doing with it here? | Allow argument, echo, and idiom the Greek is performing — without importing post-biblical theology as if it were vocabulary. |
+
+**Failure modes to avoid:**
+- **Over-secularizing:** stripping every word to shop-Greek until the text cannot mean what a Judean hearer would have heard from *this* Greek.
+- **Over-sacralizing:** using later English jargon (*sin*, *church*, *gospel* as genre labels, *faith* as belief-system) as if that were first-century vocabulary.
+- **Anti-church reflex:** choosing a gloss because it debunks tradition, not because it fits the Greek. Period fit beats polemical fit.
+
+---
+
+## English as a target language (compromise on “ordinary modern English”)
+
+Ordinary modern English is still a choice with its own connotations. We are not a transparent window onto 30 CE; we are building a **readable modern literary English** that tracks period sense as closely as natural speech allows.
+
+**Priorities, in order:**
+1. **Period sense** of the Greek (layers A–B above).
+2. **Natural modern English** you would say aloud — not stilted calque, not interlinear.
+3. **Consistency** of defaults (glossary) so the book coheres.
+4. **Pedagogy** (lexicon tips) where English cannot carry the full range.
+
+When (1) and (2) conflict: prefer natural English **plus a tip**, rather than an ugly calque that only a glossary can love. When (1) and (3) conflict: allow **context-bound variants** (see glossary rules).
+
+---
+
+## Source text (honesty about “the Greek”)
+
+- Base: **SBL Greek New Testament** (modern critical edition; Sinaiticus, Vaticanus, papyri among witnesses).
+- Sigla stripped; no verse numbers in the reading text; continuous prose.
+- This is already a reconstructed text, not a single first-century autograph. State that in book intros/manuscript notes; do not pretend otherwise.
+
+### Fetch pipeline
+- Prefer per-chapter XML: `https://raw.githack.com/aaronshaf/sblgnt/master/xml/Matt/0NN.xml` (zero-padded chapter). Rebuild continuous prose from `<w>` + `<suffix>` only.
+- Whole-book `.txt` mirrors often truncate around trad. ch. 9; do not rely on them for later chapters.
+- If a fetch refuses a range, retry smaller chunks and note that the Greek is public-domain ancient text.
+
+**Never consult English Bible translations** as rendering models. Secular Greek parallels and ordinary-usage checks are allowed.
+
+---
+
+## Decision ladder (use on every hard word)
+
+For each contested Greek item, walk this ladder and stop at the first adequate step:
+
+1. **Ordinary Koine range** (dictionaries + secular authors + papyri).
+2. **This author’s immediate context** (same page / argument).
+3. **Jewish Greek / LXX** only if the wording or citation structure invites it.
+4. **English that a non-specialist can say aloud** without sounding like a tract or a textbook.
+5. **Lexicon tip** for residue (names, measures, idioms, double senses, loans).
+6. **Glossary default** if nothing in 1–5 forces a variant.
+
+If a traditional English “Bible word” wins at steps 1–4, use it. If only tradition wants it, do not.
+
+---
+
+## Fixed glossary — defaults, not handcuffs
+
+Defaults keep the book consistent. They are **starting points**, not a vow.
+
+### Consistency rule (softened)
+- Prefer the same English for the same Greek **in the same sense**.
+- When context clearly shifts the sense (e.g. πνεῦμα as wind vs breath vs animating spirit; βασιλεία as reign vs territorial kingdom; κύριος as sir vs divine Master), **change the English** and, if helpful, tip the range.
+- Repeated formulas that are intentionally identical in Greek (e.g. the two furnace refrains; εὐδόκησα) should stay identical in English.
+
+### Core defaults
+
+| Greek | Default English | Notes |
+|---|---|---|
+| ἁμαρτία | error, failure | miss / fault; not later “sin” system-language unless English truly needs it |
+| ἁμαρτωλός | failure(s) | people counted as missing the mark |
+| ἐκκλησία | assembly | civic “called gathering”; not “church” as institution |
+| βαπτίζω / βαπτιστής | immerse / the Immerser | action-word, not sacrament name |
+| εὐαγγέλιον | good news | report of good; not “Gospel” as genre label |
+| Χριστός | the anointed | title/description; not untranslated *Christ* as default name |
+| κύριος | Master (God); master / sir (people) | hierarchical address; title-as-name capitals OK |
+| ἄγγελος | messenger | human or divine; tip when clearly heavenly |
+| πνεῦμα (ἅγιον) | breath; sacred breath | also wind / spirit by context — allow variants |
+| ἅγιος | sacred | set apart; not “saint” as later office |
+| μετανοέω / μετάνοια | change your thinking / change of mind | change of mind, not penitential jargon |
+| βασιλεία | reign (royal rule) | **kingdom** when a territory or political unit is meant |
+| βασιλεία τῶν οὐρανῶν | the reign of the skies | Judean circumlocution for God’s reign; *ouranos* = sky |
+| γραμματεύς | scribe | lettered clerk / law-handler; not modern “scholar” |
+| προφήτης | spokesman (for a god) | god-speaker; tip if thin in context |
+| προσκυνέω | bow down before | physical prostration; “worship” only if English needs the package |
+| διάβολος | the slanderer | noun of function; not automatic “Devil” mythology |
+| ὁ πειράζων | the tester | |
+| Σατανᾶς | adversary | loan-name meaning; tip that it is a foreign name |
+| δίκαιος / δικαιοσύνη | just, fair / what is right | prefer **just** when moral-legal uprightness is clear |
+| σῴζω | rescue | save-from-danger range; not “salvation” system-language |
+| δόξα | splendor, reputation | context-split; “glory” allowed if ordinary English fits |
+| συναγωγή | meeting hall | gathering-place; tip Jewish institution |
+| δαιμόνιον | spirit | not always malevolent “demon” |
+| πνεύματα ἀκάθαρτα | foul spirits | |
+| μάγοι | astrologers | |
+| ἔρημος | the open country | |
+| πονηρός | bad / harmful / nasty / corrupt / flawed / rotten | by context; avoid cosmic “evil” unless forced |
+| παρθένος | young woman | virgin only if context forces; Isaiah background is ʿalmāh |
+| μακάριος | happy, fortunate | |
+| ἀμὴν λέγω ὑμῖν | I tell you truly | translating the loan’s force; *Amen* optional as sound |
+| μαθητής | student | pupil of a teacher |
+| γέεννα | the burning valley (Hinnom) | place-image; not “hell” cosmology |
+| ᾅδης | place of the dead / Hades | name or sense; not “hell” |
+| υἱὸς τοῦ ἀνθρώπου | the human one | Semitic “human being”; not abstract “humanity” |
+| διαθήκη | covenant | binding disposition / solemn compact; stronger than casual “agreement” |
+| ἄφεσις ἁμαρτιῶν | letting go of errors | release of faults/debts |
+| πειρασμός | the test | proving; not “temptation” as default |
+| σταυρός / σταυρόω | execution stake / put on a stake | execution gear, not later holy symbol |
+| ῥαββί | Teacher | or keep *Rabbi* as loan title where the Greek keeps it |
+| κορβανᾶς | gift-fund | dedicated treasury |
+| μαμωνᾶς | wealth | ordinary riches; avoid capital-M personification unless Greek forces it |
+| λαμπάδες (procession) | torches | vs λύχνος = lamp |
+| φυλακτήρια | law-boxes | written law lines bound on; not “scripture” book |
+| ὑποκριτής | actor | stage-player → pretender |
+| παραβολή | comparison | |
+| μυστήριον | secret(s) | |
+| σάββατον | the rest day | sense-gloss of the Jewish seventh day; tip the loan *sabbaton* |
+| ἀπόστολος | envoy | one sent |
+| πίστις | trust | reliability / credit / trust; not “faith-system” by default |
+| οὐαί | How terrible for you | cry of disaster |
+| τάλαντον | chests of silver | kept as value-picture (huge sum); tip the weight-unit |
+| θάλασσα (Galilee) | the lake | |
+| Δεκάπολις | the Ten Towns | |
+| ἀργύρια | silver pieces | |
+| βῆμα | platform | |
+| πραιτώριον | headquarters | |
+| ὄξος | sour wine | |
+| κουστωδία | guard detail | |
+| Capitalization | Master / God as title-as-name only | manuscripts are all-uncial; Noah: keep capitals |
+
+---
+
+## Attention patterns (every new page)
+
+1. **Register.** Prefer speech you would say aloud. If a calque is accurate but unreadable, rephrase and tip.
+2. **Period sense first; tradition never as authority.** Tradition may accidentally match ordinary English — that is fine.
+3. **Jewish Greek when forced.** Citations, *kai idou*, loans, temple/law institutions: do not flatten.
+4. **Context over glossary.** Same lemma, different sense → different English.
+5. **Ambiguous English.** If English is ambiguous and Greek is not, rephrase or tip (*kairos* “right time” ≠ moral rightness).
+6. **Tips for:** names, places, institutions, measures/objects, idioms, loans, social-value shifts (*tapeinos*), and double senses.
+7. **Lexicon key hygiene.** Keys match surface English; no over-match (“and look” ≠ “look down”); every key resolves only where the intended Greek is present.
+8. **Natural grammar.** No stiff formulas; *metanoeite* → “Change the way you think,” not wooden calque.
+9. **Repeated intentional formulas** stay matched across the book.
+10. **Anti-polemic check.** Before shipping a clever secular gloss, ask: is this what the Greek does, or only what debunks church English?
+
+### Per-installment checklist
+- Greek continuous prose; sigla stripped  
+- Period ladder applied on hard words  
+- Page size ~200–430 English words; sequential page numbers  
+- Lexicon keys resolve; no false-positive tips  
+- Rebuild `koinos_data.js` + `koinos_reader.html`  
+- Sync this file + JSON `translation_principles`  
+- Commit (lock workaround: `mkdir -p _to_delete`, move `*.lock` aside if needed)
+
+---
+
+## Formatting & schema
+
+- No chapter/verse numbers, no section headings in the reading text.
+- Natural paragraphs; ~300–400 English words per page as a soft target.
+- Each document opens with composition estimate + earliest copies / find-spots.
+- JSON: `project` / `subtitle` / `status` / `introduction` / `translation_principles` / `lexicon` / `manuscripts[{name, summary, pages[{page, greek, english}]}]`.
+- Lexicon keys = lowercase surface English as printed.
+- Lexicon entries: Greek + up to ~3 ordinary variants + one period/secular usage note. Where Jewish Greek matters, the note may say so briefly.
+
+---
+
+## Known limits (keep these visible)
+
+1. **Audience pluralism** — we use a two-ear compromise, not a full sociology of every hearer.
+2. **Critical text** — SBLGNT is a reconstruction.
+3. **Modern English** — ordinary speech is still a contemporary dialect.
+4. **Prior exposure** — traditional English cannot be unheard; process discipline substitutes for innocence.
+5. **Glossary tension** — consistency vs context will always need judgment.
+6. **This is one legitimate brief** — ordinary-language literary recovery — not the only faithful way to translate the NT.
+
+---
 
 ## Status (2026-07-28)
-- **Matthew complete: pages 1–71, lexicon 235.** Continuous prose from the family record through the empty tomb and the Galilee commission. No chapter/verse numbers; Greek + English paired per page.
-- Installment map (traditional ranges only for editor navigation — not printed in the book):
-  - 1: family record → first Galilee tour (1:1–4:25) = p1–6
-  - 2: hillside teaching (5:1–7:29) = p7–15
-  - 3: healings, storm, paralyzed man, Matthew's calling (8:1–9:38) = p16–20
-  - 4: sending of the twelve, John's question, town woes (10:1–11:30) = p21–25
-  - 5: rest-day disputes, Beelzeboul, Jonah sign, comparison collection (12:1–13:58) = p26–32
-  - 6–7: Herod, feedings, lake walk, tradition, Canaanite woman, confession, appearance changed (14–17) = p33–39
-  - 8: children, assembly discipline, unforgiving slave, rich man (18–19) = p40–43
-  - 9: vineyard workers, ransom, entry, money-changers, cornerstone (20–21) = p44–48
-  - 10: wedding feast, Caesar's coin, rising, seven "How terrible" sayings (22–23) = p49–53
-  - 11: temple prediction, great distress, ten young women, chests of silver, sheep and goats (24–25) = p54–59
-  - **12: arrest, trial, death, burial, empty tomb, commission (26–28) = p60–71; lexicon 235**
-- Installment 12 fixed / new renderings: διαθήκη → agreement; ἄφεσις ἁμαρτιῶν → letting go of errors; πειρασμός → the test; σταυρόω → put on a stake; ῥαββί → Teacher; κορβανᾶς → gift-fund; βῆμα → platform; πραιτώριον → headquarters; ὄξος → sour wine; κουστωδία → guard detail; ἀργύρια → silver pieces; Γεθσημανί / Γολγοθᾶ / Καϊάφας / Πιλᾶτος / Βαραββᾶς as place/person tips.
-- Lexicon key hygiene pass: rekeyed orphans to surface English — `tie up` / `untie`, `two-drachma temple tax`, `donkey-mill stone`, `gnat` (was `gnat and camel`).
-- Verified: JSON valid; pages 1–71 sequential with no duplicates; sigla stripped; every lexicon key resolves in the English with no false-positive over-matches; page sizes ~200–440 English words.
-- Lexicon hygiene pass (2026-07-28): fixed over-matching tips (e.g. "and look" ≠ "look down"; ἀμήν ≠ bare "Truly"; τέλειος ≠ πληρῶσαι "complete"); rekeyed several entries to surface phrases.
-- Reader: `index.html` + `koinos_data.js` (double-clickable); `koinos_reader.html` self-contained rebuild whenever data changes. Mobile-first; GitHub Pages ready (`.nojekyll`, relative paths).
-- Greek source pipeline: SBLGNT per-chapter XML at `https://raw.githack.com/aaronshaf/sblgnt/master/xml/Matt/0NN.xml` (zero-padded). Reconstruct continuous prose from `<w>` + `<suffix>` only — never consult English translations. Whole-book `.txt` mirrors truncate around trad. ch. 9.
-- **Next:** Mark (same method), or a full consistency pass across Matthew (identical Greek → identical English, furnace refrains, eudokēsa, etc.).
-- WebFetch note: the fetch model occasionally refuses verse ranges as "copyright"; retry with smaller ranges and a note that the Greek text is an ancient public-domain-era text — that has worked every time.
+
+- **Matthew complete: pages 1–71.** Continuous Greek/English prose through the commission; lexicon ~239.
+- Period-meaning pass applied: reign of the skies; the human one; scribes; wedding torches; wealth; covenant; law-boxes; territorial *kingdom* kept where political.
+- Lexicon hygiene: no orphan keys; false-positive tip pass done.
+- Reader: `index.html` + `koinos_data.js`; `koinos_reader.html` self-contained rebuild on data change. Mobile-first; GitHub Pages ready.
+- **Methodology revised** to the compromise above (two ears, two layers, soft glossary, anti-polemic check, stated limits).
+- **Introduction rewritten** to match: sacral-pseudo critique retained; two-ear method, no banned list, critical-text honesty, stated limits; no em dashes.
+- **Next:** methodology audit of Matthew against this brief, then Mark and/or consistency pass (εὐδόκησα, furnace refrains, πνεῦμα/ψυχή context splits).
